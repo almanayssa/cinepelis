@@ -11,6 +11,7 @@ package pe.edu.upc.cinepe.model;
  */
 public class Cliente {
 
+    //test de commit =) johana
 
     private Long id_Cliente;
     private String nombres;
