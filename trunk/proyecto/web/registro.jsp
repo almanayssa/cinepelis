@@ -15,7 +15,7 @@ Released   : 20100707
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Gestion de Cine</title>
+<title>Gesti&oacute;n de Cine</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
@@ -23,7 +23,7 @@ Released   : 20100707
 	<div id="header-wrapper">
 		<div id="header">
 			<div id="logo">
-				<h1><a href="#">Cinestar  </a></h1>
+				<h1><a href="#">Cinepelis  </a></h1>
 			</div>
 			<div id="menu">
 				<ul>													
@@ -31,7 +31,7 @@ Released   : 20100707
 					<li class="current_page_item"><a href="registro.jsp">Registro Clientes</a></li>
 					<li><a href="mantenimiento_pelicula.jsp">Registro Pel&iacute;culas</a></li>
                     <li><a href="venta_entrada.jsp">Registro Venta</a></li>
-                    <li><a href="estadistica_salas.jsp">Estadisticas</a></li>
+                    <li><a href="estadistica_salas.jsp">Estad&iacute;sticas</a></li>
 				</ul>
 			</div>
 		</div>
@@ -126,7 +126,7 @@ Released   : 20100707
 	<!-- end #page -->
 </div>
 <div id="footer">
-	<p>Copyright (c) 2010 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
+	<p>Copyright (c) 2010 Cinepelis.com. All rights reserved.</p>
 </div>
 <!-- end #footer -->
 </body>
