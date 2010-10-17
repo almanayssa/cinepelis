@@ -15,7 +15,7 @@ Released   : 20100707
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Gestión de Cine</title>
+<title>Gesti&oacute;n de Cine</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
@@ -23,7 +23,7 @@ Released   : 20100707
 	<div id="header-wrapper">
 		<div id="header">
 			<div id="logo">
-				<h1><a href="#">Cinestar  </a></h1>
+				<h1><a href="#">Cinepelis  </a></h1>
 			</div>
 			<div id="menu">
 				<ul>													
@@ -45,8 +45,16 @@ Released   : 20100707
 						<h2 class="title"><a href="#">Registro de Venta</a></h2>
 				    <div class="entry">
 	<table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>N&uacute;mero de Tarjeta:</td>
+              <td style="padding:2px;"><input name='tbxTarjeta' type='text'/></td>
+            </tr>
+            <tr>
+              <td>Titular:</td>
+              <td style="padding:2px;"><input name='tbxTitular' type='text'/></td>
+            </tr>
     <tr>
-    	<td>Película:</td>
+    	<td>Pel&iacute;cula:</td>
     	<td style="padding:2px;"><select name="cbxGenero2">
     	  <option>Como Perros y Gatos 2 - Sala 1 - 6:30pm</option>
           <option>Como Perros y Gatos 2 - Sala 1 - 8:30pm</option>
@@ -54,11 +62,11 @@ Released   : 20100707
   	    </select></td>
     </tr>
     <tr>
-      <td># de entradas:</td>
+      <td>N&uacute;mero de entradas:</td>
       <td style="padding:2px;"><input disabled="disabled" name='tbxDirector2' type='text' value="0"/></td>
     </tr>
     <tr>
-      <td valign="top">Ubicación:</td>
+      <td valign="top">Ubicaci&oacute;n:</td>
       <td style="padding:2px;"><table width="269" border="1">
         <tr>
           <td>1
@@ -310,7 +318,7 @@ Released   : 20100707
 	<!-- end #page -->
 </div>
 <div id="footer">
-	<p>Copyright (c) 2010 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
+	<p>Copyright (c) 2010 Cinepelis.com. All rights reserved.</p>
 </div>
 <!-- end #footer -->
 </body>

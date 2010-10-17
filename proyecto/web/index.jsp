@@ -15,7 +15,7 @@ Released   : 20100707
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Gestión de Cine</title>
+<title>Gesti&oacute;n de Cine</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
@@ -23,7 +23,7 @@ Released   : 20100707
 	<div id="header-wrapper">
 		<div id="header">
 			<div id="logo">
-				<h1><a href="#">Cinestar  </a></h1>
+				<h1><a href="#">Cinepelis  </a></h1>
 			</div>
 			<div id="menu">
 				<ul>
@@ -60,7 +60,6 @@ Released   : 20100707
 <div class="entry">					    
   <p><a href="detalles.jsp"><img src="images/movie1274761627.jpg" alt="" width="163" height="227" /></a>
     </p>
-  </p>
   <p><strong>Casi embarazada </strong>                            </p>
   <ul>
     <li><strong>Genero:</strong> Comedia</li>
@@ -73,7 +72,6 @@ Released   : 20100707
 <div class="entry">
   <p><img src="images/10a9aavampiros301x464p.jpg" alt="" width="163" height="227" />
     </p>
-  </p>
   <p><strong>Una loca película de vampiros</strong> </p>
 
                             <ul>
@@ -89,7 +87,6 @@ Released   : 20100707
 <div class="entry">
               <p><img src="images/the-last-airbender-poster.jpg" alt="" width="163" height="227" />
               </p>
-              </p>
               <p><strong>El último maestro del aire </strong> </p>
               <ul>
               <li><strong>Género:</strong> Accion</li
@@ -104,7 +101,6 @@ Released   : 20100707
 <div class="entry">						    
   <p><img src="images/trailer-como-perros-y-gatos-2.jpg" alt="" width="163" height="227" />
     </p>
-  </p>
   <p><strong>Como perros y gatos 2</strong></p>
   <ul>
 			    <li><strong>Género:</strong> Infantil</li>
@@ -118,7 +114,6 @@ Released   : 20100707
         <div class="entry">
               <p><img src="images/18dfadaenamorada301x464p.jpg" alt="" width="163" height="227" />
                 </p>
-              </p>
               <p><strong>Enamorada de mi ex </strong>							</p>
               <ul>
 			    <li><strong>Genero:</strong> Comedia</li>
@@ -160,7 +155,7 @@ Released   : 20100707
 	<!-- end #page -->
 </div>
 <div id="footer">
-	<p>Copyright (c) 2010 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"> CSS Templates</a>.</p>
+	<p>Copyright (c) 2010 Cinepelis.com. All rights reserved.</p>
 </div>
 <!-- end #footer -->
 </body>

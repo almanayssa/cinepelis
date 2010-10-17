@@ -13,7 +13,7 @@
             <div id="header-wrapper">
                 <div id="header">
                     <div id="logo">
-                        <h1><a href="#">Cinestar  </a></h1>
+                        <h1><a href="#">Cinepelis  </a></h1>
                     </div>
 
                 </div>
@@ -67,7 +67,7 @@
         <!-- end #page -->
  
     <div id="footer">
-        <p><a>DEW PROJECT- 2010-2</a>.</p>
+        <p>Copyright (c) 2010 Cinepelis.com. All rights reserved.</p>
     </div>
     <!-- end #footer -->
         </div>
