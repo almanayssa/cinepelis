@@ -16,4 +16,5 @@ Describe los beneficios adicionales que brinde el cine. En esta opción, actualm
 *Ingresar*<br>
 Esta pantalla solicita un usuario y password para que el usuario utilice el sistema de venta de entradas.
 
-<font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Descripción de Desarrollo de Sistema Cinestar</font>
+<font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Descripción de Desarrollo de Sistema Cinestar</font><br>
+En construcción
