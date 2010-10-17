@@ -1,11 +1,11 @@
 [http://lh6.ggpht.com/_-OCxitGNEHk/TLph4Hqz7FI/AAAAAAAAA3Y/jLyxbowOd-U/ScreenHunter_06%20Oct.%2016%2021.39.gif] 
 
-<font face="Arial Rounded MT Bold" color="black" size="6" style="bold">Cinestar Web System</font>
+<font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Cinestar Web System</font>
 
 Cinestart es un sistema Web de gestión de los principales procesos de un Cine; es decir automatiza desde las consultas de cartelera hasta la venta de entradas a los clientes. Este sistema ha sido creado en base al modelo de negocio que existe en la ciudad de Lima y aplica para un cine de una sede con varias salas.
 
 
-<font face="Arial Rounded MT Bold" color="black" size="6" style="bold">Opciones de Sistema Cinestar</font>
+<font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Opciones de Sistema Cinestar</font>
 
 *Home*<br>
 Esta opción muestra las películas en cartelera, con su respectiva sinopsis. Cuando el usuario desea obtener una descripción más detallada, se selecciona la imagen de la película y se podrá visualizar más detalles como el director, país, año, duración, entre otros.
@@ -16,4 +16,4 @@ Describe los beneficios adicionales que brinde el cine. En esta opción, actualm
 *Ingresar*<br>
 Esta pantalla solicita un usuario y password para que el usuario utilice el sistema de venta de entradas.
 
-<font face="Arial Rounded MT Bold" color="black" size="6" style="bold">Descripción de Desarrollo de Sistema Cinestar</font>
+<font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Descripción de Desarrollo de Sistema Cinestar</font>
