@@ -1,6 +1,6 @@
 #summary One-sentence summary of this page.
 
-[http://lh3.ggpht.com/_-OCxitGNEHk/TLpZDIkMFNI/AAAAAAAAA3U/yABlO4xZ9EE/ScreenHunter_04%20Oct.%2016%2020.59.gif] 
+[http://lh3.ggpht.com/_-OCxitGNEHk/TLpZCw7d8xI/AAAAAAAAA3Q/H6S2VzjWwM0/ScreenHunter_05%20Oct.%2016%2021.01.gif] 
 = Cinestar Web System =
 
 Cinestart es un sistema Web de gestión de los principales procesos de un Cine; es decir automatiza desde las consultas de cartelera hasta la venta de entradas a los clientes. Este sistema ha sido creado en base al modelo de negocio que existe en la ciudad de Lima y aplica para un cine de una sede con varias salas.
