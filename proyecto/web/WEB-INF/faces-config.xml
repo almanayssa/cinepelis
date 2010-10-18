@@ -10,15 +10,15 @@
     <!--BACKING BEAN DE LOGUEO-->
     <managed-bean>
         <managed-bean-name>loginBean</managed-bean-name>
-        <managed-bean-class>edu.upc.dew.cinepelis.controller.LoginBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>edu.upc.dew.cinepelis.controller.LoginJSF</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
 
     <managed-bean>
         <managed-bean-name>clienteBean</managed-bean-name>
-        <managed-bean-class>edu.upc.dew.cinepelis.controller.ClienteBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>edu.upc.dew.cinepelis.controller.ClienteJSF</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
 
 
     <navigation-rule>
