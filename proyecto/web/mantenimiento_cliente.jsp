@@ -59,13 +59,13 @@ Released   : 20100707
                                 <td>DNI:</td>
                                 <td style="padding:2px;"><input name="tbxDNI" type="text"/></td></tr>
                                 <tr>
-                                <td>Teléfono:</td>
+                                <td>Tel&eacute;fono:</td>
                                 <td style="padding:2px;"><input name="tbxTelefono" type="text"/></td></tr>
                                 <tr>
                                 <td>Email:</td>
                                 <td style="padding:2px;"><input name="tbxEmail" type="text"/></td></tr>
                                 <tr>
-                                <td>Tipo tarjeta:</td>
+                                <td>Tipo Tarjeta:</td>
                                 <td style="padding:2px;">
                                 <select>
                                 <option>Cl&aacute;sica</option>
@@ -84,7 +84,7 @@ Released   : 20100707
                                 
                                 <table class="table" border = "1" cellspading = "0" cellspacing = "0" width="100%">
                                 <thead>
-                                <tr><th width="103">Nombre</th><th width="190">Apellidos</th><th width="94">Tipo tarjeta</th><th>&nbsp;</th></tr>
+                                <tr><th width="103">Nombre</th><th width="190">Apellidos</th><th width="94">Tipo Tarjeta</th><th>&nbsp;</th></tr>
                                 </thead>
                                 <tr><td width="103">Pedro</td><td width="190">Rios Pino</td><td width="94">Clasica</td><td width="95"><a href="#">Eliminar</a></td></tr>
                                 <tr><td width="103">Johana</td><td width="190">Herrera Quintanilla</td><td width="94">Premium</td><td><a href="#">Eliminar</a></td></tr>
@@ -100,12 +100,12 @@ Released   : 20100707
 		<div id="sidebar">
                     <ul>
                             <li>
-                                    <h2>Autenticacion</h2>
+                                    <h2>Autenticaci&oacute;n</h2>
                                     <p>
                                         <div id="usuario" >
                                         <div>
-                                        Bienvenid@: Mayra Marquez<br />
-                                        <a href="index.jsp">Cerrar Sesion</a>
+                                        Bienvenid@: Mayra M&aacute;rquez<br />
+                                        <a href="index.jsp">Cerrar Sesi&oacute;n</a>
                                         </div>
                                         </div>
                                     </p>

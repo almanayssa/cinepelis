@@ -47,9 +47,9 @@ Released   : 20100707
                         <div class="entry">
                             <table class="table" border = "1" cellpading = "0" cellspacing = "0" width="100%">
                             <thead>
-                            <tr><th width="100">Pelicula</th><th width="50">Sala</th><th width="50">Butacas</th><th width="30">Vendidas</th><th width="30">Porcentaje</th></tr>
+                            <tr><th width="100">Pel&iacute;cula</th><th width="50">Sala</th><th width="50">Butacas</th><th width="30">Vendidas</th><th width="30">Porcentaje</th></tr>
                             </thead>
-                            <tr><td width="100">El ultimo maestro</td><td width="50">4</td><td width="50">40</td><td width="50">30</td><td>10%</td></tr>
+                            <tr><td width="100">El &Uacute;ltimo Maestro del Aire</td><td width="50">4</td><td width="50">40</td><td width="50">30</td><td>10%</td></tr>
                             <tr><td width="100">Karate Kid</td><td width="50">2</td><td width="50">45</td><td>10</td><td>10%</td></tr>
                             </table>
                             <table>
@@ -64,12 +64,12 @@ Released   : 20100707
 		<div id="sidebar">
                     <ul>
                             <li>
-                                    <h2>Autenticacion</h2>
+                                    <h2>Autenticaci&oacute;n</h2>
                                     <p>
                                         <div id="usuario" >
                                         <div>
-                                        Bienvenid@: Mayra Marquez<br />
-                                        <a href="index.jsp">Cerrar Sesion</a>
+                                        Bienvenid@: Mayra M&aacute;rquez<br />
+                                        <a href="index.jsp">Cerrar Sesi&oacute;n</a>
                                         </div>
                                         </div>
                                     </p>

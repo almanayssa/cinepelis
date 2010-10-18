@@ -291,12 +291,12 @@ Released   : 20100707
 		<div id="sidebar">
                     <ul>
                             <li>
-                                    <h2>Autenticacion</h2>
+                                    <h2>Autenticaci&oacute;n</h2>
                                     <p>
                                         <div id="usuario" >
                                         <div>
-                                        Bienvenid@: Mayra Marquez<br />
-                                        <a href="index.jsp">Cerrar Sesion</a>
+                                        Bienvenid@: Mayra M&aacute;rquez<br />
+                                        <a href="index.jsp">Cerrar Sesi&oacute;n</a>
                                         </div>
                                         </div>
                                     </p>
