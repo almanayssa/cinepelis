@@ -12,7 +12,7 @@ import javax.faces.context.FacesContext;
  *
  * @author Ralf
  */
-public class LoginBean {
+public class LoginJSF {
 
     private String usuario;
     private String password;

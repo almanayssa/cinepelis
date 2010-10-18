@@ -2,6 +2,7 @@ package edu.upc.dew.cinepelis.common.util;
 
 
 
+import edu.upc.dew.cinepelis.service.ClienteService;
 import edu.upc.dew.cinepelis.service.UsuarioService;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -38,6 +39,15 @@ public class ServiceFactory implements ApplicationContextAware {
      */ 
     public UsuarioService getUsuarioService(){
     	return (UsuarioService)getBean("usuarioServiceCtx");
+    }
+
+
+    /**
+     *
+     * @return ClienteService
+     */
+    public ClienteService getClienteService(){
+    	return (ClienteService)getBean("clienteServiceCtx");
     }
     
    

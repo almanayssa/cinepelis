@@ -89,6 +89,38 @@ Released   : 20100707
                                 <tr><td width="103">Pedro</td><td width="190">Rios Pino</td><td width="94">Clasica</td><td width="95"><a href="#">Eliminar</a></td></tr>
                                 <tr><td width="103">Johana</td><td width="190">Herrera Quintanilla</td><td width="94">Premium</td><td><a href="#">Eliminar</a></td></tr>
                                 </table>
+
+                     <h:dataTable id="books"  value="#{bookListBean.books}"  var="book"  border="1">
+			<h:column>
+				<f:facet name="header"> <h:outputText  value="Author"/> </f:facet>
+				<h:outputText value="#{book.author}" />
+			</h:column>
+			<h:column>
+				<f:facet name="header"> <h:outputText  value="Title"/> </f:facet>
+				<h:outputText value="#{book.title}" />
+			</h:column>
+			<h:column>
+				<f:facet name="header"> <h:outputText  value="Available"/> </f:facet>
+				<h:selectBooleanCheckbox disabled="true"  value="#{book.available}" />
+			</h:column>
+			<h:column>
+				<f:facet name="header"> <h:outputText  value="Edit"/> </f:facet>
+				<h:commandLink id="Edit"  action="editBook"  actionListener="#{bookBean.selectBook}">
+					<h:outputText value="Edit" />
+					<f:param id="editId"  name="id"  value="#{book.id}" />
+				</h:commandLink>
+			</h:column>
+			<h:column>
+				<f:facet name="header"> <h:outputText  value="Delete"/> </f:facet>
+				<h:commandLink id="Delete"  action="listBooks"  actionListener="#{bookBean.deleteBook}">
+					<h:outputText value="Delete" />
+					<f:param id="deleteId"  name="id"  value="#{book.id}" />
+				</h:commandLink>
+			</h:column>
+		</h:dataTable>
+
+
+
                         </div>
                     </div>
 		</div>
