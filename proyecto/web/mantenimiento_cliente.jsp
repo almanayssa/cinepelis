@@ -62,15 +62,35 @@
                                 </tr>
                                 </table>
 
-                                
-                                <table class="table" border = "1" cellspading = "0" cellspacing = "0" width="100%">
-                                <thead>
-                                <tr><th width="103">Nombre</th><th width="190">Apellidos</th><th width="94">Tipo Tarjeta</th><th>&nbsp;</th></tr>
-                                </thead>
-                                <tr><td width="103">Pedro</td><td width="190">Rios Pino</td><td width="94">Clasica</td><td width="95"><a href="#">Eliminar</a></td></tr>
-                                <tr><td width="103">Johana</td><td width="190">Herrera Quintanilla</td><td width="94">Premium</td><td><a href="#">Eliminar</a></td></tr>
-                                </table>
+                            
 
+                                <h:dataTable id="clientes"  value="#{clienteBean.lstCliente}"  
+                                             var="cliente"  border="1" rows="5">
+                                    <h:column>
+                                            <f:facet name="header"> <h:outputText  value="Nombre"/> </f:facet>
+                                            <f:attribute name="width" value="40" />
+                                            <%-- <f:attribute name="align" value="left" /> --%>
+                                            <%-- <f:attribute name="height" value="20" /> --%>
+                                            <%-- <f:attribute name="nowrap" value="true" /> --%>
+                                            <%-- <f:attribute name="valign" value="top" /> --%>
+                                            <%-- <f:attribute name="bgcolor" value="red" /> --%>
+                                            <%-- <f:attribute name="style" value="color:White;" /> --%>
+
+                                            <h:outputText value="#{cliente.nombre}" />
+                                    </h:column>
+                                    <h:column>
+                                            <f:facet name="header"> <h:outputText  value="Apellido Paterno"/> </f:facet>
+                                            <h:outputText value="#{cliente.ape_paterno}" />
+                                    </h:column>
+                                    <h:column>
+                                            <f:facet name="header"> <h:outputText  value="Apellido Materno"/> </f:facet>
+                                            <h:outputText value="#{cliente.ape_materno}" />
+                                    </h:column>
+                                     <h:column>
+                                            <f:facet name="header"> <h:outputText  value="Email"/> </f:facet>
+                                            <h:outputText value="#{cliente.email}" />
+                                    </h:column>
+                            </h:dataTable>
 
 
 
