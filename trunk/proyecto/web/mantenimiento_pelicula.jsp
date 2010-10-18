@@ -17,6 +17,14 @@ Released   : 20100707
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Gesti&oacute;n de Cine</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+-->
+</style>
 </head>
 <body>
 <div id="wrapper">
@@ -124,8 +132,32 @@ Released   : 20100707
 					</ul>
 			  </div>
 				<!-- end #sidebar -->
-				<div style="clear: both;">&nbsp;</div>
-			</div>
+				<div style="clear: both;">&nbsp;
+				  <table width="900" border="1">
+                    <tr>
+                      <td width="74" bgcolor="#3C3D3F">&nbsp;</td>
+                      <td width="299" bgcolor="#3C3D3F" class="style1">Nombre</td>
+                      <td width="146" bgcolor="#3C3D3F" class="style1">Genero</td>
+                      <td width="173" bgcolor="#3C3D3F" class="style1">Sitio Web</td>
+                      <td width="174" bgcolor="#3C3D3F" class="style1">Censura</td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#FFFFFF">1</td>
+                      <td bgcolor="#FFFFFF">Los iun</td>
+                      <td bgcolor="#FFFFFF">Accion</td>
+                      <td bgcolor="#FFFFFF">http://www.ind.com</td>
+                      <td bgcolor="#FFFFFF">Mayores de 14</td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#FFFFFF">&nbsp;</td>
+                      <td bgcolor="#FFFFFF">&nbsp;</td>
+                      <td bgcolor="#FFFFFF">&nbsp;</td>
+                      <td bgcolor="#FFFFFF">&nbsp;</td>
+                      <td bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                  </table>
+				</div>
+		  </div>
 		</div>
 	</div>
 	<!-- end #page -->
