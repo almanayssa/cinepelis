@@ -27,12 +27,12 @@ Released   : 20100707
 			</div>
 			<div id="menu">
 				<ul>													
-					<li ><a href="mantenimiento_cartelera.html">Registro Cartelera</a></li>															
-					<li><a href="registro.html">Registro Clientes</a></li>				
-					<li><a href="mantenimiento_pelicula.html">Registro Pel&iacute;culas</a></li>	
-                    <li class="current_page_item"><a href="venta_entrada.html">Registro Venta</a></li>			
-                    <li><a href="estadistica_salas.html">Estadisticas</a></li>	
-				</ul>
+					<li ><a href="mantenimiento_cartelera.jsp">Registro Cartelera</a></li>															
+				  <li><a href="registro.jsp">Registro Clientes</a></li>				
+				  <li><a href="mantenimiento_pelicula.jsp">Registro Pel&iacute;culas</a></li>	
+                  <li class="current_page_item"><a href="venta_entrada.jsp">Registro Venta</a></li>			
+                  <li><a href="estadistica_salas.jsp">Estadisticas</a></li>	
+			  </ul>
 			</div>
 		</div>
 	</div>

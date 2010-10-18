@@ -19,7 +19,7 @@
         <from-view-id>/login.jsp</from-view-id>
         <navigation-case>
             <from-outcome>success</from-outcome>
-            <to-view-id>/registro.jsp</to-view-id>
+            <to-view-id>/inicio.jsp</to-view-id>
             <redirect/>
         </navigation-case>
     </navigation-rule>

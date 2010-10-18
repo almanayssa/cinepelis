@@ -1,11 +1,11 @@
-<%@taglib prefix="f" uri="http://java.sun.com/jsf/core"%>
-<%@taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
+<%@ include file="/common/header_include.jsp"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
+     <f:view>
+        <f:loadBundle basename="messages" var="msgs"/>
     <head>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>Gesti&oacute;n de Cine</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
         <link href="<%=request.getContextPath()%>/faces/style.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
@@ -13,7 +13,7 @@
             <div id="header-wrapper">
                 <div id="header">
                     <div id="logo">
-                        <h1><a href="#">Cinepelis  </a></h1>
+                        <h1><a href="#">Cinepelis </a></h1>
                     </div>
 
                 </div>
@@ -24,7 +24,7 @@
                     <div id="page-bgbtm">
                         <div id="content">                             
                                  <div id="login">
-                                     <f:view>
+                                    
                                      <h:form id="formLogin">
                                      <fieldset>
                                          <legend>Ingrese su Usuario y Contrase&ntilde;a</legend>
@@ -52,7 +52,7 @@
                                        
                                      </fieldset>                                      
                                      </h:form>
-                                     </f:view>
+                                    
                                      <p></p>
                                  </div>
                         <div style="clear: both;">&nbsp;</div>
@@ -72,4 +72,5 @@
     <!-- end #footer -->
         </div>
 </body>
+ </f:view>
 </html>
