@@ -7,6 +7,14 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+  .cabeceratabla {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align:center;
+  }
+
+</style>
 </head>
 
 <body>
@@ -65,7 +73,7 @@
                             
 
                                 <h:dataTable id="clientes"  value="#{clienteBean.lstCliente}"  
-                                             var="cliente"  border="1" rows="5">
+                                             var="cliente"  border="1" rows="5" headerClass="cabeceratabla">
                                     <h:column>
                                             <f:facet name="header"> <h:outputText  value="Nombre"/> </f:facet>
                                             <f:attribute name="width" value="40" />
