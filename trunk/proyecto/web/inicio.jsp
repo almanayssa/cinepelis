@@ -1,4 +1,3 @@
-
 <%@ include file="/common/header_include.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
@@ -15,28 +14,10 @@
 </head>
 <body>
     <div id="logo">
-        <h1><a href="#">Cinepelis </a></h1>
+         <h1><h:outputText value="#{msgs.nombre_sistema}"/></h1>
     </div>
 <div id="header">
-        <h:form id="menuForm">
-	<div id="menu">
-		<ul>
-                    <li><a href="mantenimiento_cartelera.jsp">Gesti&oacute;n Cartelera</a></li>
-                    <li>
-                        <h:commandLink id="linkClientes" action="#{clienteBean.initClientes}">
-                            <h:outputText value="#{msgs.link_gclientes}"/>
-                        </h:commandLink>
-
-
-                    </li>
-                    <li><a href="mantenimiento_pelicula.jsp">Gesti&oacute;n Pel&iacute;culas</a></li>
-                    <li><a href="venta_entrada.jsp">Registro Venta</a></li>
-                    <li><a href="estadistica_salas.jsp">Estad&iacute;sticas</a></li>
-		</ul>
-	</div>
-        </h:form>
-	<!-- end #menu -->
-
+        <%@ include file="/common/menu_include.jsp"%>
 </div>
 <!-- end #header -->
 <hr />
