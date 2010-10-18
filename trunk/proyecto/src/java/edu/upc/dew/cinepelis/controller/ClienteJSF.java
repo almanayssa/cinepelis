@@ -27,7 +27,6 @@ public class ClienteJSF extends  GenericBean{
         try {
 
             lstCliente = serviceFactory.getClienteService().getClientes();
-
             for(ClienteBean cliente: lstCliente){
                 System.out.println(cliente.getApe_paterno());
             }
@@ -41,5 +40,12 @@ public class ClienteJSF extends  GenericBean{
 
         return forward;
     }
-   
+
+    public List<ClienteBean> getLstCliente() {
+        return lstCliente;
+    }
+
+    
+
+
 }
