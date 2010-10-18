@@ -19,65 +19,59 @@ Released   : 20100707
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-<div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header">
-			<div id="logo">
-				<h1><a href="#">Cinepelis  </a></h1>
-			</div>
-			<div id="menu">
-				<ul>													
-					<li ><a href="mantenimiento_cartelera.jsp">Registro Cartelera</a></li>															
-					<li><a href="registro.jsp">Registro Clientes</a></li>				
-					<li><a href="mantenimiento_pelicula.jsp">Registro Pel&iacute;culas</a></li>	
-                    <li class="current_page_item"><a href="venta_entrada.jsp">Registro Venta</a></li>			
-                    <li><a href="estadistica_salas.jsp">Estadisticas</a></li>	
-				</ul>
-			</div>
-		</div>
+   <div id="logo">
+        <h1><a href="#">Cinepelis </a></h1>
+    </div>
+<div id="header">
+	<div id="menu">
+		<ul>
+                    <li class="current_page_item"><a href="mantenimiento_cartelera.jsp">Registro Cartelera</a></li>
+                    <li><a href="registro.jsp">Registro Clientes</a></li>
+                    <li><a href="mantenimiento_pelicula.jsp">Registro Pel&iacute;culas</a></li>
+                    <li><a href="venta_entrada.jsp">Registro Venta</a></li>
+                    <li><a href="estadistica_salas.jsp">Estadisticas</a></li>
+		</ul>
 	</div>
-	<!-- end #header -->
-	<div id="page">
-		<div id="page-bgtop">
-			<div id="page-bgbtm">
-				<div id="content">
-		    <div class="post">
-						<h2 class="title"><a href="#">Inicio</a></h2>
-	          <div class="entry"></div>
-				  </div>
-			    <div style="clear: both;">&nbsp;</div>
-				</div>
-				<!-- end #content -->
-				<div id="sidebar">
-					<ul>
-						<li><div id="usuario" >
-			    <div>
-										Bienvenid@: Mayra Marquez<br />
-					<a href="index.html">Cerrar Sesion</a>
-				  </div>
-							</div>
-							<div id="search" >
-								<form method="get" action="#">
-									<div>
-										<input type="text" name="s" id="search-text" value="" />
-										<input type="submit" id="search-submit" value="GO" />
-									</div>
-								</form>
-							</div>
-							<div style="clear: both;">&nbsp;</div>
-						</li>
-					  <li>
-					    <ul>
-							  <li></li>
-					    </ul>
-					  </li>
-					  <li> </li>
-					</ul>
-			  </div>
-				<!-- end #sidebar -->
-				<div style="clear: both;">&nbsp;</div>
-			</div>
+	<!-- end #menu -->
+        <div id="search">
+		<form method="get" action="">
+			<fieldset>
+				<input type="text" name="s" id="search-text" size="15" />
+			</fieldset>
+		</form>
+	</div>
+	<!-- end #search -->
+</div>
+<!-- end #header -->
+<hr />
+<!-- end #logo -->
+<div id="page">
+	<div id="page-bgtop">
+		<div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#">Inicio</a></h2>
+                        <div class="entry">
+                        </div>
+                    </div>
 		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+                    <ul>
+                            <li>
+                                    <h2>Autenticacion</h2>
+                                    <p>
+                                        <div id="usuario" >
+                                        <div>
+                                        Bienvenid@: Mayra Marquez<br />
+                                        <a href="index.jsp">Cerrar Sesion</a>
+                                        </div>
+                                        </div>
+                                    </p>
+                            </li>
+                    </ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
 	</div>
 	<!-- end #page -->
 </div>

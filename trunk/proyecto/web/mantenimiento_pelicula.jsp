@@ -27,23 +27,32 @@ Released   : 20100707
 </style>
 </head>
 <body>
-<div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header">
-			<div id="logo">
-				<h1><a href="#">Cinepelis  </a></h1>
-			</div>
-			<div id="menu">
-				<ul>													
-					<li ><a href="mantenimiento_cartelera.jsp">Registro Cartelera</a></li>															
-				  <li><a href="registro.jsp">Registro Clientes</a></li>				
-				  <li><a href="mantenimiento_pelicula.html">Registro Pel&iacute;culas</a></li>	
-                    <li class="current_page_item"><a href="venta_entrada.jsp">Registro Venta</a></li>			
-                  <li><a href="estadistica_salas.jsp">Estadisticas</a></li>	
-			  </ul>
-			</div>
-		</div>
+               <div id="logo">
+        <h1><a href="#">Cinepelis </a></h1>
+    </div>
+<div id="header">
+	<div id="menu">
+		<ul>
+                    <li class="current_page_item"><a href="mantenimiento_cartelera.jsp">Registro Cartelera</a></li>
+                    <li><a href="registro.jsp">Registro Clientes</a></li>
+                    <li><a href="mantenimiento_pelicula.jsp">Registro Pel&iacute;culas</a></li>
+                    <li><a href="venta_entrada.jsp">Registro Venta</a></li>
+                    <li><a href="estadistica_salas.jsp">Estadisticas</a></li>
+		</ul>
 	</div>
+	<!-- end #menu -->
+        <div id="search">
+		<form method="get" action="">
+			<fieldset>
+				<input type="text" name="s" id="search-text" size="15" />
+			</fieldset>
+		</form>
+	</div>
+	<!-- end #search -->
+</div>
+<!-- end #header -->
+<hr />
+<!-- end #logo -->
 	<!-- end #header -->
 	<div id="page">
 		<div id="page-bgtop">
@@ -91,12 +100,36 @@ Released   : 20100707
         <option>Descuentos</option>
         <option>Promociones</option>
       </select></td></tr>
-      <tr>
-      <td>:</td>
-      <td style="padding:2px;">&nbsp;</td></tr>
-    <tr><td></td><td style="padding:2px;"><input type="submit" id="search-submit" value="OK" /></td></tr>
-</table>	
-                    
+    <tr>
+    <td></td>
+    <td style="padding:2px;">&nbsp;</td>
+    </tr>
+    <tr><td></td><td><input type="submit" value="Guardar" /></td></tr>
+</table>
+<br/>
+<table border="1">
+<tr>
+  <td width="74" bgcolor="#3C3D3F">&nbsp;</td>
+  <td width="299" bgcolor="#3C3D3F" class="style1">Nombre</td>
+  <td width="146" bgcolor="#3C3D3F" class="style1">Genero</td>
+  <td width="173" bgcolor="#3C3D3F" class="style1">Sitio Web</td>
+  <td width="174" bgcolor="#3C3D3F" class="style1">Censura</td>
+</tr>
+<tr>
+  <td bgcolor="#FFFFFF">1</td>
+  <td bgcolor="#FFFFFF">Los iun</td>
+  <td bgcolor="#FFFFFF">Accion</td>
+  <td bgcolor="#FFFFFF">http://www.ind.com</td>
+  <td bgcolor="#FFFFFF">Mayores de 14</td>
+</tr>
+<tr>
+  <td bgcolor="#FFFFFF">&nbsp;</td>
+  <td bgcolor="#FFFFFF">&nbsp;</td>
+  <td bgcolor="#FFFFFF">&nbsp;</td>
+  <td bgcolor="#FFFFFF">&nbsp;</td>
+  <td bgcolor="#FFFFFF">&nbsp;</td>
+</tr>
+</table>
                     
                     
                     
@@ -106,62 +139,27 @@ Released   : 20100707
 				</div>
 				<!-- end #content -->
 				<div id="sidebar">
-					<ul>
-						<li><div id="usuario" >
-			    <div>
-										Bienvenid@: Mayra Marquez<br />
-					<a href="index.html">Cerrar Sesion</a>
-				  </div>
-							</div>
-							<div id="search" >
-								<form method="get" action="#">
-									<div>
-										<input type="text" name="s" id="search-text" value="" />
-										<input type="submit" id="search-submit" value="GO" />
-									</div>
-								</form>
-							</div>
-							<div style="clear: both;">&nbsp;</div>
-						</li>
-					  <li>
-					    <ul>
-							  <li></li>
-					    </ul>
-					  </li>
-					  <li> </li>
-					</ul>
-			  </div>
-				<!-- end #sidebar -->
-				<div style="clear: both;">&nbsp;
-				  <table width="900" border="1">
-                    <tr>
-                      <td width="74" bgcolor="#3C3D3F">&nbsp;</td>
-                      <td width="299" bgcolor="#3C3D3F" class="style1">Nombre</td>
-                      <td width="146" bgcolor="#3C3D3F" class="style1">Genero</td>
-                      <td width="173" bgcolor="#3C3D3F" class="style1">Sitio Web</td>
-                      <td width="174" bgcolor="#3C3D3F" class="style1">Censura</td>
-                    </tr>
-                    <tr>
-                      <td bgcolor="#FFFFFF">1</td>
-                      <td bgcolor="#FFFFFF">Los iun</td>
-                      <td bgcolor="#FFFFFF">Accion</td>
-                      <td bgcolor="#FFFFFF">http://www.ind.com</td>
-                      <td bgcolor="#FFFFFF">Mayores de 14</td>
-                    </tr>
-                    <tr>
-                      <td bgcolor="#FFFFFF">&nbsp;</td>
-                      <td bgcolor="#FFFFFF">&nbsp;</td>
-                      <td bgcolor="#FFFFFF">&nbsp;</td>
-                      <td bgcolor="#FFFFFF">&nbsp;</td>
-                      <td bgcolor="#FFFFFF">&nbsp;</td>
-                    </tr>
-                  </table>
-				</div>
+                                    <ul>
+                                            <li>
+                                                    <h2>Autenticacion</h2>
+                                                    <p>
+                                                        <div id="usuario" >
+                                                        <div>
+                                                        Bienvenid@: Mayra Marquez<br />
+                                                        <a href="index.jsp">Cerrar Sesion</a>
+                                                        </div>
+                                                        </div>
+                                                    </p>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <!-- end #sidebar -->
+                                <div style="clear: both;">&nbsp;</div>
 		  </div>
 		</div>
+		<!-- end #content -->
 	</div>
 	<!-- end #page -->
-</div>
 <div id="footer">
 	<p>Copyright (c) 2010 Cinepelis.com. All rights reserved.</p>
 </div>
