@@ -16,141 +16,183 @@ Released   : 20100707
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Gesti&oacute;n de Cine</title>
+<script type="text/javascript" src="jquery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.slidertron-0.1.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+@import "slidertron.css";
+</style>
 </head>
 <body>
-<div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header">
-			<div id="logo">
-				<h1><a href="#">Cinepelis  </a></h1>
-			</div>
-			<div id="menu">
-				<ul>
-					<li class="current_page_item"><a href="index.jsp">Home</a></li>
-					<li ><a href="premium.jsp">Informacion Premium</a></li>
-                                        <li ><a href="<%=request.getContextPath()%>/faces/login.jsp">Ingresar</a></li>
-				</ul>
-			</div>
-		</div>
+    <div id="logo">
+	<h1><a href="#">Cinepelis </a></h1>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<!--<li><a href="#" class="first">Homepage</a></li>
+			<li class="current_page_item"><a href="#">Blog</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>-->
+                        <li class="current_page_item"><a href="index.jsp">Home</a></li>
+                        <li ><a href="premium.jsp">Informacion Premium</a></li>
+                        <li ><a href="<%=request.getContextPath()%>/faces/login.jsp">Ingresar</a></li>
+		</ul>
 	</div>
-	<!-- end #header -->
-	<div id="page">
-		<div id="page-bgtop">
-			<div id="page-bgbtm">
-				<div id="content">
-					<div class="cart">
-						
-						<div class="entry">
-							<p><a href="detalles.jsp"><img src="images/Los-Indestructibles.jpg" alt="" width="163" height="227" /></a>
-					      </p>
-						  <p><strong>Los Indestructibles</strong>
-                            <!--<li><strong>Género:</strong> </li>-->
-                          </p>
-						  <ul>
-                            <li><strong>Genero:</strong> Accion.</li>
-                            
-                              <li><strong>Censura:</strong> Mayores de 14 años</li>
-                          
-                              <li><strong>Horarios: </strong> 18:30 / 20:30</li>
- </ul>
+	<!-- end #menu -->
+        <div id="search">
+		<form method="get" action="">
+			<fieldset>
+				<input type="text" name="s" id="search-text" size="15" />
+			</fieldset>
+		</form>
+	</div>
+	<!-- end #search -->
 </div>
-</div>
-<div class="cart">
-<div class="entry">					    
-  <p><a href="detalles.jsp"><img src="images/movie1274761627.jpg" alt="" width="163" height="227" /></a>
-    </p>
-  <p><strong>Casi embarazada </strong>                            </p>
-  <ul>
-    <li><strong>Genero:</strong> Comedia</li>
-                            
-                              <li><strong>Censura:</strong> Mayores de 14 años</li>
-                              <li><strong>Horarios: </strong> 18:30 / 20:30</li>
-              </ul>
-</div></div>
-                              <div class="cart">					    
-<div class="entry">
-  <p><img src="images/10a9aavampiros301x464p.jpg" alt="" width="163" height="227" />
-    </p>
-  <p><strong>Una loca película de vampiros</strong> </p>
-
-                            <ul>
-                              <li><strong>Género:</strong> Comedia </li>
-                            
-                              <li><strong>Censura:</strong>Mayores de 14 años.</li>
-                            
-                              <li><strong>Horarios:</strong>18:30 / 20:30</li>
-                            </ul>
-              
-</div></div>
-<div class="cart">
-<div class="entry">
-              <p><img src="images/the-last-airbender-poster.jpg" alt="" width="163" height="227" />
-              </p>
-              <p><strong>El último maestro del aire </strong> </p>
-              <ul>
-              <li><strong>Género:</strong> Accion</li
-              
-                ><li><strong>Censura:</strong> Apta para todos</li>
-              
-                              <li><strong>Horarios:</strong> 18:30 / 20:30</li>
-                            </ul>
-                            
-</div></div>
-<div class="cart">
-<div class="entry">						    
-  <p><img src="images/trailer-como-perros-y-gatos-2.jpg" alt="" width="163" height="227" />
-    </p>
-  <p><strong>Como perros y gatos 2</strong></p>
-  <ul>
-			    <li><strong>Género:</strong> Infantil</li>
-  
-                              <li><strong>Censura:</strong> Apta para todos</li>
-              
-                              <li><strong>Horarios:</strong> 18:30 / 20:30</li>
-              </ul>
-</div></div>
-<div class="cart">
-        <div class="entry">
-              <p><img src="images/18dfadaenamorada301x464p.jpg" alt="" width="163" height="227" />
-                </p>
-              <p><strong>Enamorada de mi ex </strong>							</p>
-              <ul>
-			    <li><strong>Genero:</strong> Comedia</li>
-                              <li><strong>Censura: </strong>Mayores de 14 años</li>
-                            
-                              <li><strong>Horarios:</strong> 18:30 / 20:30</li>
-              </ul>
-</div>			
-				  </div>
-					<div style="clear: both;">&nbsp;</div>
+<!-- end #header -->
+<hr />
+<!-- end #logo -->
+<div id="slideshow">
+	<!-- start -->
+	<div id="foobar">
+		<div id="col1"><a href="#" class="previous">&nbsp;</a></div>
+		<div id="col2">
+			<div class="viewer">
+				<div class="reel">
+					<div class="slide"><img src="images/pel01.jpg" width="726" height="335" alt="" /> <span>Una Loca Pelicula de Vampiros.</span> </div>
+					<div class="slide"><img src="images/pel02.jpg" width="726" height="335" alt="" /> <span>Los Indestructibles.</span> </div>
+					<div class="slide"><img src="images/pel03.jpg" width="726" height="335" alt="" /> <span>Casi Embarazada.</span> </div>
+                                        <div class="slide"><img src="images/pel04.jpg" width="726" height="335" alt="" /> <span>Como Perros y Gatos 2.</span> </div>
+                                        <div class="slide"><img src="images/pel05.jpg" width="726" height="335" alt="" /> <span>Enamorada de mi Ex.</span> </div>
+                                        <div class="slide"><img src="images/pel06.jpg" width="726" height="335" alt="" /> <span>El Ultimo Maestro del Aire.</span> </div>
 				</div>
-				<!-- end #content -->
-				<div id="sidebar">
-					<ul>
-						<li>
-							<div id="search" >
-								<form method="get" action="#">
-									<div>
-										<input type="text" name="s" id="search-text" value="" />
-										<input type="submit" id="search-submit" value="GO" />
-									</div>
-								</form>
-							</div>
-							<div style="clear: both;">&nbsp;</div>
-						</li>
-					  <li>
-					    <ul>
-							  <li></li>
-					    </ul>
-					  </li>
-					  <li> </li>
-					</ul>
-			  </div>
-				<!-- end #sidebar -->
-				<div style="clear: both;">&nbsp;</div>
 			</div>
 		</div>
+		<div id="col3"><a href="#" class="next">&nbsp;</a></div>
+	</div>
+	<script type="text/javascript">
+
+						$('#foobar').slidertron({
+							viewerSelector:			'.viewer',
+							reelSelector:			'.viewer .reel',
+							slidesSelector:			'.viewer .reel .slide',
+							navPreviousSelector:	'.previous',
+							navNextSelector:		'.next',
+							navFirstSelector:		'.first',
+							navLastSelector:		'.last'
+						});
+
+					</script>
+	<!-- end -->
+</div>
+<div id="page">
+	<div id="page-bgtop">
+		<div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#">Los Indestructibles</a></h2>
+                        <div class="entry">
+                            <p><img src="images/min02.jpg" alt="" width="163" height="227" />
+                            </p>
+                            <ul>
+                                <li><strong>Genero:</strong> Accion.</li>
+
+                                <li><strong>Censura:</strong> Mayores de 14 años</li>
+
+                                <li><strong>Horarios: </strong> 18:30 / 20:30</li>
+                            </ul>
+                        </div>
+                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                    </div>
+                    <div class="post">
+                        <h2 class="title"><a href="#">Casi Embarazada</a></h2>
+                        <div class="entry">
+                            <p><img src="images/min03.jpg" alt="" width="163" height="227" />
+                            </p>
+                            <ul>
+                            <li><strong>Genero:</strong> Comedia</li>
+
+                            <li><strong>Censura:</strong> Mayores de 14 años</li>
+                            <li><strong>Horarios: </strong> 18:30 / 20:30</li>
+                            </ul>
+                        </div>
+
+                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                    </div>
+                    <div class="post">
+                        <h2 class="title"><a href="#">Una loca película de vampiros</a></h2>
+                        <div class="entry">
+                            <p><img src="images/min01.jpg" alt="" width="163" height="227" />
+                            </p>
+                            <ul>
+                            <li><strong>Género:</strong> Comedia </li>
+
+                            <li><strong>Censura:</strong>Mayores de 14 años.</li>
+
+                            <li><strong>Horarios:</strong>18:30 / 20:30</li>
+                            </ul>
+                        </div>
+                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                    </div>
+                    <div class="post">
+                        <h2 class="title"><a href="#">El último maestro del aire</a></h2>
+                        <div class="entry">
+                            <p><img src="images/min06.jpg" alt="" width="163" height="227" />
+                            </p>
+                            <ul>
+                            <li><strong>Género:</strong> Accion</li
+
+                            ><li><strong>Censura:</strong> Apta para todos</li>
+
+                            <li><strong>Horarios:</strong> 18:30 / 20:30</li>
+                            </ul>
+                        </div>
+
+                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                    </div>
+                    <div class="post">
+                        <h2 class="title"><a href="#">Como perros y gatos 2</a></h2>
+                        <div class="entry">
+                            <p><img src="images/min04.jpg" alt="" width="163" height="227" />
+                            </p>
+                            <ul>
+                            <li><strong>Género:</strong> Infantil</li>
+
+                            <li><strong>Censura:</strong> Apta para todos</li>
+
+                            <li><strong>Horarios:</strong> 18:30 / 20:30</li>
+                            </ul>
+                        </div>
+
+                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                    </div>
+                    <div class="post">
+                        <h2 class="title"><a href="#">Enamorada de mi ex</a></h2>
+                        <div class="entry">
+                            <p><img src="images/min05.jpg" alt="" width="163" height="227" />
+                            </p>
+                            <ul>
+                            <li><strong>Genero:</strong> Comedia</li>
+                            <li><strong>Censura: </strong>Mayores de 14 años</li>
+
+                            <li><strong>Horarios:</strong> 18:30 / 20:30</li>
+                            </ul>
+                        </div>
+
+                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                    </div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2>Cinepelis</h2>
+					<p>Sea parte de una nueva experiencia en cines. Visitenos y comprueba la calidad de nuestros servicios.</p>
+				</li>				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
 	</div>
 	<!-- end #page -->
 </div>
