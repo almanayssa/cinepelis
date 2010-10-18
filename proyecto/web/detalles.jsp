@@ -31,14 +31,7 @@ Released   : 20100707
 		</ul>
 	</div>
 	<!-- end #menu -->
-        <div id="search">
-		<form method="get" action="">
-			<fieldset>
-				<input type="text" name="s" id="search-text" size="15" />
-			</fieldset>
-		</form>
-	</div>
-	<!-- end #search -->
+
 </div>
 <!-- end #header -->
 <hr />

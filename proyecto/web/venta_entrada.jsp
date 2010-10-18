@@ -25,6 +25,7 @@ Released   : 20100707
 <div id="header">
 	<div id="menu">
 		<ul>
+                    <li><a href="inicio.jsp">Inicio</a></li>
                     <li><a href="mantenimiento_cartelera.jsp">Gesti&oacute;n Cartelera</a></li>
                     <li><a href="mantenimiento_cliente.jsp">Gesti&oacute;n Clientes</a></li>
                     <li><a href="mantenimiento_pelicula.jsp">Gesti&oacute;n Pel&iacute;culas</a></li>
@@ -33,14 +34,8 @@ Released   : 20100707
 		</ul>
 	</div>
 	<!-- end #menu -->
-        <div id="search">
-		<form method="get" action="">
-			<fieldset>
-				<input type="text" name="s" id="search-text" size="15" />
-			</fieldset>
-		</form>
-	</div>
-	<!-- end #search -->
+ 
+
 </div>
 <!-- end #header -->
 <hr />
