@@ -11,14 +11,14 @@
     <managed-bean>
         <managed-bean-name>loginBean</managed-bean-name>
         <managed-bean-class>edu.upc.dew.cinepelis.controller.LoginJSF</managed-bean-class>
-
-        <managed-bean-scope>session</managed-bean-scope></managed-bean>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
 
     <managed-bean>
         <managed-bean-name>clienteBean</managed-bean-name>
         <managed-bean-class>edu.upc.dew.cinepelis.controller.ClienteJSF</managed-bean-class>
-
-        <managed-bean-scope>session</managed-bean-scope></managed-bean>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
 
 
     <navigation-rule>
@@ -31,10 +31,11 @@
     </navigation-rule>
 
     <navigation-rule>
-        <from-view-id>/inicio.jsp</from-view-id>
+        <from-view-id>/*</from-view-id>
         <navigation-case>
             <from-outcome>clientes</from-outcome>
             <to-view-id>/mantenimiento_cliente.jsp</to-view-id>
+            <redirect/>
         </navigation-case>
     </navigation-rule>
 
