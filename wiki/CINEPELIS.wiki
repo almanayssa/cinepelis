@@ -16,7 +16,7 @@ Describe los beneficios adicionales que brinde el cine. En esta opción, actualm
 *Ingresar*<br>
 Esta pantalla solicita un usuario y password para que el usuario utilice el sistema de venta de entradas.
 
-<font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Ventajas del Sistema Cinepelis</font><br>
+<font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Ventajas del Sistema Cinepelis</font><br><br>
 Los cines que son empresas del rubro del Entretenimiento que necesitan contar con información actualizada en tiempo real. Es por ello que con el Sistema Cinepelis, la cantidad de entradas vendidas y la cantidad de butacas ocupadas, se podrán consultar en cualquier momento y así evitar vender más o menos entradas por sala.
 
 Además, este sistema permite a los clientes del cine consultar la cartelera a tiempo real, visualizar el detalle de las películas programadas y leer la sinopsis de cada una.
