@@ -28,11 +28,11 @@ Released   : 20100707
 <div id="header">
 	<div id="menu">
 		<ul>
-                    <li class="current_page_item"><a href="mantenimiento_cartelera.jsp">Registro Cartelera</a></li>
-                    <li><a href="registro.jsp">Registro Clientes</a></li>
-                    <li><a href="mantenimiento_pelicula.jsp">Registro Pel&iacute;culas</a></li>
+                    <li><a href="mantenimiento_cartelera.jsp">Gesti&oacute;n Cartelera</a></li>
+                    <li><a href="mantenimiento_cliente.jsp">Gesti&oacute;n Clientes</a></li>
+                    <li><a href="mantenimiento_pelicula.jsp">Gesti&oacute;n Pel&iacute;culas</a></li>
                     <li><a href="venta_entrada.jsp">Registro Venta</a></li>
-                    <li><a href="estadistica_salas.jsp">Estadisticas</a></li>
+                    <li><a href="estadistica_salas.jsp">Estad&iacute;sticas</a></li>
 		</ul>
 	</div>
 	<!-- end #menu -->
@@ -52,7 +52,7 @@ Released   : 20100707
 	<div id="page-bgtop">
 		<div id="content">
                     <div class="post">
-                        <h2 class="title"><a href="#">Mantenimiento Cartelera</a></h2>
+                        <h2 class="title"><a href="#">Gesti&oacute;n Cartelera</a></h2>
                         <div class="entry">
                             <table border="0" cellpadding="0" cellspacing="0">
                                 <tr>

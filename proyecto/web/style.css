@@ -89,7 +89,7 @@ hr { display: none; }
 
 #menu {
 	float: left;
-	width: 500px;
+	width: 800px;
 	height: 68px;
 }
 
@@ -113,7 +113,6 @@ hr { display: none; }
 	letter-spacing: -1px;
 	text-decoration: none;
 	text-align: center;
-	text-transform: lowercase;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	font-weight: normal;
