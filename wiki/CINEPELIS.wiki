@@ -25,7 +25,7 @@ Además, este sistema permite a los clientes del cine consultar la cartelera a t
   * Desarrollado en JavaEE
   * Arquitectura en capas
   * Base de Datos en MYSQL 5.0 
-  * Frameworks : Ibatis, Spring, MVC JSFO 
-  * Librería : log4j
+  * Frameworks : Ibatis, Spring, JSF(MVC)
+  * Bitácora : log4j
  
   
