@@ -54,7 +54,7 @@ Released   : 20100707
                                     <td style="padding:2px;">
                                         <select name="cbxPelicula">
                                             <option>Los Indestructibles</option>
-                                            <option>El Ultimo Maestro Del Aire</option>
+                                            <option>El &Uacute;ltimo Maestro del Aire</option>
                                             <option>Casi Embarazada</option>
                                             <option>Enamorada de mi Ex</option>
                                             <option>Como Perros y Gatos 2</option>
@@ -95,9 +95,9 @@ Released   : 20100707
                             </table>
                             <table class="table" border = "1" cellspading = "0" cellspacing = "0" width="100%">
                             <thead>
-                            <tr><th width="100">Pelicula</th><th width="50">Sala</th><th width="50">Hora</th><th>&nbsp;</th></tr>
+                            <tr><th width="100">Pel&iacute;cula</th><th width="50">Sala</th><th width="50">Hora</th><th>&nbsp;</th></tr>
                             </thead>
-                            <tr><td width="100">El ultimo maestro</td><td width="50">4</td><td width="50">20:30</td><td width="50"><a href="#">Eliminar</a></td></tr>
+                            <tr><td width="100">El &Uacute;ltimo Maestro del Aire</td><td width="50">4</td><td width="50">20:30</td><td width="50"><a href="#">Eliminar</a></td></tr>
                             <tr><td width="100">Karate Kid</td><td width="50">2</td><td width="50">17:15</td><td><a href="#">Eliminar</a></td></tr>
                             </table>
                             <table>
@@ -112,12 +112,12 @@ Released   : 20100707
 		<div id="sidebar">
                     <ul>
                             <li>
-                                    <h2>Autenticacion</h2>
+                                    <h2>Autenticaci&oacute;n</h2>
                                     <p>
                                         <div id="usuario" >
                                         <div>
-                                        Bienvenid@: Mayra Marquez<br />
-                                        <a href="index.jsp">Cerrar Sesion</a>
+                                        Bienvenid@: Mayra M&aacute;rquez<br />
+                                        <a href="index.jsp">Cerrar Sesi&oacute;n</a>
                                         </div>
                                         </div>
                                     </p>

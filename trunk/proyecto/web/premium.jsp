@@ -52,12 +52,12 @@ Released   : 20100707
                           <p><img src="images/tarjeta-premium.jpg" alt="" width="180" height="142" /></p>
                           <ul>
                             <li><strong>Descripci&oacute;n:</strong> <br />
-                            El Programa <strong>CINEPE Premium Cl&aacute;sica</strong> es un novedoso y divertido programa, mediante el cual CinePlanet premia la lealtad de los clientes que lo visitan frecuentemente. El Programa Planet Premium permite a los clientes que utilicen la tarjeta, acumular puntos con los cuales podr&aacute;n obtener entradas desde S/3.00. Asimismo, el Programa Planet Premium permite acceder a promociones especiales en boletería y dulcería con la tarjeta por temporadas.</li>
+                            El Programa <strong>Cinepelis Premium Cl&aacute;sica</strong> es un novedoso y divertido programa, mediante el cual Cinepelis premia la lealtad de los clientes que lo visitan frecuentemente. El Programa Cinepelis Premium permite a los clientes que utilicen la tarjeta, acumular puntos con los cuales podr&aacute;n obtener entradas desde S/3.00. Asimismo, el Programa Cinepelis Premium permite acceder a promociones especiales en boleter&iacute;a y dulcer&iacute;a con la tarjeta por temporadas.</li>
 
-                              <li><strong>Afiliacion:</strong><br />Afiliarse a la Tarjeta Premium es muy sencillo. Sólo debes acercarte a nuestro   m&oacute;dulo de afiliaci&oacute;n ubicado en cada uno de los CinePlanet, <strong>presentar tu   DNI y efectuar el pago &uacute;nico de S/2.00</strong>. La tarjeta te la entregamos al   instante.Los niños mayores de 10 años también podrán afiliarse a la Tarjeta   Premium</li>
+                              <li><strong>Afiliaci&oacute;n:</strong><br />Afiliarse a la Tarjeta Premium es muy sencillo. S&oacute;lo debes acercarte a nuestro   m&oacute;dulo de afiliaci&oacute;n, <strong>presentar tu   DNI y efectuar el pago &uacute;nico de S/2.00</strong>. La tarjeta te la entregamos al   instante.Los ni&ntilde;os mayores de 10 a&ntilde;os tambi&eacute;n podr&aacute;n afiliarse a la Tarjeta   Premium.</li>
 
                               <li><strong>Acumular puntos: </strong><br />
-                              Es muy sencillo. <strong>Cada vez que adquieras una entrada en boletería,   deberás presentar tu Tarjeta Planet Premium y acumularás 1 punto</strong>. Es   indispensable la presentaci&oacute;n de tu Tarjeta en boletería para hacer efectivo tu   puntaje</li>
+                              Es muy sencillo. <strong>Cada vez que adquieras una entrada en boleter&iacute;a,   deber&aacute;s presentar tu Tarjeta Cinepelis Premium y acumular&aacute;s 1 punto</strong>. Es   indispensable la presentaci&oacute;n de tu Tarjeta en boleter&iacute;a para hacer efectivo tu   puntaje.</li>
                           </ul>
                         </div>
                     </div>
@@ -67,15 +67,15 @@ Released   : 20100707
                             <p><img src="images/tarjeta-oro.jpg" alt="" width="180" height="142" /></p>
                             <ul>
 
-                                        <li><strong>Descripcion:</strong> <br />
+                                        <li><strong>Descripci&oacute;n:</strong> <br />
                                         </li>
-                                        Es la nueva tarjeta con la cual se identifica a los<strong> Clientes Premium   Oro</strong> más frecuentes. La nueva tarjeta tendrá una vigencia de un año, a   partir del momento de su emisión.<br />
-                                        Su diseño es completamente distinto a la   tarjeta actual.
-                                                    <li><strong>Afiliacion:</strong><br />
-                                                    Para poder acceder al programa Oro, el cliente deberá acumular un mínimo de 30   visitas al año a más.</li>
+                                        Es la nueva tarjeta con la cual se identifica a los<strong> Clientes Premium   Oro</strong> m&aacute;s frecuentes. La nueva tarjeta tendr&aacute; una vigencia de un a&ntilde;o, a   partir del momento de su emisi&oacute;n.<br />
+                                        Su dise&ntilde;o es completamente distinto a la   tarjeta actual.
+                                                    <li><strong>Afiliaci&oacute;n:</strong><br />
+                                                    Para poder acceder al programa Oro, el cliente deber&aacute; acumular un m&iacute;nimo de 30   visitas al a&ntilde;o a m&aacute;s.</li>
                                                     <li><strong>Acumular puntos: </strong><br />
                                                     </li>
-                                                    Es muy sencillo. <strong>Cada vez que adquieras una entrada en boletería,   deberás presentar tu Tarjeta Planet Premium y acumularás 1 punto</strong>. Es   indispensable la presentación de tu Tarjeta en boletería para hacer efectivo tu   puntaje.
+                                                    Es muy sencillo. <strong>Cada vez que adquieras una entrada en boleter&iacute;a,   deber&aacute;s presentar tu Tarjeta Cinepelis Premium y acumular&aacute;s 1 punto</strong>. Es   indispensable la presentaci&oacute;n de tu Tarjeta en boleter&iacute;a para hacer efectivo tu   puntaje.
                             </ul>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ Released   : 20100707
                     <ul>
                             <li>
                                     <h2>Cinepelis</h2>
-                                    <p>Sea parte de una nueva experiencia en cines. Visitenos y comprueba la calidad de nuestros servicios.</p>
+                                    <p>Sea parte de una nueva experiencia en cines. Vis&iacute;tenos y compruebe la calidad de nuestros servicios.</p>
                             </li>
                     </ul>
 		</div>

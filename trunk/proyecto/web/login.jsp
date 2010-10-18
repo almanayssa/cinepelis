@@ -16,7 +16,7 @@
 	<div id="menu">
 		<ul>
                     <li class="current_page_item"><a href="index.jsp">Home</a></li>
-                    <li ><a href="premium.jsp">Informacion Premium</a></li>
+                    <li ><a href="premium.jsp">Informaci&oacute;n Premium</a></li>
                     <li ><a href="<%=request.getContextPath()%>/faces/login.jsp">Ingresar</a></li>
 		</ul>
 	</div>
@@ -37,7 +37,7 @@
 	<div id="page-bgtop">
 		<div id="content">
                     <div class="post">
-                        <h2 class="title"><a href="#">Autenticacion</a></h2>
+                        <h2 class="title"><a href="#">Autenticaci&oacute;n</a></h2>
                         <div class="entry">
                                  <div id="login">
 
@@ -82,7 +82,7 @@
                     <ul>
                             <li>
                                     <h2>Cinepelis</h2>
-                                    <p>Sea parte de una nueva experiencia en cines. Visitenos y comprueba la calidad de nuestros servicios.</p>
+                                    <p>Sea parte de una nueva experiencia en cines. Vis&iacute;tenos y compruebe la calidad de nuestros servicios.</p>
                             </li>
                     </ul>
 		</div>

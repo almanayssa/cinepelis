@@ -60,14 +60,14 @@ Released   : 20100707
     	<td>Nombre:</td><td style="padding:2px;"><input name='tbxNombre' type='text'/></td>
     </tr>
     <tr>
-    <td>Género:</td><td style="padding:2px;"><select name="cbxGenero">
+    <td>G&eacute;nero:</td><td style="padding:2px;"><select name="cbxGenero">
       <option>Drama</option>
       <option>Comedia</option>
-      <option>Accion</option>
+      <option>Acci&oacute;n</option>
     </select></td>
     </tr>
     <tr>
-    <td>Duración:</td>
+    <td>Duraci&oacute;n:</td>
     <td style="padding:2px;"><input name='tbxDuracion' type='text'/></td></tr>
     <tr>
       <td>Director:</td>
@@ -89,7 +89,7 @@ Released   : 20100707
       <td>Sinopsis:</td>
       <td style="padding:2px;"><textarea name="tbxSinopsis"></textarea></td></tr>
       <tr>
-      <td>Restricción:</td>
+      <td>Restricci&oacute;n:</td>
       <td style="padding:2px;"><select name="cbxRestriccion">
         <option>Descuentos</option>
         <option>Promociones</option>
@@ -105,14 +105,14 @@ Released   : 20100707
 <tr>
   <td width="74" bgcolor="#3C3D3F">&nbsp;</td>
   <td width="299" bgcolor="#3C3D3F" class="style1">Nombre</td>
-  <td width="146" bgcolor="#3C3D3F" class="style1">Genero</td>
+  <td width="146" bgcolor="#3C3D3F" class="style1">G&eacute;nero</td>
   <td width="173" bgcolor="#3C3D3F" class="style1">Sitio Web</td>
   <td width="174" bgcolor="#3C3D3F" class="style1">Censura</td>
 </tr>
 <tr>
   <td bgcolor="#FFFFFF">1</td>
-  <td bgcolor="#FFFFFF">Los iun</td>
-  <td bgcolor="#FFFFFF">Accion</td>
+  <td bgcolor="#FFFFFF">Los Indestructibles</td>
+  <td bgcolor="#FFFFFF">Acci&oacute;n</td>
   <td bgcolor="#FFFFFF">http://www.ind.com</td>
   <td bgcolor="#FFFFFF">Mayores de 14</td>
 </tr>
@@ -135,12 +135,12 @@ Released   : 20100707
 				<div id="sidebar">
                                     <ul>
                                             <li>
-                                                    <h2>Autenticacion</h2>
+                                                    <h2>Autenticaci&oacute;n</h2>
                                                     <p>
                                                         <div id="usuario" >
                                                         <div>
-                                                        Bienvenid@: Mayra Marquez<br />
-                                                        <a href="index.jsp">Cerrar Sesion</a>
+                                                        Bienvenid@: Mayra M&aacute;rquez<br />
+                                                        <a href="index.jsp">Cerrar Sesi&oacute;n</a>
                                                         </div>
                                                         </div>
                                                     </p>

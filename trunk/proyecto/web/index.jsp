@@ -36,7 +36,7 @@ Released   : 20100707
 			<li><a href="#">About</a></li>
 			<li><a href="#">Contact</a></li>-->
                         <li class="current_page_item"><a href="index.jsp">Home</a></li>
-                        <li ><a href="premium.jsp">Informacion Premium</a></li>
+                        <li ><a href="premium.jsp">Informaci&oacute;n Premium</a></li>
                         <li ><a href="<%=request.getContextPath()%>/faces/login.jsp">Ingresar</a></li>
 		</ul>
 	</div>
@@ -95,14 +95,14 @@ Released   : 20100707
                             <p><img src="images/min02.jpg" alt="" width="163" height="227" />
                             </p>
                             <ul>
-                                <li><strong>Genero:</strong> Accion.</li>
+                                <li><strong>G&eacute;nero:</strong> Acci&oacute;n.</li>
 
                                 <li><strong>Censura:</strong> Mayores de 14 años</li>
 
                                 <li><strong>Horarios: </strong> 18:30 / 20:30</li>
                             </ul>
                         </div>
-                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
                         <h2 class="title"><a href="#">Casi Embarazada</a></h2>
@@ -110,37 +110,37 @@ Released   : 20100707
                             <p><img src="images/min03.jpg" alt="" width="163" height="227" />
                             </p>
                             <ul>
-                            <li><strong>Genero:</strong> Comedia</li>
+                            <li><strong>G&eacute;nero:</strong> Comedia</li>
 
                             <li><strong>Censura:</strong> Mayores de 14 años</li>
                             <li><strong>Horarios: </strong> 18:30 / 20:30</li>
                             </ul>
                         </div>
 
-                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
-                        <h2 class="title"><a href="#">Una loca película de vampiros</a></h2>
+                        <h2 class="title"><a href="#">Una Loca Película de Vampiros</a></h2>
                         <div class="entry">
                             <p><img src="images/min01.jpg" alt="" width="163" height="227" />
                             </p>
                             <ul>
-                            <li><strong>Género:</strong> Comedia </li>
+                            <li><strong>G&eacute;nero:</strong> Comedia </li>
 
                             <li><strong>Censura:</strong>Mayores de 14 años.</li>
 
                             <li><strong>Horarios:</strong>18:30 / 20:30</li>
                             </ul>
                         </div>
-                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
-                        <h2 class="title"><a href="#">El último maestro del aire</a></h2>
+                        <h2 class="title"><a href="#">El &Uacute;ltimo Maestro del Aire</a></h2>
                         <div class="entry">
                             <p><img src="images/min06.jpg" alt="" width="163" height="227" />
                             </p>
                             <ul>
-                            <li><strong>Género:</strong> Accion</li
+                            <li><strong>G&eacute;nero:</strong> Acci&oacute;n</li
 
                             ><li><strong>Censura:</strong> Apta para todos</li>
 
@@ -148,7 +148,7 @@ Released   : 20100707
                             </ul>
                         </div>
 
-                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
                         <h2 class="title"><a href="#">Como perros y gatos 2</a></h2>
@@ -156,7 +156,7 @@ Released   : 20100707
                             <p><img src="images/min04.jpg" alt="" width="163" height="227" />
                             </p>
                             <ul>
-                            <li><strong>Género:</strong> Infantil</li>
+                            <li><strong>G&eacute;nero:</strong> Infantil</li>
 
                             <li><strong>Censura:</strong> Apta para todos</li>
 
@@ -164,22 +164,22 @@ Released   : 20100707
                             </ul>
                         </div>
 
-                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
-                        <h2 class="title"><a href="#">Enamorada de mi ex</a></h2>
+                        <h2 class="title"><a href="#">Enamorada de mi Ex</a></h2>
                         <div class="entry">
                             <p><img src="images/min05.jpg" alt="" width="163" height="227" />
                             </p>
                             <ul>
-                            <li><strong>Genero:</strong> Comedia</li>
+                            <li><strong>G&eacute;nero:</strong> Comedia</li>
                             <li><strong>Censura: </strong>Mayores de 14 años</li>
 
                             <li><strong>Horarios:</strong> 18:30 / 20:30</li>
                             </ul>
                         </div>
 
-                        <div><a href="detalles.jsp" class="links">Ver mas</a></div>
+                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
                     </div>
 		</div>
 		<!-- end #content -->
@@ -187,7 +187,7 @@ Released   : 20100707
 			<ul>
 				<li>
 					<h2>Cinepelis</h2>
-					<p>Sea parte de una nueva experiencia en cines. Visitenos y comprueba la calidad de nuestros servicios.</p>
+					<p>Sea parte de una nueva experiencia en cines. Vis&iacute;tenos y compruebe la calidad de nuestros servicios.</p>
 				</li>				
 			</ul>
 		</div>
