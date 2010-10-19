@@ -37,7 +37,6 @@ public class GenericBean implements InitializingBean{
                         FacesContext fc = FacesContext.getCurrentInstance();
                         ServletContext sc = (ServletContext) fc.getExternalContext().getContext();
 			applicationContext = WebApplicationContextUtils.getWebApplicationContext(sc);
-                        System.out.println(applicationContext);
 		}
 		if (serviceFactory == null) {
 			serviceFactory = new ServiceFactory(applicationContext);
