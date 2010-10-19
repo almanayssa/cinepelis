@@ -90,9 +90,9 @@ Released   : 20100707
 	<div id="page-bgtop">
 		<div id="content">
                     <div class="post">
-                        <h2 class="title"><a href="#">Los Indestructibles</a></h2>
+                        <h2 class="title"><a href="peliculaServlet?id=1">Los Indestructibles</a></h2>
                         <div class="entry">
-                            <p><a href="detalles.jsp"><img src="images/min02.jpg" alt="" width="163" height="227" /></a>                            </p>
+                            <p><img src="images/min02.jpg" alt="" width="163" height="227" /></p>                           </p>
                       <ul>
                                 <li><strong>G&eacute;nero:</strong> Acci&oacute;n.</li>
 
@@ -104,7 +104,7 @@ Released   : 20100707
                         <div><a href="peliculaServlet?id=1" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
-                        <h2 class="title"><a href="#">Casi Embarazada</a></h2>
+                        <h2 class="title"><a href="peliculaServlet?id=2">Casi Embarazada</a></h2>
                         <div class="entry">
                             <p><img src="images/min03.jpg" alt="" width="163" height="227" />
                             </p>
@@ -119,7 +119,7 @@ Released   : 20100707
                         <div><a href="peliculaServlet?id=2" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
-                        <h2 class="title"><a href="#">Una Loca Película de Vampiros</a></h2>
+                        <h2 class="title"><a href="peliculaServlet?id=3">Una Loca Película de Vampiros</a></h2>
                         <div class="entry">
                             <p><img src="images/min01.jpg" alt="" width="163" height="227" />
                             </p>
@@ -134,7 +134,7 @@ Released   : 20100707
                         <div><a href="peliculaServlet?id=3" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
-                        <h2 class="title"><a href="#">El &Uacute;ltimo Maestro del Aire</a></h2>
+                        <h2 class="title"><a href="peliculaServlet?id=4">El &Uacute;ltimo Maestro del Aire</a></h2>
                         <div class="entry">
                             <p><img src="images/min06.jpg" alt="" width="163" height="227" />
                             </p>
@@ -150,7 +150,7 @@ Released   : 20100707
                         <div><a href="peliculaServlet?id=4" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
-                        <h2 class="title"><a href="#">Como perros y gatos 2</a></h2>
+                        <h2 class="title"><a href="peliculaServlet?id=5">Como perros y gatos 2</a></h2>
                         <div class="entry">
                             <p><img src="images/min04.jpg" alt="" width="163" height="227" />
                             </p>
@@ -166,7 +166,7 @@ Released   : 20100707
                         <div><a href="peliculaServlet?id=5" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
-                        <h2 class="title"><a href="#">Enamorada de mi Ex</a></h2>
+                        <h2 class="title"><a href="peliculaServlet?id=6">Enamorada de mi Ex</a></h2>
                         <div class="entry">
                             <p><img src="images/min05.jpg" alt="" width="163" height="227" />
                             </p>
