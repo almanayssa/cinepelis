@@ -41,20 +41,20 @@
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    
     <servlet-mapping>
         <servlet-name>Logueo</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Logueo</servlet-name>
-        <url-pattern>/login</url-pattern>
-    </servlet-mapping>
+
+    
     <!--SERVLET DE JSF-->
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
     </servlet-mapping>
     <!--SESSION y PAGINA DE INICIO-->
+
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
