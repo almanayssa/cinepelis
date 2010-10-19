@@ -18,9 +18,9 @@
                         </h:commandLink>
                     </li>
                     <li>
-                        <a href="mantenimiento_pelicula.jsp">
-                             <h:outputText value="#{msgs.link_gpeliculas}"/>
-                        </a>
+                        <h:commandLink id="linkPeliculas" action="#{peliculaBean.initPeliculas}">
+                            <h:outputText value="#{msgs.link_gpeliculas}"/>
+                        </h:commandLink>
                     </li>
                     <li>
                         <a href="venta_entrada.jsp">

@@ -8,8 +8,23 @@ package edu.upc.dew.cinepelis.model;
 /**
  *
  * @author edison
+ *
+ * CREATE TABLE tb_pelicula (
+  id_pelicula INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(150) NULL,
+  genero VARCHAR(20) NULL,
+  duracion TIME NULL,
+  director VARCHAR(255) NULL,
+  actores TEXT NULL,
+  censura INTEGER UNSIGNED NULL,
+  web VARCHAR(255) NULL,
+  sinopsis TEXT NULL,
+  periodo INTEGER UNSIGNED NULL,
+  foto VARCHAR(255) NULL,
+  PRIMARY KEY(id_pelicula)
+);
  */
-public class Pelicula {
+public class PeliculaBean {
 
     private Long id_pelicula;
     private String nombre;
@@ -23,12 +38,12 @@ public class Pelicula {
     private String periodo;
     private String rutaImagen;
 
-    public Pelicula() {
+    public PeliculaBean() {
     }
 
-    
 
-    public Pelicula(Long id_pelicula, String nombre, int duracionMinutos, String director, String actoresPrincipales, String tipoCensura, String sitioWeb, String sinopsis, String rutaImagen, String tipoRestriccion, String genero, String periodo) {
+
+    public PeliculaBean(Long id_pelicula, String nombre, int duracionMinutos, String director, String actoresPrincipales, String tipoCensura, String sitioWeb, String sinopsis, String rutaImagen, String tipoRestriccion, String genero, String periodo) {
         this.id_pelicula = id_pelicula;
         this.nombre = nombre;
         this.duracionMinutos = duracionMinutos;
@@ -131,6 +146,6 @@ public class Pelicula {
     }
 
 
-    
+
 
 }

@@ -20,9 +20,15 @@
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
 
-     <managed-bean>
+    <managed-bean>
         <managed-bean-name>estadisticaBean</managed-bean-name>
         <managed-bean-class>edu.upc.dew.cinepelis.controller.EstadisticaJSF</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+        <managed-bean-name>peliculaBean</managed-bean-name>
+        <managed-bean-class>edu.upc.dew.cinepelis.controller.PeliculaJSF</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
 
@@ -51,6 +57,15 @@
         <navigation-case>
             <from-outcome>estadisticas</from-outcome>
             <to-view-id>/estadistica_salas.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+
+    <navigation-rule>
+        <from-view-id>/*</from-view-id>
+        <navigation-case>
+            <from-outcome>peliculas</from-outcome>
+            <to-view-id>/mantenimiento_pelicula.jsp</to-view-id>
             <redirect/>
         </navigation-case>
     </navigation-rule>
