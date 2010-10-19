@@ -5,6 +5,7 @@ package edu.upc.dew.cinepelis.common.util;
 import edu.upc.dew.cinepelis.service.CarteleraService;
 import edu.upc.dew.cinepelis.service.ClienteService;
 import edu.upc.dew.cinepelis.service.EstadisticaService;
+import edu.upc.dew.cinepelis.service.PeliculaService;
 import edu.upc.dew.cinepelis.service.UsuarioService;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -52,14 +53,34 @@ public class ServiceFactory implements ApplicationContextAware {
     	return (ClienteService)getBean("clienteServiceCtx");
     }
     
-   
-     public CarteleraService getCarteleraService(){
+   /**
+     *
+     * @return CarteleraService
+     */
+    public CarteleraService getCarteleraService(){
     	return (CarteleraService)getBean("carteleraServiceCtx");
     }
 
-     public EstadisticaService getEstadisticaService(){
+
+    /**
+     *
+     * @return EstadisticaService
+     */
+    public EstadisticaService getEstadisticaService(){
     	return (EstadisticaService)getBean("estadisticaServiceCtx");
     }
+
+
+    /**
+     *
+     * @return PeliculaService
+     */
+    public PeliculaService getPeliculaService(){
+    	return (PeliculaService)getBean("peliculaServiceCtx");
+    }
+
+
+
  
     
 }

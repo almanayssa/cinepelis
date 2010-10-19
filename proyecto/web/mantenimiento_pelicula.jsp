@@ -14,6 +14,11 @@
 	color: #FFFFFF;
 	font-weight: bold;
 }
+ .cabeceratabla {
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    text-align:center;
+                }
 -->
 </style>
 </head>
@@ -80,33 +85,28 @@
     </tr>
     <tr><td></td><td><input type="submit" value="Guardar" /></td></tr>
 </table>
-<br/>
-<table border="1">
-<tr>
-  <td width="74" bgcolor="#3C3D3F">&nbsp;</td>
-  <td width="299" bgcolor="#3C3D3F" class="style1">Nombre</td>
-  <td width="146" bgcolor="#3C3D3F" class="style1">G&eacute;nero</td>
-  <td width="173" bgcolor="#3C3D3F" class="style1">Sitio Web</td>
-  <td width="174" bgcolor="#3C3D3F" class="style1">Censura</td>
-</tr>
-<tr>
-  <td bgcolor="#FFFFFF">1</td>
-  <td bgcolor="#FFFFFF">Los Indestructibles</td>
-  <td bgcolor="#FFFFFF">Acci&oacute;n</td>
-  <td bgcolor="#FFFFFF">http://www.ind.com</td>
-  <td bgcolor="#FFFFFF">Mayores de 14</td>
-</tr>
-<tr>
-  <td bgcolor="#FFFFFF">&nbsp;</td>
-  <td bgcolor="#FFFFFF">&nbsp;</td>
-  <td bgcolor="#FFFFFF">&nbsp;</td>
-  <td bgcolor="#FFFFFF">&nbsp;</td>
-  <td bgcolor="#FFFFFF">&nbsp;</td>
-</tr>
-</table>
-                    
-                    
-                    
+                            <h:dataTable id="peliculas"  value="#{peliculaBean.lstPelicula}"
+                                             var="pelicula"  border="1" rows="5" headerClass="cabeceratabla">
+                                    <h:column>
+                                            <f:facet name="header"> <h:outputText  value="Nombre"/> </f:facet>
+                                            <h:outputText value="#{pelicula.nombre}" />
+                                    </h:column>
+                                    <h:column>
+                                            <f:facet name="header"> <h:outputText  value="Duracion"/> </f:facet>
+                                            <h:outputText value="#{pelicula.duracionMinutos}" />
+                                    </h:column>
+                                    <h:column>
+                                            <f:facet name="header"> <h:outputText  value="Director"/> </f:facet>
+                                            <h:outputText value="#{pelicula.director}" />
+                                    </h:column>
+                                     <h:column>
+                                            <f:facet name="header"> <h:outputText  value="Censura"/> </f:facet>
+                                            <h:outputText value="#{pelicula.tipoCensura}" />
+                                    </h:column>
+                            </h:dataTable>
+
+
+
 			      </div>
 				  </div>
 			    <div style="clear: both;">&nbsp;</div>
