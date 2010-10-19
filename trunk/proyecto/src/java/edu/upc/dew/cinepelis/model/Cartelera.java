@@ -19,18 +19,28 @@ public class Cartelera  implements Serializable{
     private String hora;
     private Date fecha_inicio;
     private Date fecha_fin;
+    private String nom_pelicula;
 
     public Cartelera() {
     }
 
 
 
-    public Cartelera(Long id_pelicula, int num_Sala, String hora, Date fecha_inicio, Date fecha_fin) {
+    public Cartelera(Long id_pelicula, int num_Sala, String hora, Date fecha_inicio, Date fecha_fin,String nom_pelicula) {
         this.id_pelicula = id_pelicula;
         this.num_Sala = num_Sala;
         this.hora = hora;
         this.fecha_inicio = fecha_inicio;
         this.fecha_fin = fecha_fin;
+        this.nom_pelicula=nom_pelicula;
+    }
+
+    public String getNom_pelicula() {
+        return nom_pelicula;
+    }
+
+    public void setNom_pelicula(String nom_pelicula) {
+        this.nom_pelicula=nom_pelicula;
     }
 
     public Date getFecha_fin() {
