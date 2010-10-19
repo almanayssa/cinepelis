@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author johana
  */
-public class Cartelera  implements Serializable{
+public class CarteleraBean  implements Serializable{
 
     private Long id_pelicula;
     private int num_Sala;
@@ -21,12 +21,12 @@ public class Cartelera  implements Serializable{
     private Date fecha_fin;
     private String nom_pelicula;
 
-    public Cartelera() {
+    public CarteleraBean() {
     }
 
 
 
-    public Cartelera(Long id_pelicula, int num_Sala, String hora, Date fecha_inicio, Date fecha_fin,String nom_pelicula) {
+    public CarteleraBean(Long id_pelicula, int num_Sala, String hora, Date fecha_inicio, Date fecha_fin,String nom_pelicula) {
         this.id_pelicula = id_pelicula;
         this.num_Sala = num_Sala;
         this.hora = hora;

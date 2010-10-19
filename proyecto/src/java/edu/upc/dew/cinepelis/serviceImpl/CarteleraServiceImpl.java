@@ -6,7 +6,7 @@
 package edu.upc.dew.cinepelis.serviceImpl;
 
 import edu.upc.dew.cinepelis.dao.ibatis.CarteleraDAO;
-import edu.upc.dew.cinepelis.model.Cartelera;
+import edu.upc.dew.cinepelis.model.CarteleraBean;
 import edu.upc.dew.cinepelis.service.CarteleraService;
 import java.util.List;
 
@@ -26,7 +26,7 @@ public class CarteleraServiceImpl implements CarteleraService {
         this.carteleraDAO=carteleraDAO;
     }
 
-    public List<Cartelera> getCartelera() {
+    public List<CarteleraBean> getCartelera() {
         return getCarteleraDAO().getCartelera();
     }
 

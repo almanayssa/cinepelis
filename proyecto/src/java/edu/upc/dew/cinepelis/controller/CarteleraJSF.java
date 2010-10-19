@@ -6,7 +6,7 @@
 package edu.upc.dew.cinepelis.controller;
 
 import edu.upc.dew.cinepelis.common.util.GenericBean;
-import edu.upc.dew.cinepelis.model.Cartelera;
+import edu.upc.dew.cinepelis.model.CarteleraBean;
 import java.util.List;
 
 /**
@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class CarteleraJSF extends  GenericBean{
 
-    List<Cartelera> lstCartelera;
+    List<CarteleraBean> lstCartelera;
 
     public String initCartelera(){
 
@@ -26,7 +26,7 @@ public class CarteleraJSF extends  GenericBean{
          try {
 
             lstCartelera = serviceFactory.getCarteleraService().getCartelera();
-            for(Cartelera cartelera: lstCartelera){
+            for(CarteleraBean cartelera: lstCartelera){
                 System.out.println(cartelera.getHora());
             }
 
@@ -40,7 +40,7 @@ public class CarteleraJSF extends  GenericBean{
     }
             
 
-      public List<Cartelera> getLstCarteleras() {
+      public List<CarteleraBean> getLstCartelera() {
         return lstCartelera;
     }
 
