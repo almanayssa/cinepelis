@@ -16,5 +16,7 @@ public interface PeliculaDAO {
 
      public List<PeliculaBean> getPeliculas();
 
+     public PeliculaBean getPeliculaById(String id);
+
 
 }

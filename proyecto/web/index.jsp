@@ -101,7 +101,7 @@ Released   : 20100707
                                 <li><strong>Horarios: </strong> 18:30 / 20:30</li>
                             </ul>
                         </div>
-                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
+                        <div><a href="peliculaServlet?id=1" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
                         <h2 class="title"><a href="#">Casi Embarazada</a></h2>
@@ -116,7 +116,7 @@ Released   : 20100707
                             </ul>
                         </div>
 
-                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
+                        <div><a href="peliculaServlet?id=2" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
                         <h2 class="title"><a href="#">Una Loca Película de Vampiros</a></h2>
@@ -131,7 +131,7 @@ Released   : 20100707
                             <li><strong>Horarios:</strong>18:30 / 20:30</li>
                             </ul>
                         </div>
-                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
+                        <div><a href="peliculaServlet?id=3" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
                         <h2 class="title"><a href="#">El &Uacute;ltimo Maestro del Aire</a></h2>
@@ -147,7 +147,7 @@ Released   : 20100707
                             </ul>
                         </div>
 
-                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
+                        <div><a href="peliculaServlet?id=4" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
                         <h2 class="title"><a href="#">Como perros y gatos 2</a></h2>
@@ -163,7 +163,7 @@ Released   : 20100707
                             </ul>
                         </div>
 
-                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
+                        <div><a href="peliculaServlet?id=5" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
                         <h2 class="title"><a href="#">Enamorada de mi Ex</a></h2>
@@ -178,7 +178,7 @@ Released   : 20100707
                             </ul>
                         </div>
 
-                        <div><a href="detalles.jsp" class="links">Ver m&aacute;s</a></div>
+                        <div><a href="peliculaServlet?id=6" class="links">Ver m&aacute;s</a></div>
                     </div>
 		</div>
 		<!-- end #content -->
