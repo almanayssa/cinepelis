@@ -8,9 +8,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="mantenimiento_cartelera.jsp">
+                         <h:commandLink id="linkCartelera" action="#{carteleraBean.initCartelera}">
                             <h:outputText value="#{msgs.link_gcartelera}"/>
-                        </a>
+                        </h:commandLink>
                     </li>
                     <li>
                         <h:commandLink id="linkClientes" action="#{clienteBean.initClientes}">

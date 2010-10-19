@@ -73,14 +73,27 @@
                             <tr><td>&nbsp;</td>
                             </tr>
                             </table>
-                            <table class="table" border = "1" cellspading = "0" cellspacing = "0" width="100%">
-                            <thead>
-                            <tr><th width="100">Pel&iacute;cula</th><th width="50">Sala</th><th width="50">Hora</th><th>&nbsp;</th></tr>
-                            </thead>
-                            <tr><td width="100">El &Uacute;ltimo Maestro del Aire</td><td width="50">4</td><td width="50">20:30</td><td width="50"><a href="#">Eliminar</a></td></tr>
-                            <tr><td width="100">Karate Kid</td><td width="50">2</td><td width="50">17:15</td><td><a href="#">Eliminar</a></td></tr>
-                            </table>
-                            <table>
+
+                            <h:dataTable id="cartelera" value="#{Cartelera.lstCartelera}" var="cartelera"
+                                         border="1" rows="5" headerClass="cabeceratabla">
+                                <h:column>
+                                    <f:facet name="header"> <h:outputText  value="Pelicula"/></f:facet>
+                                     <f:attribute name="width" value="40" />
+                                      <h:outputText value="#{cartelera.nom_pelicula}" />
+                                </h:column>  
+                                <h:column>
+                                    <f:facet name="header"> <h:outputText  value="Sala"/></f:facet>
+                                    <h:outputText value="#{cartelera.num_Sala}" />
+                                </h:column>    
+                                 <h:column>
+                                    <f:facet name="header"> <h:outputText  value="Hora"/></f:facet>
+                                    <h:outputText value="#{cartelera.hora}" />
+                                </h:column>                                 
+                                
+                                
+                            </h:dataTable>
+
+                             <table>
                             <tr><td>&nbsp;</td>   </tr>
                             <tr><td>
                             <input type="submit" value="Guardar" /></td></tr>
