@@ -5,13 +5,14 @@
 
 package edu.upc.dew.cinepelis.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  *
- * @author Alyssa
+ * @author johana
  */
-public class Cartelera {
+public class Cartelera  implements Serializable{
 
     private Long id_pelicula;
     private int num_Sala;

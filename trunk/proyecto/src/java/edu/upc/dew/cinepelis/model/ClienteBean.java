@@ -5,6 +5,8 @@
 
 package edu.upc.dew.cinepelis.model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author edison
@@ -22,9 +24,8 @@ package edu.upc.dew.cinepelis.model;
   PRIMARY KEY(id_cliente)
 );
  */
-public class ClienteBean {
+public class ClienteBean  implements  Serializable{
 
-    //test de commit =) johana
 
     private Long id_cliente;
     private String nombre;
