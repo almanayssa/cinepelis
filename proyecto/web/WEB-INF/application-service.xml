@@ -27,6 +27,16 @@
     <bean id="clienteServiceCtx"  class="edu.upc.dew.cinepelis.serviceImpl.ClienteServiceImpl">
 	<property name="clienteDAO" ref="clienteIbatis"/>
     </bean>
+
+    <!--  ****************************  ESTADISTICAS **************************** -->
+    <bean id="estadisticaIbatis" class="edu.upc.dew.cinepelis.dao.ibatisImpl.EstadisticaDAOMysql">
+     	  <property name="sqlMapClient"><ref bean="sqlMapClient"/></property>
+    </bean>
+
+    <bean id="estadisticaServiceCtx"  class="edu.upc.dew.cinepelis.serviceImpl.EstadisticaServiceImpl">
+	<property name="estadisticaDAO" ref="estadisticaIbatis"/>
+    </bean>
+
  	
  
  
