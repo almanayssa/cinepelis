@@ -6,10 +6,10 @@
         <Node id="venta_entrada.jsp" x="900" y="150" zoom="true"/>
         <Node id="index.jsp" x="150" y="450" zoom="true"/>
         <Node id="common/menu_include.jsp" x="150" y="300" zoom="true"/>
-        <Node id="*" x="1150" y="150" zoom="true"/>
         <Node id="common/header_include.jsp" x="150" y="600" zoom="true"/>
-        <Node id="estadistica_salas.jsp" x="150" y="150" zoom="true"/>
-        <Node id="premium.jsp" x="400" y="150" zoom="true"/>
+        <Node id="*" x="1150" y="150" zoom="false"/>
+        <Node id="estadistica_salas.jsp" x="150" y="150" zoom="false"/>
+        <Node id="premium.jsp" x="400" y="150" zoom="false"/>
         <Node id="mantenimiento_pelicula.jsp" x="400" y="300" zoom="true"/>
         <Node id="detalles.jsp" x="650" y="150" zoom="true"/>
         <Node id="mantenimiento_cliente.jsp" x="561" y="590" zoom="true"/>
