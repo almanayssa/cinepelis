@@ -52,13 +52,7 @@
                                     </h:column>
                                 </h:dataTable>
 
-                                <table class="table" border = "1" cellpading = "0" cellspacing = "0" width="100%">
-                                    <thead>
-                                        <tr><th width="100">Pel&iacute;cula</th><th width="50">Sala</th><th width="50">Butacas</th><th width="30">Vendidas</th><th width="30">Porcentaje</th></tr>
-                                    </thead>
-                                    <tr><td width="100">El &Uacute;ltimo Maestro del Aire</td><td width="50">4</td><td width="50">40</td><td width="50">30</td><td>10%</td></tr>
-                                    <tr><td width="100">Karate Kid</td><td width="50">2</td><td width="50">45</td><td>10</td><td>10%</td></tr>
-                                </table>
+      
                                 <table>
                                     <tr><td>&nbsp;</td></tr>
                                     <tr><td>

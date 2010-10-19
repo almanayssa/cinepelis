@@ -28,9 +28,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="estadistica_salas.jsp">
+                        <h:commandLink id="linkEstadisticas" action="#{estadisticaBean.initEstadistica}">
                             <h:outputText value="#{msgs.link_estadisticas}"/>
-                        </a>
+                        </h:commandLink>
                     </li>
 		</ul>
 	</div>

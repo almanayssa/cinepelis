@@ -36,7 +36,6 @@ public class EstadisticaJSF extends  GenericBean {
 
 
         log.info("Saliendo ... initEstadistica() - EstadisticaJSF");
-
         return forward;
     }
 
