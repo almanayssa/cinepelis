@@ -5,7 +5,7 @@
 
 package edu.upc.dew.cinepelis.service;
 
-import edu.upc.dew.cinepelis.model.Cartelera;
+import edu.upc.dew.cinepelis.model.CarteleraBean;
 import java.util.List;
 
 /**
@@ -14,6 +14,6 @@ import java.util.List;
  */
 public interface CarteleraService {
 
-    public List<Cartelera> getCartelera();
+    public List<CarteleraBean> getCartelera();
 
 }

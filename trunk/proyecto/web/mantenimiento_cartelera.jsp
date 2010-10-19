@@ -74,7 +74,7 @@
                             </tr>
                             </table>
 
-                            <h:dataTable id="cartelera" value="#{Cartelera.lstCartelera}" var="cartelera"
+                            <h:dataTable id="cartelera" value="#{carteleraBean.lstCartelera}" var="cartelera"
                                          border="1" rows="5" headerClass="cabeceratabla">
                                 <h:column>
                                     <f:facet name="header"> <h:outputText  value="Pelicula"/></f:facet>
