@@ -31,6 +31,11 @@
         <managed-bean-class>edu.upc.dew.cinepelis.controller.PeliculaJSF</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
+    <managed-bean>
+        <managed-bean-name>carteleraBean</managed-bean-name>
+        <managed-bean-class>edu.upc.dew.cinepelis.controller.CarteleraJSF</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
 
 
     <navigation-rule>
@@ -70,6 +75,14 @@
         </navigation-case>
     </navigation-rule>
 
+    <navigation-rule>
+        <from-view-id>/*</from-view-id>
+        <navigation-case>
+            <from-outcome>cartelera</from-outcome>
+            <to-view-id>/mantenimiento_cartelera.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
 
 
 </faces-config>
