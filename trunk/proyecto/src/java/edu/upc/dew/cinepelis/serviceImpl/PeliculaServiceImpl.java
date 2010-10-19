@@ -30,4 +30,15 @@ public class PeliculaServiceImpl implements PeliculaService{
     public List<PeliculaBean> getPeliculas() {
         return getPeliculaDAO().getPeliculas();
     }
+
+    public PeliculaBean getPeliculaById(String id) {
+        for(PeliculaBean pelicula : getPeliculaDAO().getPeliculas()){
+            String pel = pelicula.getId_pelicula().toString();
+            if (pel.equals(id)){
+                return pelicula;
+            }
+        }
+        return null;
+
+    }
 }

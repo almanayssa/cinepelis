@@ -40,9 +40,37 @@ Released   : 20100707
 	<div id="page-bgtop">
 		<div id="content">
                     <div class="post">
-                        <h2 class="title"><a href="#">Los Indestructibles  </a></h2>                                                  <div class="entry">                                                          <p><img src="<%=request.getContextPath()%>/images/min02.jpg" alt="" width="480" height="742" /></p>
-                        <p>Despu&eacute;s de a&ntilde;os de corrupci&oacute;n y asesinatos de rehenes, Estados Unidos, con la   ayuda de otras naciones, arma en secreto un equipo con su personal militar m&aacute;s   capacitado para derrocar a un dictador que ha causado estragos en un pa&iacute;s de   Am&eacute;rica latina durante m&aacute;s de 20 años.</p>                                                          <ul>                                                            <li><strong>Pa&iacute;s:</strong> Estados Unidos</li>                                                    </ul>                              <ul>                                <li><strong>A&ntilde;o:</strong> 2010</li>                              </ul>                              <ul>                                <li><strong>Director:</strong> Sylvester Stallone</li>                              </ul>                              <ul>                                <li><strong>Gui&oacute;n: </strong>Dave Callaham, Sylvester Stallone</li>                              </ul>                              <ul>                                <li><strong>Actores:</strong> Sylvester Stallone, Bruce Willis, Arnold   Schwarzenegger, Jason Statham, Jet Li, Terry Crews, Randy Couture, Mickey   Rourke, Dolph Lundgren, Steve Austin.</li>                              </ul>                              <!--<li><strong>Género:</strong> </li>-->                              <ul>                                <li><strong>Duraci&oacute;n:</strong> 100 minutos.</li>                              </ul>                            <ul>                                <li><strong>Calificaci&oacute;n:</strong> Mayores de 14 a&ntilde;os</li>                            </ul>                              <ul>                                <li><strong>Sitio Oficial:</strong> <a href="http://www.widepictures.es/losmercenarios/" rel="nofollow">http://www.widepictures.es/losmercenarios/</a></li></ul>
-                        <ul> <li><strong>Horarios:</strong> 18:30 / 20:30</li></ul>
+                        <h2 class="title"><a href="#">${pelicula.nombre}</a></h2>
+                        <p><img src="<%=request.getContextPath()%>${pelicula.rutaImagen}"/></p>
+                        <p>Despu&eacute;s de a&ntilde;os de corrupci&oacute;n y asesinatos de rehenes, Estados Unidos, con la   ayuda de otras naciones, arma en secreto un equipo con su personal militar m&aacute;s   capacitado para derrocar a un dictador que ha causado estragos en un pa&iacute;s de   Am&eacute;rica latina durante m&aacute;s de 20 años.</p>
+                        <ul>
+                            <li><strong>Pa&iacute;s:</strong> Estados Unidos</li>
+                        </ul>
+                        <ul>
+                            <li><strong>A&ntilde;o:</strong> 2010</li>
+                        </ul>
+                        <ul>
+                            <li><strong>Director:</strong> ${pelicula.director}</li>
+                        </ul>
+                        <ul>
+                            <li><strong>Gui&oacute;n: </strong>Dave Callaham, Sylvester Stallone</li>
+                        </ul>
+                        <ul>
+                            <li><strong>Actores:</strong> Sylvester Stallone, Bruce Willis, Arnold   Schwarzenegger, Jason Statham, Jet Li, Terry Crews, Randy Couture, Mickey   Rourke, Dolph Lundgren, Steve Austin.</li>
+                        </ul>
+                        <!--<li><strong>Género:</strong> </li>-->
+                        <ul>
+                            <li><strong>Duraci&oacute;n:</strong> 100 minutos.</li>
+                        </ul>
+                        <ul>
+                            <li><strong>Calificaci&oacute;n:</strong> Mayores de 14 a&ntilde;os</li>
+                        </ul>
+                        <ul>
+                            <li><strong>Sitio Oficial:</strong> <a href="http://www.widepictures.es/losmercenarios/" rel="nofollow">http://www.widepictures.es/losmercenarios/</a></li>
+                        </ul>
+                        <ul>
+                            <li><strong>Horarios:</strong> 18:30 / 20:30</li>
+                        </ul>
                         <ul> <li><strong>Disponibilidad:</strong> 20/50</li></ul>
 
                         </div>
@@ -61,7 +89,7 @@ Released   : 20100707
 		<div style="clear: both;">&nbsp;</div>
 	</div>
 	<!-- end #page -->
-</div>
+
 <div id="footer">
 	<p>Copyright (c) 2010 Cinepelis.com. All rights reserved.</p>
 </div>
