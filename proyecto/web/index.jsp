@@ -92,9 +92,8 @@ Released   : 20100707
                     <div class="post">
                         <h2 class="title"><a href="#">Los Indestructibles</a></h2>
                         <div class="entry">
-                            <p><img src="images/min02.jpg" alt="" width="163" height="227" />
-                            </p>
-                            <ul>
+                            <p><a href="detalles.jsp"><img src="images/min02.jpg" alt="" width="163" height="227" /></a>                            </p>
+                      <ul>
                                 <li><strong>G&eacute;nero:</strong> Acci&oacute;n.</li>
 
                                 <li><strong>Censura:</strong> Mayores de 14 años</li>

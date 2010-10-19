@@ -27,7 +27,7 @@ Released   : 20100707
 		<ul>
                     <li><a href="index.jsp">Home</a></li>
                     <li class="current_page_item"><a href="premium.jsp">Informaci&oacute;n Premium</a></li>
-                    <li><a href="login.jsp">Ingresar</a></li>
+                    <li><a href="<%=request.getContextPath()%>/faces/login.jsp">Ingresar</a></li>
 		</ul>
 	</div>
 	<!-- end #menu -->
