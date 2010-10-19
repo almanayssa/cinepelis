@@ -2,6 +2,7 @@ package edu.upc.dew.cinepelis.common.util;
 
 
 
+import edu.upc.dew.cinepelis.service.CarteleraService;
 import edu.upc.dew.cinepelis.service.ClienteService;
 import edu.upc.dew.cinepelis.service.UsuarioService;
 import org.springframework.beans.BeansException;
@@ -51,7 +52,9 @@ public class ServiceFactory implements ApplicationContextAware {
     }
     
    
-    
+     public CarteleraService getCarteleraService(){
+    	return (CarteleraService)getBean("carteleraServiceCtx");
+    }
  
     
 }
