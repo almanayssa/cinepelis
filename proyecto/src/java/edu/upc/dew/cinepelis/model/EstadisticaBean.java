@@ -5,11 +5,13 @@
 
 package edu.upc.dew.cinepelis.model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Alyssa
  */
-public class EstadisticaBean {
+public class EstadisticaBean implements  Serializable{
 
     private Long id_pelicula;
     private String nombre;
