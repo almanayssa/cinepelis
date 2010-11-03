@@ -10,32 +10,32 @@
     <!--BACKING BEAN DE LOGUEO-->
     <managed-bean>
         <managed-bean-name>loginBean</managed-bean-name>
-        <managed-bean-class>edu.upc.dew.cinepelis.controller.LoginJSF</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>edu.upc.dew.cinepelis.controller.jsf.LoginJSF</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
 
     <managed-bean>
         <managed-bean-name>clienteBean</managed-bean-name>
-        <managed-bean-class>edu.upc.dew.cinepelis.controller.ClienteJSF</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>edu.upc.dew.cinepelis.controller.jsf.ClienteJSF</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
 
     <managed-bean>
         <managed-bean-name>estadisticaBean</managed-bean-name>
-        <managed-bean-class>edu.upc.dew.cinepelis.controller.EstadisticaJSF</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>edu.upc.dew.cinepelis.controller.jsf.EstadisticaJSF</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
 
     <managed-bean>
         <managed-bean-name>peliculaBean</managed-bean-name>
-        <managed-bean-class>edu.upc.dew.cinepelis.controller.PeliculaJSF</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>edu.upc.dew.cinepelis.controller.jsf.PeliculaJSF</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
     <managed-bean>
         <managed-bean-name>carteleraBean</managed-bean-name>
-        <managed-bean-class>edu.upc.dew.cinepelis.controller.CarteleraJSF</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>edu.upc.dew.cinepelis.controller.jsf.CarteleraJSF</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
 
 
     <navigation-rule>

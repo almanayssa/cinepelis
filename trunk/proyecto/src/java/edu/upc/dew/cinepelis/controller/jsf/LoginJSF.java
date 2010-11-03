@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package edu.upc.dew.cinepelis.controller;
+package edu.upc.dew.cinepelis.controller.jsf;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
