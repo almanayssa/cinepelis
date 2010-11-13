@@ -27,11 +27,12 @@
                             <h:outputText value="#{msgs.link_rventa}"/>
                         </a>
                     </li>
+                    <!--
                     <li>
                         <h:commandLink id="linkEstadisticas" action="#{estadisticaBean.initEstadistica}">
                             <h:outputText value="#{msgs.link_estadisticas}"/>
                         </h:commandLink>
-                    </li>
+                    </li> -->
 		</ul>
 	</div>
 </h:form>
