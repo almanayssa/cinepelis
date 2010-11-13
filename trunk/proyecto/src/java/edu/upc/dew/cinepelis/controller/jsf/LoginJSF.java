@@ -5,6 +5,7 @@
 
 package edu.upc.dew.cinepelis.controller.jsf;
 
+import edu.upc.dew.cinepelis.common.util.GenericBean;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 
@@ -12,7 +13,7 @@ import javax.faces.context.FacesContext;
  *
  * @author Ralf
  */
-public class LoginJSF {
+public class LoginJSF  extends GenericBean{
 
     private String usuario;
     private String password;
@@ -46,14 +47,16 @@ public class LoginJSF {
     }
 
 
-    public String loguear(){        
+    public String loguear(){
+        log.info("Entrando ... loguear() - LoginJSF");
         if(usuario!=null && password!=null && usuario.equals("cinepe") && password.equals("cinepe")){
             return "success";
         }else{
             FacesContext.getCurrentInstance().addMessage("formLogin",
                     new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usuario y/o password incorrectos", null));
             return null;
-        }    
+        }
+
     }
 
 }

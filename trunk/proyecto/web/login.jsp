@@ -7,6 +7,23 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
         <link href="<%=request.getContextPath()%>/faces/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <script type="text/javascript" src="<%=request.getContextPath()%>/common/prototype.js"></script>
+        <script type="text/javascript">
+            function validarLogueo(){
+                var f = document.forms[0];
+                if($F('formLogin:usuario')==''){
+                    alert('Ingresar el Usuario');
+                    $('formLogin:usuario').focus();
+                    return false;
+                }
+                if($F('formLogin:password')==''){
+                    alert('Ingresar la Clave');
+                    $('formLogin:password').focus();
+                    return false;
+                }
+            }
+        </script>
+
     </head>
     <body>
                       <div id="logo">
@@ -48,17 +65,19 @@
                                          <table border = 0>
                                              <tr><td rowspan="4"><img src="images/llave.jpg" alt="" width="106" height="88" /></td>
                                                  <td><h:outputText value="Usuario:" /></td>
-                                                 <td><h:inputText id="usuario" value="#{loginBean.usuario}" required="true" requiredMessage="*" /></td>
+                                                 <td><h:inputText id="usuario" value="#{loginBean.usuario}"  /></td>
                                                  <td><h:message for="usuario" errorStyle="color:red;" /></td>
                                              </tr>
                                              <tr>
                                                  <td><h:outputText value="Password:" /></td>
-                                                 <td><h:inputSecret id="password" value="#{loginBean.password}" required="true" requiredMessage="*"/></td>
+                                                 <td><h:inputSecret id="password" value="#{loginBean.password}" /></td>
                                                  <td><h:message for="password" errorStyle="color:red;" /></td></tr>
                                              <tr>
                                                  <td></td>
                                                  <td>
-                                                     <h:commandButton value="Entrar" action="#{loginBean.loguear}" styleClass="boton-azul"/>
+             
+                                                     <h:commandButton  value="Entrar" action="#{loginBean.loguear}" styleClass="boton-azul"
+                                                                      onclick="return validarLogueo();"/>
                                                      <input type="button" value = "Cancelar"/>
                                                  </td>
                                                  <td></td>
