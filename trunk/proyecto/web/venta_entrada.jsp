@@ -85,17 +85,12 @@ Released   : 20100707
                                 <td>Monto Total:</td>
                                 <td style="padding:2px;"><input name='tbxDirector' type='text'/></td>
                                 </tr>
-                                <tr>
-                                <td>Tipo Pago:</td>
-                                <td style="padding:2px;"><select name="cbxGenero4">
-                                <option>Efectivo</option>
-                                <option>Tarjeta</option>
-                                </select></td></tr>
+                                
                                 <tr>
                                 <td></td>
                                 <td style="padding:2px;">&nbsp;</td>
                                 </tr>
-                                <tr><td></td><td><input type="submit" value="Aceptar" /></td></tr>
+                                <tr><td><input type="submit" value="Cancelar" /></td><td><input type="submit" value="Aceptar" /></td></tr>
                             </table>
                         </div>
                     </div>
