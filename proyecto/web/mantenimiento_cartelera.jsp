@@ -58,12 +58,35 @@
                                             <option value="1">6</option>
                                             </select>
                             </td>
-                            <td>Hora</td>
-                            <td><input type="text" style="width:50px;"/></td>
+                            <td>Hora:</td>
+                            <td><select>
+                                            <option value="1">11:00</option>
+                                            <option value="1">11:30</option>
+                                            <option value="1">12:00</option>
+                                            <option value="1">12:30</option>
+                                            <option value="1">13:00</option>
+                                            <option value="1">13:30</option>
+                                            <option value="1">14:00</option>
+                                            <option value="1">14:30</option>
+                                            <option value="1">15:00</option>
+                                            <option value="1">15:30</option>
+                                            <option value="1">16:00</option>
+                                            <option value="1">16:30</option>
+                                            <option value="1">17:00</option>
+                                            <option value="1">17:30</option>
+                                            <option value="1">18:00</option>
+                                            <option value="1">18:30</option>
+                                            <option value="1">19:00</option>
+                                            <option value="1">19:30</option>
+                                            <option value="1">20:00</option>
+                                            <option value="1">20:30</option>
+                                            <option value="1">21:00</option>
+                                            <option value="1">21:30</option>
+                                            <option value="1">22:00</option>
+                                            </select></td>
                             <td><input type="button" value = "Agregar"/></td>
                             </tr>
-                            <tr>
-                            <td>Estreno:</td><td style="padding:2px;"><input name="tbxApeMaterno" type="checkbox"/></td></tr>
+                          
 
                             </table>
                             </fieldset>
