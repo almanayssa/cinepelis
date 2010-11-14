@@ -119,7 +119,7 @@
                              <table>
                             <tr><td>&nbsp;</td>   </tr>
                             <tr><td>
-                            <input type="submit" value="Guardar" /></td></tr>
+                            <input type="submit" value="Cancelar" /></td></tr>
                             </table>
                         </div>
                     </div>
