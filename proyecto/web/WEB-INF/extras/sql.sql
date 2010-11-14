@@ -1,26 +1,31 @@
-CREATE TABLE tb_pelicula (
+/*drop database cinepelis;*/
+
+create database cinepelis;
+
+CREATE TABLE cinepelis.tb_pelicula (
   id_pelicula INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
-  nombre VARCHAR(150) NULL,
-  genero VARCHAR(20) NULL,
-  duracion TIME NULL,
+  nombre VARCHAR(150) NOT NULL,
+  genero VARCHAR(20) NOT NULL,
+  duracion VARCHAR(20) NULL,
   director VARCHAR(255) NULL,
   actores TEXT NULL,
-  censura INTEGER UNSIGNED NULL,
+  censura VARCHAR(50) NOT NULL,
   web VARCHAR(255) NULL,
   sinopsis TEXT NULL,
-  periodo INTEGER UNSIGNED NULL,
-  foto VARCHAR(255) NULL,
+  periodo VARCHAR(10) NULL,
+  ruta_foto VARCHAR(255) NULL,
+  is_vigente CHAR(1) NOT NULL DEFAULT '1',
   PRIMARY KEY(id_pelicula)
 );
 
-CREATE TABLE tb_sala (
+CREATE TABLE cinepelis.tb_sala (
   num_Sala INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   capacidad INTEGER UNSIGNED NOT NULL,
   is_3d CHAR(1) NOT NULL,
   PRIMARY KEY(num_Sala)
 );
 
-CREATE TABLE tb_usuario (
+CREATE TABLE cinepelis.tb_usuario (
   id_usuario INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(60) NOT NULL,
   ape_paterno VARCHAR(60) NOT NULL,
@@ -32,7 +37,25 @@ CREATE TABLE tb_usuario (
   PRIMARY KEY(id_usuario)
 );
 
-CREATE TABLE tb_cliente (
+insert into cinepelis.tb_usuario(nombre,ape_paterno,ape_materno,dni,usuario,clave,perfil)
+values ('Johana Rosalinda','Herrera','Quintanilla','45527731','jherrera','jherrera1','A');
+
+insert into cinepelis.tb_usuario(nombre,ape_paterno,ape_materno,dni,usuario,clave,perfil)
+values ('Mayra Yanina','Marquez','Rosadio','23456789','mrosadio','mrosadio','A');
+
+insert into cinepelis.tb_usuario(nombre,ape_paterno,ape_materno,dni,usuario,clave,perfil)
+values ('Alyssa Tamara','Quinto','Ingaruca','57668234','aquinto','aquinto1','A');
+
+insert into cinepelis.tb_usuario(nombre,ape_paterno,ape_materno,dni,usuario,clave,perfil)
+values ('Pedro Edison','Rios','Pino','45553639','prios','prios1','A');
+
+insert into cinepelis.tb_usuario(nombre,ape_paterno,ape_materno,dni,usuario,clave,perfil)
+values ('Ralf Aurelio','Saldania','Bacalla','45527741','rsaldania','rsaldania1','A');
+
+
+
+
+CREATE TABLE cinepelis.tb_cliente (
   id_cliente INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(60) NOT NULL,
   ape_paterno VARCHAR(60) NOT NULL,
@@ -45,26 +68,15 @@ CREATE TABLE tb_cliente (
   PRIMARY KEY(id_cliente)
 );
 
-CREATE TABLE tb_puntos (
-  id_cliente INTEGER UNSIGNED NOT NULL,
-  cant_puntos INTEGER UNSIGNED NULL,
-  INDEX tb_puntos_FKIndex1(id_cliente),
-  FOREIGN KEY(id_cliente)
-    REFERENCES tb_cliente(id_cliente)
-      ON DELETE NO ACTION
-      ON UPDATE NO ACTION
-);
-
-CREATE TABLE tb_cartelera (
+CREATE TABLE cinepelis.tb_cartelera (
   id_cartelera INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   id_pelicula INTEGER UNSIGNED NOT NULL,
   num_Sala INTEGER UNSIGNED NOT NULL,
-  fecha_inicio DATE NULL,
-  hora TIME NOT NULL,
-  fecha_fin DATE NULL,
+  hora_inicio VARCHAR(10) NOT NULL,
+  is_activo CHAR(1) NOT NULL DEFAULT '1',
   PRIMARY KEY(id_cartelera),
   INDEX tb_cartelera_FKIndex2(num_Sala),
-  INDEX tb_cartelera_FKIndex2(id_pelicula),
+  INDEX tb_cartelera_FKIndex3(id_pelicula),
   FOREIGN KEY(num_Sala)
     REFERENCES tb_sala(num_Sala)
       ON DELETE NO ACTION
@@ -75,18 +87,18 @@ CREATE TABLE tb_cartelera (
       ON UPDATE NO ACTION
 );
 
-CREATE TABLE tb_venta (
+CREATE TABLE cinepelis.tb_venta (
   id_venta INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   id_cartelera INTEGER UNSIGNED NOT NULL,
   id_cliente INTEGER UNSIGNED NOT NULL,
   id_usuario INTEGER UNSIGNED NOT NULL,
   fecha_venta DATETIME NULL,
   cant_entradas INTEGER UNSIGNED NULL,
-  promocion BOOL NULL,
+  monto_total DOUBLE NULL,
   PRIMARY KEY(id_venta),
   INDEX tb_venta_FKIndex2(id_usuario),
   INDEX tb_venta_FKIndex3(id_cliente),
-  INDEX tb_venta_FKIndex3(id_cartelera),
+  INDEX tb_venta_FKIndex4(id_cartelera),
   FOREIGN KEY(id_usuario)
     REFERENCES tb_usuario(id_usuario)
       ON DELETE NO ACTION
@@ -101,14 +113,13 @@ CREATE TABLE tb_venta (
       ON UPDATE NO ACTION
 );
 
-CREATE TABLE tb_detalle_venta (
+CREATE TABLE cinepelis.tb_detalle_venta (
   id_venta INTEGER UNSIGNED NOT NULL,
-  num_butaca INTEGER UNSIGNED NULL,
+  num_butaca VARCHAR(10) NULL,
   INDEX tb_detalle_venta_FKIndex1(id_venta),
   FOREIGN KEY(id_venta)
     REFERENCES tb_venta(id_venta)
-      ON DELETE NO ACTION
+      ON DELETE CASCADE
       ON UPDATE NO ACTION
 );
-
 
