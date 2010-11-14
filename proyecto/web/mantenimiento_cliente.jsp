@@ -36,23 +36,22 @@
                             <div class="entry">
                                 <table border="0" cellpadding="0" cellspacing="0">
                                     <tr>
-                                        <td>Nombre:</td><td style="padding:2px;"><input name='tbxNombre' type='text'/></td>
+                                        <td>Nombre:</td><td style="padding:2px;"><input name='tbxNombre' type='text' size="50" maxlength="50"/></td>
                                     </tr>
                                     <tr>
-                                        <td>Apellido Paterno:</td><td style="padding:2px;"><input name="tbxApePaterno" type="text"/></td>
+                                        <td>Apellido Paterno:</td><td style="padding:2px;"><input name="tbxApePaterno" type="text" size="50" maxlength="50"/></td>
                                     </tr>
-                                    <tr>
                                         <td>Apellido Materno:</td>
-                                        <td style="padding:2px;"><input name="tbxApeMaterno" type="text"/></td></tr>
+                                        <td style="padding:2px;"><input name="tbxApeMaterno" type="text" size="50" maxlength="50"/></td></tr>
                                     <tr>
                                         <td>DNI:</td>
-                                        <td style="padding:2px;"><input name="tbxDNI" type="text"/></td></tr>
+                                        <td style="padding:2px;"><input name="tbxDNI" type="text" size="20" maxlength="8"/></td></tr>
                                     <tr>
                                         <td>Tel&eacute;fono:</td>
-                                        <td style="padding:2px;"><input name="tbxTelefono" type="text"/></td></tr>
+                                        <td style="padding:2px;"><input name="tbxTelefono" type="text" size="20" maxlength="18"/></td></tr>
                                     <tr>
                                         <td>Email:</td>
-                                        <td style="padding:2px;"><input name="tbxEmail" type="text"/></td></tr>
+                                        <td style="padding:2px;"><input name="tbxEmail" type="text" size="50" maxlength="110"/></td></tr>
                                     <tr>
                                         <td>Tipo Tarjeta:</td>
                                         <td style="padding:2px;">
@@ -62,10 +61,13 @@
                                             </select>
                                         </td>
                                     </tr>
+                                     <tr>
+                                        <td># Tarjeta:</td>
+                                        <td style="padding:2px;"><input name="numTarjeta" type="text" size="20" maxlength="18"/></td></tr>
                                     <tr>
                                         <td>&nbsp;</td>
                                     </tr>
-                                    <tr><td></td><td><input type="submit" value="Guardar" /></td></tr>
+                                    <tr><td><input type="submit" value="Cancelar" /></td><td><input type="submit" value="Guardar" /></td></tr>
                                     <tr><td>&nbsp;</td>
                                     </tr>
                                 </table>
