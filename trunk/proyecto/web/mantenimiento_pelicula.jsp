@@ -42,24 +42,25 @@
 				    <div class="entry">
                     <table border="0" cellpadding="0" cellspacing="0">
     <tr>
-    	<td>Nombre:</td><td style="padding:2px;"><input name='tbxNombre' type='text'/></td>
+        <td>Nombre:</td><td style="padding:2px;"><input name='tbxNombre' type='text' size="50" maxlength="140"/></td>
     </tr>
     <tr>
     <td>G&eacute;nero:</td><td style="padding:2px;"><select name="cbxGenero">
       <option>Drama</option>
       <option>Comedia</option>
       <option>Acci&oacute;n</option>
+      <option>Terror</option>
     </select></td>
     </tr>
     <tr>
-    <td>Duraci&oacute;n:</td>
-    <td style="padding:2px;"><input name='tbxDuracion' type='text'/></td></tr>
+    <td>Duraci&oacute;n (minutos):</td>
+    <td style="padding:2px;"><input name='tbxDuracion' type='text' size="20" maxlength="4"/></td></tr>
     <tr>
       <td>Director:</td>
-      <td style="padding:2px;"><input name='tbxDirector' type='text'/></td></tr>
+      <td style="padding:2px;"><input name='tbxDirector' type='text' size="50" maxlength="200"/></td></tr>
       <tr>
-      <td>Actores:</td>
-      <td style="padding:2px;"><textarea name="tbxActores"></textarea></td></tr>
+      <td>Actores Principales:</td>
+      <td style="padding:2px;"><textarea name="tbxActores" cols="40"></textarea></td></tr>
       <tr>
       <td>Censura:</td>
       <td style="padding:2px;"><select name="cbxCensura">
@@ -69,21 +70,18 @@
       </select></td></tr>
       <tr>
       <td>Sitio web:</td>
-      <td style="padding:2px;"><input name='tbxSitioWeb' type='text'/></td></tr>
+      <td style="padding:2px;"><input name='tbxSitioWeb' type='text' size="50" maxlength="200"/></td></tr>
       <tr>
       <td>Sinopsis:</td>
-      <td style="padding:2px;"><textarea name="tbxSinopsis"></textarea></td></tr>
+      <td style="padding:2px;"><textarea name="tbxSinopsis" cols="40"></textarea></td></tr>
       <tr>
-      <td>Restricci&oacute;n:</td>
-      <td style="padding:2px;"><select name="cbxRestriccion">
-        <option>Descuentos</option>
-        <option>Promociones</option>
-      </select></td></tr>
+      <td>Ruta Foto:</td>
+      <td style="padding:2px;"><input name='ruta_foto' type='text' size="50" maxlength="200"/></td></tr>
     <tr>
     <td></td>
     <td style="padding:2px;">&nbsp;</td>
     </tr>
-    <tr><td></td><td><input type="submit" value="Guardar" /></td></tr>
+    <tr><td><input type="button" value="Cancelar" /></td><td><input type="submit" value="Guardar" /></td></tr>
 </table>
                             <h:dataTable id="peliculas"  value="#{peliculaBean.lstPelicula}"
                                              var="pelicula"  border="1" rows="5" headerClass="cabeceratabla">

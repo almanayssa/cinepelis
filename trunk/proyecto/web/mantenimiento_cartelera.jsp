@@ -47,7 +47,7 @@
                             <tr>
                             <td style="vertical-align:top;" colspan = "2">
                             <fieldset>
-                            <legend>Selecci&oacute;n de horarios</legend>
+                                <legend style="color: #FFFFFF">Selecci&oacute;n de horarios</legend>
                             <table border = 0>
                             <tr><td>Sala</td><td width="70"><select>
                                             <option value="1">1</option>

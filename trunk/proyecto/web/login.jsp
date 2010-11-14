@@ -60,7 +60,7 @@
 
                                      <h:form id="formLogin">
                                      <fieldset>
-                                         <legend>Ingrese su Usuario y Contrase&ntilde;a</legend>
+                                         <legend style="color: #FFFFFF">Ingrese su Usuario y Contrase&ntilde;a</legend>
 
                                          <table border = 0>
                                              <tr><td rowspan="4"><img src="images/llave.jpg" alt="" width="106" height="88" /></td>
