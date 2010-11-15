@@ -7,7 +7,7 @@
         <head>
             <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
             <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
-            <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+            <link href="<%=request.getContextPath()%>/faces/style.css" rel="stylesheet" type="text/css" media="screen" />
             <script type="text/javascript" src="<%=request.getContextPath()%>/common/prototype.js"></script>
 
             <script type="text/javascript">
@@ -78,7 +78,7 @@
                                     <h:form id="formPeli">
                                         <table border="0" cellpadding="0" cellspacing="0">
                                             <tr>
-                                                <td>Nombre:</td><td style="padding:2px;"><input name='tbxNombre' type='text' size="50" maxlength="140"/></td>
+                                                <td>Nombre:</td><td style="padding:2px;"><input id="tbxNombre" name='tbxNombre' type='text' size="50" maxlength="140"/></td>
                                             </tr>
                                             <tr>
                                                 <td>G&eacute;nero:</td><td style="padding:2px;"><select name="cbxGenero">
@@ -90,13 +90,13 @@
                                             </tr>
                                             <tr>
                                                 <td>Duraci&oacute;n (minutos):</td>
-                                                <td style="padding:2px;"><input name='tbxDuracion' type='text' size="20" maxlength="4"/></td></tr>
+                                                <td style="padding:2px;"><input id="tbxDuracion" name='tbxDuracion' type='text' size="20" maxlength="4"/></td></tr>
                                             <tr>
                                                 <td>Director:</td>
-                                                <td style="padding:2px;"><input name='tbxDirector' type='text' size="50" maxlength="200"/></td></tr>
+                                                <td style="padding:2px;"><input id="tbxDirector" name='tbxDirector' type='text' size="50" maxlength="200"/></td></tr>
                                             <tr>
                                                 <td>Actores Principales:</td>
-                                                <td style="padding:2px;"><textarea name="tbxActores" cols="40"></textarea></td></tr>
+                                                <td style="padding:2px;"><textarea  id="tbxActores" name="tbxActores" cols="40"></textarea></td></tr>
                                             <tr>
                                                 <td>Censura:</td>
                                                 <td style="padding:2px;"><select name="cbxCensura">
@@ -106,13 +106,13 @@
                                                     </select></td></tr>
                                             <tr>
                                                 <td>Sitio web:</td>
-                                                <td style="padding:2px;"><input name='tbxSitioWeb' type='text' size="50" maxlength="200"/></td></tr>
+                                                <td style="padding:2px;"><input  id="tbxSitioWeb" name='tbxSitioWeb' type='text' size="50" maxlength="200"/></td></tr>
                                             <tr>
                                                 <td>Sinopsis:</td>
-                                                <td style="padding:2px;"><textarea name="tbxSinopsis" cols="40"></textarea></td></tr>
+                                                <td style="padding:2px;"><textarea  id="tbxSinopsis" name="tbxSinopsis" cols="40"></textarea></td></tr>
                                             <tr>
                                                 <td>Ruta Foto:</td>
-                                                <td style="padding:2px;"><input name='ruta_foto' type='text' size="50" maxlength="200"/></td></tr>
+                                                <td style="padding:2px;"><input  id="ruta_foto" name='ruta_foto' type='text' size="50" maxlength="200"/></td></tr>
                                             <tr>
                                                 <td></td>
                                                 <td style="padding:2px;">&nbsp;</td>
