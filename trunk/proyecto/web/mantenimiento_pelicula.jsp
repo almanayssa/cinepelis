@@ -12,7 +12,6 @@
 
             <script type="text/javascript">
                  function validarForm(){
-                     var f = document.forms[0];
                     if($F('formPeli:tbxNombre')==''){
                         alert('Ingrese nombre');
                         $('formPeli:tbxNombre').focus();
@@ -122,7 +121,7 @@
                                                     <input type="button" value="Cancelar" />
                                                 </td>
                                                 <td>
-                                                    <input type="submit" value="Guardar" onclick="return validarForm();" />
+                                                    <input type="submit" value="Guardar" onclick="validarForm();" />
                                                 </td>
                                             </tr>
                                         </table>
