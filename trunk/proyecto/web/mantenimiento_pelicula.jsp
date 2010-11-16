@@ -12,29 +12,29 @@
 
             <script type="text/javascript">
                  function validarForm(){
-                    if($F('formPeli:tbxNombre')==''){
+                    if($F('tbxNombre')==''){
                         alert('Ingrese nombre');
-                        $('formPeli:tbxNombre').focus();
+                        $('tbxNombre').focus();
                         return false;
                     }
-                    else if($F('formPeli:tbxDuracion')==''){
+                    else if($F('tbxDuracion')==''){
                         alert('Ingrese duracion de la pelicula');
-                        $('formPeli:tbxDuracion').focus();
+                        $('tbxDuracion').focus();
                         return false;
                     }
-                    else  if($F('formPeli:tbxDirector')==''){
+                    else  if($F('tbxDirector')==''){
                         alert('Ingrese el nombre del director de la pelicula');
-                        $('formPeli:tbxDirector').focus();
+                        $('tbxDirector').focus();
                         return false;
                     }
-                    else if($F('formPeli:tbxActores')==''){
+                    else if($F('tbxActores')==''){
                         alert('Ingrese el nombre de los actores de esta pelicula');
-                        $('formPeli:tbxActores').focus();
+                        $('tbxActores').focus();
                         return false;
                     }
-                    else if($F('formPeli:tbxActores')==''){
+                    else if($F('tbxActores')==''){
                         alert('Ingrese el nombre de los actores de esta pelicula');
-                        $('formPeli:tbxActores').focus();
+                        $('tbxActores').focus();
                         return false;
                     }
                 }
@@ -121,7 +121,7 @@
                                                     <input type="button" value="Cancelar" />
                                                 </td>
                                                 <td>
-                                                    <input type="submit" value="Guardar" onclick="validarForm();" />
+                                                    <input type="submit" value="Guardar" onclick="return validarForm();" />
                                                 </td>
                                             </tr>
                                         </table>
