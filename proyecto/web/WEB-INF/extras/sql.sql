@@ -19,11 +19,23 @@ CREATE TABLE cinepelis.tb_pelicula (
 );
 
 CREATE TABLE cinepelis.tb_sala (
-  num_Sala INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  num_Sala INTEGER UNSIGNED NOT NULL,
   capacidad INTEGER UNSIGNED NOT NULL,
   is_3d CHAR(1) NOT NULL,
   PRIMARY KEY(num_Sala)
 );
+
+insert into cinepelis.tb_sala(num_Sala,capacidad,is_3d)
+values (1,100,'0');
+
+insert into cinepelis.tb_sala(num_Sala,capacidad,is_3d)
+values (2,100,'1');
+
+insert into cinepelis.tb_sala(num_Sala,capacidad,is_3d)
+values (3,100,'0');
+
+insert into cinepelis.tb_sala(num_Sala,capacidad,is_3d)
+values (4,100,'0');
 
 CREATE TABLE cinepelis.tb_usuario (
   id_usuario INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -69,19 +81,19 @@ CREATE TABLE cinepelis.tb_cliente (
 );
 
 insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
-values ('Joel','Gonzales','Flores','44546567','4556897','jgonzales@email.com','clasica','4244557881');
+values ('Joel','Gonzales','Flores','44546567','4556897','jgonzales@email.com','C','4244557881');
 
 insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
-values ('Andrea','Aguirre','Rojas','23456789','42254888','arojas@email.com','premium','5697789655');
+values ('Andrea','Aguirre','Rojas','23456789','42254888','arojas@email.com','P','5697789655');
 
 insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
-values ('Gianfranco','Bogani','Ferrand','46474744','7157888','gbogani@email.com','premium','1046467891');
+values ('Gianfranco','Bogani','Ferrand','46474744','7157888','gbogani@email.com','P','1046467891');
 
 insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
-values ('Nicolas','De Las Casas','Picasso','43458877','5334577','ndelascasas@email.com','clasica','6566477880');
+values ('Nicolas','De Las Casas','Picasso','43458877','5334577','ndelascasas@email.com','C','6566477880');
 
 insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
-values ('Grace','Gonzales','Flores','42459886','3321660','ggonzales@email.com','premium','0456310122');
+values ('Grace','Gonzales','Flores','42459886','3321660','ggonzales@email.com','P','0456310122');
 
 
 CREATE TABLE cinepelis.tb_cartelera (
