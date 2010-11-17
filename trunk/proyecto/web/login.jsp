@@ -8,19 +8,11 @@
         <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
         <link href="<%=request.getContextPath()%>/faces/style.css" rel="stylesheet" type="text/css" media="screen" />
         <script type="text/javascript" src="<%=request.getContextPath()%>/common/prototype.js"></script>
+        <script type="text/javascript" src="<%=request.getContextPath()%>/common/validaciones.js"></script>
         <script type="text/javascript">
             function validarLogueo(){
-                var f = document.forms[0];
-                if($F('formLogin:usuario')==''){
-                    alert('Ingresar el Usuario');
-                    $('formLogin:usuario').focus();
-                    return false;
-                }
-                if($F('formLogin:password')==''){
-                    alert('Ingresar la Clave');
-                    $('formLogin:password').focus();
-                    return false;
-                }
+                if (blancoJSF('formLogin:usuario', "Ingresar el Usuario") == false)return false;
+                if (blancoJSF('formLogin:password', "Ingresar el Usuario") == false)return false;
             }
         </script>
 
@@ -65,12 +57,12 @@
                                          <table border = 0>
                                              <tr><td rowspan="4"><img src="images/llave.jpg" alt="" width="106" height="88" /></td>
                                                  <td><h:outputText value="Usuario:" /></td>
-                                                 <td><h:inputText id="usuario" value="#{loginBean.usuario}"  /></td>
+                                                 <td><h:inputText id="usuario" value="#{loginBean.usuario}" maxlength="30" /></td>
                                                  <td><h:message for="usuario" errorStyle="color:red;" /></td>
                                              </tr>
                                              <tr>
                                                  <td><h:outputText value="Password:" /></td>
-                                                 <td><h:inputSecret id="password" value="#{loginBean.password}" /></td>
+                                                 <td><h:inputSecret id="password" value="#{loginBean.password}" maxlength="20"/></td>
                                                  <td><h:message for="password" errorStyle="color:red;" /></td></tr>
                                              <tr>
                                                  <td></td>
