@@ -68,6 +68,22 @@ CREATE TABLE cinepelis.tb_cliente (
   PRIMARY KEY(id_cliente)
 );
 
+insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
+values ('Joel','Gonzales','Flores','44546567','4556897','jgonzales@email.com','clasica','4244557881');
+
+insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
+values ('Andrea','Aguirre','Rojas','23456789','42254888','arojas@email.com','premium','5697789655');
+
+insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
+values ('Gianfranco','Bogani','Ferrand','46474744','7157888','gbogani@email.com','premium','1046467891');
+
+insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
+values ('Nicolas','De Las Casas','Picasso','43458877','5334577','ndelascasas@email.com','clasica','6566477880');
+
+insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
+values ('Grace','Gonzales','Flores','42459886','3321660','ggonzales@email.com','premium','0456310122');
+
+
 CREATE TABLE cinepelis.tb_cartelera (
   id_cartelera INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   id_pelicula INTEGER UNSIGNED NOT NULL,
