@@ -6,8 +6,10 @@
         <head>
             <meta http-equiv="content-type" content="text/html;charset=utf-8" />
             <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
-            <link href="<%=request.getContextPath()%>/faces/style.css" rel="stylesheet" type="text/css" media="screen" />            
+            <link href="<%=request.getContextPath()%>/faces/style.css" rel="stylesheet" type="text/css" media="screen" />
+            <script type="text/javascript" src="<%=request.getContextPath()%>/common/validaciones.js"></script>
             <script type="text/javascript">
+                
                 var b="/^[^@\s]+@[^@\.\s]+(\.[^@\.\s]+)+$⁄";
                 function validarFormulario(){
                     if(document.getElementById("tbxNombre").value==''){
@@ -15,35 +17,44 @@
                         document.getElementById("tbxNombre").focus();
                         return false;
                     }
-                    else if(document.getElementById("tbxApePaterno").value==''){
+                    if(document.getElementById("tbxApePaterno").value==''){
                         alert('Ingrese apellido paterno');
                         document.getElementById("tbxApePaterno").focus();
                         return false;
                     }
-                    else if(document.getElementById("tbxApeMaterno").value==''){
+                    if(document.getElementById("tbxApeMaterno").value==''){
                         alert('Ingrese apellido materno');
                         document.getElementById("tbxApeMaterno").focus();
                         return false;
                     }
-                    else if(document.getElementById("tbxDNI").value==''){
+                    if(document.getElementById("tbxDNI").value==''){
                         alert('Ingrese DNI');
                         document.getElementById("tbxDNI").focus();
                         return false;
                     }
-                    else if(document.getElementById("tbxTelefono").value==''){
+                    if(document.getElementById("tbxDNI").value.length!=8){
+                        alert("DNI Inv\xe1lido");
+                        document.getElementById("tbxDNI").focus();
+                        return false;
+                    }
+                    /*if(document.getElementById("tbxTelefono").value==''){
                         alert('Ingrese telefono');
                         document.getElementById("tbxTelefono").focus();
                         return false;
-                    }
-                    else if(document.getElementById("tbxEmail").value==''){
+                    }*/
+                    if(document.getElementById("tbxEmail").value==''){
                         alert('Ingrese un email');
                         document.getElementById("tbxEmail").focus();
                         return false;
-                    }else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(document.getElementById("tbxEmail").value)==false){
-                        alert("La dirección de email es incorrecta.");
-                        document.getElementById("tbxEmail").focus();
+                    }
+                    if (isEmailAddress(document.getElementById("tbxEmail")) == false)return false;
+                    
+                    if(document.getElementById("numTarjeta").value==''){
+                        alert('Ingrese el numero de tarjeta');
+                        document.getElementById("numTarjeta").focus();
                         return false;
                     }
+
                 }
             </script>
             <style type="text/css">
@@ -85,10 +96,10 @@
                                         <td style="padding:2px;"><input name="tbxApeMaterno" id='tbxApeMaterno' type="text" size="50" maxlength="50"/></td>
                                         <tr>
                                             <td>DNI:</td>
-                                            <td style="padding:2px;"><input name="tbxDNI" id='tbxDNI' type="text" size="20" maxlength="8"/></td></tr>
+                                            <td style="padding:2px;"><input name="tbxDNI" id='tbxDNI' type="text" size="20" maxlength="8" onkeypress="return soloNumeros(event)"/></td></tr>
                                         <tr>
                                             <td>Tel&eacute;fono:</td>
-                                            <td style="padding:2px;"><input name="tbxTelefono" id='tbxTelefono' type="text" size="20" maxlength="18"/></td></tr>
+                                            <td style="padding:2px;"><input name="tbxTelefono" id='tbxTelefono' type="text" size="20" maxlength="18" onkeypress="return soloNumeros(event)"/></td></tr>
                                         <tr>
                                             <td>Email:</td>
                                             <td style="padding:2px;"><input name="tbxEmail" id="tbxEmail" type="text" size="50" maxlength="110"/></td></tr>
@@ -103,7 +114,7 @@
                                         </tr>
                                         <tr>
                                             <td># Tarjeta:</td>
-                                            <td style="padding:2px;"><input name="numTarjeta" type="text" size="20" maxlength="18"/></td></tr>
+                                            <td style="padding:2px;"><input id="numTarjeta" name="numTarjeta" type="text" size="20" maxlength="18" onkeypress="return soloNumeros(event)"/></td></tr>
                                         <tr>
                                             <td>&nbsp;</td>
                                         </tr>

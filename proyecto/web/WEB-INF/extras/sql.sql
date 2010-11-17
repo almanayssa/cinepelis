@@ -62,7 +62,7 @@ CREATE TABLE cinepelis.tb_cliente (
   ape_materno VARCHAR(60) NOT NULL,
   dni CHAR(8) NOT NULL,
   telefono VARCHAR(20) NULL,
-  email VARCHAR(120) NULL,
+  email VARCHAR(120) NOT NULL,
   tipo_tarjeta CHAR(1) NULL,
   num_tarjeta VARCHAR(20) NULL,
   PRIMARY KEY(id_cliente)

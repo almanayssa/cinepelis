@@ -8,6 +8,7 @@
             <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
             <link href="<%=request.getContextPath()%>/faces/style.css" rel="stylesheet" type="text/css" media="screen" />
             <script type="text/javascript" src="<%=request.getContextPath()%>/common/prototype.js"></script>
+            <script type="text/javascript" src="<%=request.getContextPath()%>/common/validaciones.js"></script>
             <script type="text/javascript">
                  function validarForm(){
                     if($F('tbxTarjeta')==''){
@@ -74,7 +75,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td>N&uacute;mero de Tarjeta:</td>
-                                            <td style="padding:2px;"><input id="tbxTarjeta" name='tbxTarjeta' type='text'/></td>
+                                            <td style="padding:2px;"><input id="tbxTarjeta" name='tbxTarjeta' type='text' onkeypress="return soloNumeros(event)"/></td>
                                         </tr>
                                         <tr>
                                             <td>Titular:</td>
@@ -90,7 +91,7 @@
                                         </tr>
                                         <tr>
                                             <td>N&uacute;mero de entradas:</td>
-                                            <td style="padding:2px;"><input disabled="disabled" id="tbxEntradas" name='tbxEntradas' type='text' value="0"/></td>
+                                            <td style="padding:2px;"><input disabled="disabled" id="tbxEntradas" name='tbxEntradas' type='text' value="0" onkeypress="return soloNumeros(event)"/></td>
                                         </tr>
                                         <tr>
                                         <td valign="top">Ubicaci&oacute;n:</td>

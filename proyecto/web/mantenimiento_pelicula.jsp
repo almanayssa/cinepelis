@@ -9,34 +9,12 @@
             <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
             <link href="<%=request.getContextPath()%>/faces/style.css" rel="stylesheet" type="text/css" media="screen" />
             <script type="text/javascript" src="<%=request.getContextPath()%>/common/prototype.js"></script>
-
+            <script type="text/javascript" src="<%=request.getContextPath()%>/common/validaciones.js"></script>
             <script type="text/javascript">
                  function validarForm(){
-                    if($F('tbxNombre')==''){
-                        alert('Ingrese nombre');
-                        $('tbxNombre').focus();
-                        return false;
-                    }
-                    else if($F('tbxDuracion')==''){
-                        alert('Ingrese duracion de la pelicula');
-                        $('tbxDuracion').focus();
-                        return false;
-                    }
-                    else  if($F('tbxDirector')==''){
-                        alert('Ingrese el nombre del director de la pelicula');
-                        $('tbxDirector').focus();
-                        return false;
-                    }
-                    else if($F('tbxActores')==''){
-                        alert('Ingrese el nombre de los actores de esta pelicula');
-                        $('tbxActores').focus();
-                        return false;
-                    }
-                    else if($F('tbxActores')==''){
-                        alert('Ingrese el nombre de los actores de esta pelicula');
-                        $('tbxActores').focus();
-                        return false;
-                    }
+                    if (blancoJSF('tbxNombre', "Ingresar el Nombre") == false)return false;
+                    if (blancoJSF('tbxDuracion',"Ingrese duracion de la pelicula") == false)return false;
+                    if (blancoJSF('tbxDirector',"Ingrese el nombre del director de la pelicula") == false)return false;
                 }
             </script>
 
@@ -89,7 +67,7 @@
                                             </tr>
                                             <tr>
                                                 <td>Duraci&oacute;n (minutos):</td>
-                                                <td style="padding:2px;"><input id="tbxDuracion" name='tbxDuracion' type='text' size="20" maxlength="4"/></td></tr>
+                                                <td style="padding:2px;"><input id="tbxDuracion" name='tbxDuracion' type='text' size="20" maxlength="4" onkeypress="return soloNumeros(event)"/></td></tr>
                                             <tr>
                                                 <td>Director:</td>
                                                 <td style="padding:2px;"><input id="tbxDirector" name='tbxDirector' type='text' size="50" maxlength="200"/></td></tr>
