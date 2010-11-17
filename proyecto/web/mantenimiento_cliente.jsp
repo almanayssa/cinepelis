@@ -107,8 +107,8 @@
                                         <tr>
                                             <td>&nbsp;</td>
                                         </tr>
-                                        <tr><td><input type="submit" value="Cancelar" /></td>
-                                            <td><input type="submit" value="Guardar" onclick="return validarFormulario();" /></td></tr>
+                                        <tr><td></td>
+                                            <td><input type="submit" value="Guardar" onclick="return validarFormulario();" /><input type="submit" value="Cancelar" /></td></tr>
                                         <tr><td>&nbsp;</td>
                                         </tr>
                                     </table>

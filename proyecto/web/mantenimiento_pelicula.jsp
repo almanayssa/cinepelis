@@ -117,14 +117,14 @@
                                                 <td style="padding:2px;">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <input type="button" value="Cancelar" />
-                                                </td>
+                                                <td></td>
                                                 <td>
                                                     <input type="submit" value="Guardar" onclick="return validarForm();" />
+                                                    <input type="button" value="Cancelar" />
                                                 </td>
                                             </tr>
                                         </table>
+                                        <br/>
                                         <h:dataTable id="peliculas"  value="#{peliculaBean.lstPelicula}"
                                                      var="pelicula"  border="1" rows="5" headerClass="cabeceratabla">
                                             <h:column>
