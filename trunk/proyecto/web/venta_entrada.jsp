@@ -108,6 +108,48 @@
                                         </td>
                                         </tr>
                                         <tr>
+                                             <td style="vertical-align:top;" colspan = "2">
+                                          <fieldset>
+                                             <legend style="color: #FFFFFF">Selecci&oacute;n de butacas</legend>
+                                             <table border = 0>
+                                                 <tr>
+                                                     <td>Butaca:</td>
+                                                     <td><select>
+                                                    <option value="1">A</option>
+                                                    <option value="1">B</option>
+                                                    <option value="1">C</option>
+                                                    <option value="1">D</option>
+                                                    <option value="1">F</option>
+                                                    <option value="1">G</option>
+                                                    <option value="1">H</option>
+                                                    <option value="1">I</option>
+                                                    </select>
+                                                         <select>
+                                                    <option value="1">1</option>
+                                                    <option value="1">2</option>
+                                                    <option value="1">3</option>
+                                                    <option value="1">4</option>
+                                                    <option value="1">5</option>
+                                                    <option value="1">6</option>
+                                                    <option value="1">7</option>
+                                                    <option value="1">8</option>
+                                                    <option value="1">9</option>
+                                                    <option value="1">10</option>
+                                                    <option value="1">11</option>
+                                                    <option value="1">12</option>
+                                                    </select>
+                                                     </td>
+                                                     <td><input type="button" value="Agregar"> </td>
+                                                 </tr>
+                                             </table><BR>
+
+
+
+                                          </fieldset>
+                                            </td>
+                                        </tr>
+                                        <tr><td>&nbsp;</td></tr>
+                                        <tr>
                                         <td>Monto Total:</td>
                                         <td style="padding:2px;"><input id="tbxMonto" name='tbxMonto' type='text'/></td>
                                         </tr>
