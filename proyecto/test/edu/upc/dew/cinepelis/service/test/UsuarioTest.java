@@ -30,7 +30,7 @@ public class UsuarioTest extends  TestTransactional {
     public void testValidaUsuario(){
         log.info("entro testValidaUsuario");
 
-        usuario = usuarioServiceCtx.findUsuarioByLogueo("prios", "prios1");
+        usuario = usuarioServiceCtx.findUsuarioByLogueo("prios", "prios3");
         log.info("Apellido Paterno:"+ usuario.getApe_paterno());
         Assert.assertNotNull(usuario);
     }
