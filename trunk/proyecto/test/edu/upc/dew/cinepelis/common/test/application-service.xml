@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd
+       					  ">
+     
+    <!--  ****************************  USUARIOS **************************** -->
+    <bean id="usuarioIbatis" class="edu.upc.dew.cinepelis.dao.ibatisImpl.UsuarioDAOMysql">
+     	  <property name="sqlMapClient"><ref bean="sqlMapClient"/></property>
+   	</bean> 
+    
+    <bean id="usuarioServiceCtx"  class="edu.upc.dew.cinepelis.serviceImpl.UsuarioServiceImpl">
+	<property name="usuarioDAO" ref="usuarioIbatis"/>
+    </bean>
+
+
+    <!--  ****************************  CLIENTES **************************** -->
+    <bean id="clienteIbatis" class="edu.upc.dew.cinepelis.dao.ibatisImpl.ClienteDAOMysql">
+     	  <property name="sqlMapClient"><ref bean="sqlMapClient"/></property>
+    </bean>
+
+    <bean id="clienteServiceCtx"  class="edu.upc.dew.cinepelis.serviceImpl.ClienteServiceImpl">
+	<property name="clienteDAO" ref="clienteIbatis"/>
+    </bean>
+
+    <!--  ****************************  ESTADISTICAS **************************** -->
+    <bean id="estadisticaIbatis" class="edu.upc.dew.cinepelis.dao.ibatisImpl.EstadisticaDAOMysql">
+     	  <property name="sqlMapClient"><ref bean="sqlMapClient"/></property>
+    </bean>
+
+    <bean id="estadisticaServiceCtx"  class="edu.upc.dew.cinepelis.serviceImpl.EstadisticaServiceImpl">
+	<property name="estadisticaDAO" ref="estadisticaIbatis"/>
+    </bean>
+
+
+    <!--  ****************************  PELICULAS **************************** -->
+    <bean id="peliculaIbatis" class="edu.upc.dew.cinepelis.dao.ibatisImpl.PeliculaDAOMysql">
+     	  <property name="sqlMapClient"><ref bean="sqlMapClient"/></property>
+    </bean>
+
+    <bean id="peliculaServiceCtx"  class="edu.upc.dew.cinepelis.serviceImpl.PeliculaServiceImpl">
+	<property name="peliculaDAO" ref="peliculaIbatis"/>
+    </bean>
+
+    <!--  ****************************  CARTELERA **************************** -->
+    <bean id="carteleraIbatis" class="edu.upc.dew.cinepelis.dao.ibatisImpl.CarteleraDAOMysql">
+     	  <property name="sqlMapClient"><ref bean="sqlMapClient"/></property>
+    </bean>
+
+    <bean id="carteleraServiceCtx"  class="edu.upc.dew.cinepelis.serviceImpl.CarteleraServiceImpl">
+	<property name="carteleraDAO" ref="carteleraIbatis"/>
+    </bean>
+
+ 	
+ 
+ 
+
+</beans>

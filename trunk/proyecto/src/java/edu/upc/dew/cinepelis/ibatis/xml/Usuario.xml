@@ -9,7 +9,7 @@
 	 <![CDATA[
 		SELECT *
                 FROM tb_usuario
-                WHERE usuario=$usuario$ and clave=$clave$
+                WHERE usuario=#usuario# and clave=#clave#
 	]]>
     </select>
 	
