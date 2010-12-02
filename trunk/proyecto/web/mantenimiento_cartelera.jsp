@@ -132,8 +132,8 @@
                                     <p>
                                         <div id="usuario" >
                                         <div>
-                                        Bienvenid@: Mayra M&aacute;rquez<br />
-                                        <a href="index.jsp">Cerrar Sesi&oacute;n</a>
+                                            Usuario:&nbsp;<br> <b> <span style="color: #FFFFFF"><h:outputText value="#{loginBean.nombreUsuario}"/></span></b><br /><br>
+                                            <h:commandLink action="#{utilBean.logout}"><span style="color: #FFFFFF">Cerrar Sesi&oacute;n</span></h:commandLink>
                                         </div>
                                         </div>
                                     </p>

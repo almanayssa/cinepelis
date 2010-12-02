@@ -6,8 +6,11 @@
 package edu.upc.dew.cinepelis.controller.jsf;
 
 import edu.upc.dew.cinepelis.common.util.GenericBean;
+import edu.upc.dew.cinepelis.model.UsuarioBean;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -17,6 +20,7 @@ public class LoginJSF  extends GenericBean{
 
     private String usuario;
     private String password;
+    private String nombreUsuario;
 
     /**
      * @return the usuario
@@ -46,10 +50,32 @@ public class LoginJSF  extends GenericBean{
         this.password = password;
     }
 
+    public String getNombreUsuario() {
+        return nombreUsuario;
+    }
+
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
+    }
+
+
+
+
+
 
     public String loguear(){
         log.info("Entrando ... loguear() - LoginJSF");
-        if(usuario!=null && password!=null && usuario.equals("cinepe") && password.equals("cinepe")){
+
+        UsuarioBean objUsuario = serviceFactory.getUsuarioService().findUsuarioByLogueo(usuario, password);
+
+        if(objUsuario!=null){
+            FacesContext context = FacesContext.getCurrentInstance();
+            HttpServletRequest request = (HttpServletRequest)context.getExternalContext().getRequest();
+            HttpSession session = request.getSession(true);
+            nombreUsuario = objUsuario.getNombre()+" "+objUsuario.getApe_paterno()+" "+objUsuario.getApe_materno();
+            
+            session.setAttribute("beanUsuario", objUsuario);
+
             return "success";
         }else{
             FacesContext.getCurrentInstance().addMessage("formLogin",
