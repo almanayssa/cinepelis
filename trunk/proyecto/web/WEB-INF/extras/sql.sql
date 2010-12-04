@@ -11,12 +11,17 @@ CREATE TABLE cinepelis.tb_pelicula (
   actores TEXT NULL,
   censura VARCHAR(50) NOT NULL,
   web VARCHAR(255) NULL,
-  sinopsis TEXT NULL,
-  periodo VARCHAR(10) NULL,
+  sinopsis LONGTEXT NULL,
+  periodo VARCHAR(30) NULL,
   ruta_foto VARCHAR(255) NULL,
   is_vigente CHAR(1) NOT NULL DEFAULT '1',
   PRIMARY KEY(id_pelicula)
 );
+
+insert into cinepelis.tb_pelicula(nombre,genero,duracion,director,actores,censura,web,sinopsis,periodo,is_vigente)
+values ('Machete','ACCION','105','Robert Rodriguez','Danny Trejo,Steven Seagal,Robert De Niro,Michelle Rodriguez,Jessica Alba','M14','www.vivamachete.com',
+'Machete es un policia federal de Mexico que ha sido expulsado del cuerpo tras un chantaje que le ha hecho el capo Torrez.','DICIEMBRE 2010','1');
+
 
 CREATE TABLE cinepelis.tb_sala (
   num_Sala INTEGER UNSIGNED NOT NULL,
@@ -114,6 +119,9 @@ CREATE TABLE cinepelis.tb_cartelera (
       ON DELETE NO ACTION
       ON UPDATE NO ACTION
 );
+
+insert into cinepelis.tb_cartelera(id_pelicula,num_Sala,hora_inicio,is_activo)
+values (1,1,'20:00',1);
 
 CREATE TABLE cinepelis.tb_venta (
   id_venta INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,

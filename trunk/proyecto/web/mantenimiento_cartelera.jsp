@@ -60,16 +60,16 @@
                             </td>
                             <td>Hora:</td>
                             <td><select>
-                                            <option value="1">11:00</option>
-                                            <option value="1">11:30</option>
-                                            <option value="1">12:00</option>
-                                            <option value="1">12:30</option>
-                                            <option value="1">13:00</option>
-                                            <option value="1">13:30</option>
-                                            <option value="1">14:00</option>
-                                            <option value="1">14:30</option>
-                                            <option value="1">15:00</option>
-                                            <option value="1">15:30</option>
+                                            <option value="11:00">11:00</option>
+                                            <option value="11:30">11:30</option>
+                                            <option value="12:00">12:00</option>
+                                            <option value="12:30">12:30</option>
+                                            <option value="13:00">13:00</option>
+                                            <option value="13:30">13:30</option>
+                                            <option value="14:00">14:00</option>
+                                            <option value="14:30">14:30</option>
+                                            <option value="15:00">15:00</option>
+                                            <option value="15:30">15:30</option>
                                             <option value="1">16:00</option>
                                             <option value="1">16:30</option>
                                             <option value="1">17:00</option>

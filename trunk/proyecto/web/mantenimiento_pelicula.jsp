@@ -59,10 +59,10 @@
                                             </tr>
                                             <tr>
                                                 <td>G&eacute;nero:</td><td style="padding:2px;"><select name="cbxGenero">
-                                                        <option>Drama</option>
-                                                        <option>Comedia</option>
-                                                        <option>Acci&oacute;n</option>
-                                                        <option>Terror</option>
+                                                        <option value="DRAMA">Drama</option>
+                                                        <option value="COMEDIA">Comedia</option>
+                                                        <option value="ACCION">Acci&oacute;n</option>
+                                                        <option value="TERROR">Terror</option>
                                                     </select></td>
                                             </tr>
                                             <tr>
@@ -77,9 +77,9 @@
                                             <tr>
                                                 <td>Censura:</td>
                                                 <td style="padding:2px;"><select name="cbxCensura">
-                                                        <option>Ninguna</option>
-                                                        <option>Mayores 14</option>
-                                                        <option>Mayores 18</option>
+                                                        <option value="NINGUNA">Ninguna</option>
+                                                        <option value="M14">Mayores 14</option>
+                                                        <option value="M18">Mayores 18</option>
                                                     </select></td></tr>
                                             <tr>
                                                 <td>Sitio web:</td>
