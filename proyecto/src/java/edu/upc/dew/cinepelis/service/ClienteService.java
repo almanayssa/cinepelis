@@ -17,4 +17,6 @@ public interface ClienteService {
     
     public List<ClienteBean> getClientes();
 
+    public ClienteBean findCustomerByTarjeta(Long numTarjeta);
+
 }

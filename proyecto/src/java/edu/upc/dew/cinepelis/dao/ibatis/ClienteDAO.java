@@ -16,4 +16,6 @@ public interface ClienteDAO {
 
      public List<ClienteBean> getClientes();
 
+     public ClienteBean findCustomerByTarjeta(Long numTarjeta);
+
 }

@@ -6,6 +6,10 @@
 <sqlMapConfig>
 	<!-- todo esta x defecto exepto maxRequests 512,maxSessions 128,maxTransactions 32  --> 	
         <sqlMap resource="edu/upc/dew/cinepelis/ibatis/xml/Usuario.xml"/>
+        <sqlMap resource="edu/upc/dew/cinepelis/ibatis/xml/Cliente.xml"/>
+        <sqlMap resource="edu/upc/dew/cinepelis/ibatis/xml/Pelicula.xml"/>
+        <sqlMap resource="edu/upc/dew/cinepelis/ibatis/xml/Venta.xml"/>
+        <sqlMap resource="edu/upc/dew/cinepelis/ibatis/xml/Cartelera.xml"/>
 
    
 </sqlMapConfig>

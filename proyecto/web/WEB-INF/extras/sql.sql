@@ -86,19 +86,19 @@ CREATE TABLE cinepelis.tb_cliente (
 );
 
 insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
-values ('Joel','Gonzales','Flores','44546567','4556897','jgonzales@email.com','C','4244557881');
+values ('Joel','Gonzales','Flores','44546567','4556897','jgonzales@email.com','C','123');
 
 insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
-values ('Andrea','Aguirre','Rojas','23456789','42254888','arojas@email.com','P','5697789655');
+values ('Andrea','Aguirre','Rojas','23456789','42254888','arojas@email.com','P','124');
 
 insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
-values ('Gianfranco','Bogani','Ferrand','46474744','7157888','gbogani@email.com','P','1046467891');
+values ('Gianfranco','Bogani','Ferrand','46474744','7157888','gbogani@email.com','P','125');
 
 insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
-values ('Nicolas','De Las Casas','Picasso','43458877','5334577','ndelascasas@email.com','C','6566477880');
+values ('Nicolas','De Las Casas','Picasso','43458877','5334577','ndelascasas@email.com','C','126');
 
 insert into cinepelis.tb_cliente(nombre,ape_paterno,ape_materno,dni,telefono,email,tipo_tarjeta,num_tarjeta)
-values ('Grace','Gonzales','Flores','42459886','3321660','ggonzales@email.com','P','0456310122');
+values ('Grace','Gonzales','Flores','42459886','3321660','ggonzales@email.com','P','127');
 
 
 CREATE TABLE cinepelis.tb_cartelera (

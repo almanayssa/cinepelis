@@ -29,6 +29,17 @@ public class ClienteDAOMysql extends SqlMapClientDaoSupport implements ClienteDA
        return lstCliente;
     }
 
+    public ClienteBean findCustomerByTarjeta(Long numTarjeta) {
+       try{
+            return (ClienteBean)getSqlMapClientTemplate().queryForObject("findCustomerByTarjeta", numTarjeta);
+	}catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error en el ibatis - method findCustomerByTarjeta()");
+            return null;
+	}
+
+    }
+
     
 
 }

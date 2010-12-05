@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Cliente" >
+
+    <typeAlias alias="beanCliente" type="edu.upc.dew.cinepelis.model.ClienteBean"/>
+
+     <!-- retorna un objeto del tipo beanUsuario-->
+     <select id="findCustomerByTarjeta" parameterClass="java.lang.Long" resultClass="beanCliente">
+	 <![CDATA[
+                SELECT *
+                FROM tb_cliente
+                WHERE num_tarjeta= #value#
+	]]>
+    </select>
+	
+</sqlMap>    
