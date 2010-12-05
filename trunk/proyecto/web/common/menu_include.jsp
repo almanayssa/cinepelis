@@ -23,9 +23,9 @@
                         </h:commandLink>
                     </li>
                     <li>
-                        <a href="venta_entrada.jsp">
+                        <h:commandLink id="linkVentas" action="#{ventaBean.initVentas}">
                             <h:outputText value="#{msgs.link_rventa}"/>
-                        </a>
+                        </h:commandLink>
                     </li>
                     <!--
                     <li>

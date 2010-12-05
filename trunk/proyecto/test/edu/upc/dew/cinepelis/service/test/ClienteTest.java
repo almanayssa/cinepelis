@@ -6,8 +6,8 @@
 package edu.upc.dew.cinepelis.service.test;
 
 import edu.upc.dew.cinepelis.common.test.TestTransactional;
-import edu.upc.dew.cinepelis.model.UsuarioBean;
-import edu.upc.dew.cinepelis.service.UsuarioService;
+import edu.upc.dew.cinepelis.model.ClienteBean;
+import edu.upc.dew.cinepelis.service.ClienteService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,22 +17,22 @@ import org.springframework.test.annotation.Rollback;
  *
  * @author edison
  */
-public class UsuarioTest extends  TestTransactional {
+public class ClienteTest extends  TestTransactional {
 
     @Autowired
-    private UsuarioService usuarioServiceCtx;
+    private ClienteService clienteServiceCtx;
 
-    private static UsuarioBean usuario;
+    private static ClienteBean cliente;
 
     
     @Test
     @Rollback(false)
-    public void testValidaUsuario(){
+    public void testBusquedaPorNumeroTarjeta(){
         log.info("entro testValidaUsuario");
 
-        usuario = usuarioServiceCtx.findUsuarioByLogueo("prios", "prios3");
-        log.info("Apellido Paterno:"+ usuario.getApe_paterno());
-        Assert.assertNotNull(usuario);
+        cliente = clienteServiceCtx.findCustomerByTarjeta(123L);
+        log.info("Apellido Paterno:"+ cliente.getApe_paterno());
+        Assert.assertNotNull(cliente);
     }
 
     

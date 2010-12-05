@@ -10,12 +10,13 @@
             <script type="text/javascript" src="<%=request.getContextPath()%>/common/prototype.js"></script>
             <script type="text/javascript" src="<%=request.getContextPath()%>/common/validaciones.js"></script>
             <script type="text/javascript">
+                function validar(){
+                     if(blancoJSF('formVenta:numTarjeta', "Ingrese número de tarjeta") == false)return false;
+                }
+
                  function validarForm(){
-                    if($F('tbxTarjeta')==''){
-                        alert('Ingrese número de tarjeta');
-                        $('tbxTarjeta').focus();
-                        return false;
-                    }
+                    if(blancoJSF('formVenta:numTarjeta', "Ingrese número de tarjeta") == false)return false;
+                  
                     else if($F('tbxTitular')==''){
                         alert('Ingrese nombre del titular');
                         $('tbxTitular').focus();
@@ -55,6 +56,7 @@
             </meta>
         </head>
         <body>
+
             <div id="logo">
                 <h1><h:outputText value="#{msgs.nombre_sistema}"/></h1>
             </div>
@@ -65,21 +67,25 @@
             <hr />
             <!-- end #logo -->
             <!-- end #header -->
+            <h:form id="formVenta">
             <div id="page">
                 <div id="page-bgtop">
                     <div id="content">
                         <div class="post">
                             <h2 class="title"><a href="#">Registro de Venta</a></h2>
                             <div class="entry">
-                                <h:form id="formVenta">
+                               
                                     <table border="0" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td>N&uacute;mero de Tarjeta:</td>
-                                            <td style="padding:2px;"><input id="tbxTarjeta" name='tbxTarjeta' type='text' onkeypress="return soloNumeros(event)"/></td>
+                                            <td style="padding:2px;"><h:inputText id="numTarjeta" value="#{ventaBean.numTarjeta}" onkeypress="return soloNumeros(event)" maxlength="20"/>&nbsp;&nbsp;&nbsp;
+                                                <h:commandLink action="#{ventaBean.findCustomer}" onclick="return validar();"><img src="images/find.png"/></h:commandLink>
+                                            </td>
+                                           
                                         </tr>
                                         <tr>
                                             <td>Titular:</td>
-                                            <td style="padding:2px;"><input id="tbxTitular" name='tbxTitular' type='text'/></td>
+                                            <td style="padding:2px;"><h:inputText id="nomCliente" value="#{ventaBean.nomCliente}" size="40" disabled="true"/></td>
                                         </tr>
                                         <tr>
                                             <td>Pel&iacute;cula:</td>
@@ -159,9 +165,9 @@
                                         <td style="padding:2px;">&nbsp;</td>
                                         </tr>
                                         <tr><td></td><td><input type="submit" value="Aceptar" onclick="return validarForm();" /><input type="submit" value="Cancelar" /></td></tr>
-                                    </table>
-                                </h:form>
+                                    </table> 
                             </div>
+
                         </div>
                         <div style="clear: both;">&nbsp;</div>
                     </div>
@@ -185,6 +191,7 @@
                     <div style="clear: both;">&nbsp;</div>
                 </div>
             </div>
+           </h:form>
             <!-- end #page -->
             <div id="footer">
                 <p>Copyright (c) 2010 Cinepelis.com. All rights reserved.</p>

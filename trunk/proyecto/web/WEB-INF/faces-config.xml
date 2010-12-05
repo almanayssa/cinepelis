@@ -34,8 +34,14 @@
     <managed-bean>
         <managed-bean-name>carteleraBean</managed-bean-name>
         <managed-bean-class>edu.upc.dew.cinepelis.controller.jsf.CarteleraJSF</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
 
-        <managed-bean-scope>session</managed-bean-scope></managed-bean>
+    <managed-bean>
+        <managed-bean-name>ventaBean</managed-bean-name>
+        <managed-bean-class>edu.upc.dew.cinepelis.controller.jsf.VentaJSF</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
 
     <managed-bean>
         <managed-bean-name>utilBean</managed-bean-name>
@@ -86,6 +92,16 @@
         <navigation-case>
             <from-outcome>cartelera</from-outcome>
             <to-view-id>/mantenimiento_cartelera.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+
+
+     <navigation-rule>
+        <from-view-id>/*</from-view-id>
+        <navigation-case>
+            <from-outcome>venta</from-outcome>
+            <to-view-id>/venta_entrada.jsp</to-view-id>
             <redirect/>
         </navigation-case>
     </navigation-rule>

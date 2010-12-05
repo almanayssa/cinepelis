@@ -6,8 +6,8 @@
         <Node id="venta_entrada.jsp" x="608" y="527" zoom="true"/>
         <Node id="index.jsp" x="129" y="355" zoom="true"/>
         <Node id="common/menu_include.jsp" x="87" y="252" zoom="true"/>
-        <Node id="common/header_include.jsp" x="79" y="299" zoom="true"/>
         <Node id="*" x="822" y="350" zoom="false"/>
+        <Node id="common/header_include.jsp" x="79" y="299" zoom="true"/>
         <Node id="estadistica_salas.jsp" x="905" y="138" zoom="false"/>
         <Node id="premium.jsp" x="132" y="161" zoom="false"/>
         <Node id="detalles.jsp" x="134" y="204" zoom="true"/>
