@@ -37,6 +37,7 @@ public class PeliculaBean {
     private String sinopsis;
     private String periodo;
     private String rutaImagen;
+    private boolean isVigente;
 
     public PeliculaBean() {
     }
@@ -143,6 +144,20 @@ public class PeliculaBean {
 
     public void setPeriodo(String periodo) {
         this.periodo = periodo;
+    }
+
+    /**
+     * @return the isVigente
+     */
+    public boolean isIsVigente() {
+        return isVigente;
+    }
+
+    /**
+     * @param isVigente the isVigente to set
+     */
+    public void setIsVigente(boolean isVigente) {
+        this.isVigente = isVigente;
     }
 
 

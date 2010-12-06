@@ -7,8 +7,11 @@ package edu.upc.dew.cinepelis.dao.ibatisImpl;
 
 import edu.upc.dew.cinepelis.dao.ibatis.PeliculaDAO;
 import edu.upc.dew.cinepelis.model.PeliculaBean;
+import edu.upc.dew.cinepelis.model.UsuarioBean;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 
 /**
@@ -86,4 +89,11 @@ public class PeliculaDAOMysql extends SqlMapClientDaoSupport implements Pelicula
         }
         return null;
     }
+
+    public void guardarPelicula(PeliculaBean pelicula) {
+       
+       getSqlMapClientTemplate().insert("guardarPelicula",pelicula);
+    }
+
+
 }
