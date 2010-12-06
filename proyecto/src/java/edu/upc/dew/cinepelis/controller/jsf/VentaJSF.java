@@ -5,8 +5,10 @@
 
 package edu.upc.dew.cinepelis.controller.jsf;
 
+import edu.upc.dew.cinepelis.common.util.ComboBean;
 import edu.upc.dew.cinepelis.common.util.GenericBean;
 import edu.upc.dew.cinepelis.model.ClienteBean;
+import java.util.List;
 
 /**
  *
@@ -16,6 +18,9 @@ public class VentaJSF extends  GenericBean{
 
     private String numTarjeta;
     private String nomCliente;
+    private String codeCartelera;
+    private List<ComboBean> lstCombo;
+
 
     public String getNumTarjeta() {
         return numTarjeta;
@@ -33,9 +38,32 @@ public class VentaJSF extends  GenericBean{
         this.nomCliente = nomCliente;
     }
 
+    public List<ComboBean> getLstCombo() {
+        return lstCombo;
+    }
+
+    public void setLstCombo(List<ComboBean> lstCombo) {
+        this.lstCombo = lstCombo;
+    }
+
+    public String getCodeCartelera() {
+        return codeCartelera;
+    }
+
+    public void setCodeCartelera(String codeCartelera) {
+        this.codeCartelera = codeCartelera;
+    }
+
+
+
+
+
+
 
     public String initVentas(){
         log.info("Entrando ... initVentas() - VentaJSF");
+
+        lstCombo= serviceFactory.getVentaService().getCarteleraForCombo();
         return "venta";
     }
 

@@ -85,15 +85,17 @@
                                         </tr>
                                         <tr>
                                             <td>Titular:</td>
-                                            <td style="padding:2px;"><h:inputText id="nomCliente" value="#{ventaBean.nomCliente}" size="40" disabled="true"/></td>
+                                            <td style="padding:2px;"><h:inputText id="nomCliente" value="#{ventaBean.nomCliente}" size="40" readonly="true"/></td>
                                         </tr>
                                         <tr>
                                             <td>Pel&iacute;cula:</td>
-                                            <td style="padding:2px;"><select id="cbxPelicula" name="cbxPelicula">
-                                            <option>Como Perros y Gatos 2 - Sala 1 - 6:30pm</option>
-                                            <option>Como Perros y Gatos 2 - Sala 1 - 8:30pm</option>
-                                            <option>Una Loca Pelicula de Vampiros - Sala 4 - 8:30pm</option>
-                                            </select></td>
+                                            <td style="padding:2px;">
+                                                <h:selectOneMenu id="menu1" value="#{ventaBean.codeCartelera}" style="width:220px;height:22px;font-size:10pt;font-family:arial;font-weight:normal;">
+                                                <s:selectItems value="#{ventaBean.lstCombo}" var="Combo" itemLabel="#{Combo.label}" itemValue="#{Combo.code}"/>
+                                            </h:selectOneMenu>
+
+
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>N&uacute;mero de entradas:</td>
