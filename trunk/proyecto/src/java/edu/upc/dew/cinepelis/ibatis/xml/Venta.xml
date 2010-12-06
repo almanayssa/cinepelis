@@ -2,6 +2,18 @@
 <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
 <sqlMap namespace="Venta" >
 
+     <typeAlias alias="beanCombo" type="edu.upc.dew.cinepelis.common.util.ComboBean"/>
+
+    <!-- Obtiene la Data del Reporte en una lista de mapas -->
+        <select id="getCarteleraForCombo" parameterClass="java.lang.Long" resultClass="beanCombo">
+		<![CDATA[
+		SELECT CONCAT(p.nombre,' - Sala',c.num_Sala,' - ',c.hora_inicio) as label,CONCAT(c.id_cartelera,'&',c.id_pelicula,'&',c.num_Sala) as code
+                FROM tb_cartelera c,tb_pelicula p
+                WHERE c.id_pelicula=p.id_pelicula and c.is_activo=1
+                ORDER BY p.nombre DESC
+		]]>
+	</select>
+
 
 	
 </sqlMap>    

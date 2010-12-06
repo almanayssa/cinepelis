@@ -56,6 +56,15 @@
 	<property name="carteleraDAO" ref="carteleraIbatis"/>
     </bean>
 
+     <!--  ****************************  VENTA **************************** -->
+    <bean id="ventaIbatis" class="edu.upc.dew.cinepelis.dao.ibatisImpl.VentaDAOMysql">
+     	  <property name="sqlMapClient"><ref bean="sqlMapClient"/></property>
+    </bean>
+
+    <bean id="ventaServiceCtx"  class="edu.upc.dew.cinepelis.serviceImpl.VentaServiceImpl">
+	<property name="ventaDAO" ref="ventaIbatis"/>
+    </bean>
+
  	
  
  

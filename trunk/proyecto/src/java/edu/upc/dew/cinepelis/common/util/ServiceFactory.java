@@ -7,6 +7,7 @@ import edu.upc.dew.cinepelis.service.ClienteService;
 import edu.upc.dew.cinepelis.service.EstadisticaService;
 import edu.upc.dew.cinepelis.service.PeliculaService;
 import edu.upc.dew.cinepelis.service.UsuarioService;
+import edu.upc.dew.cinepelis.service.VentaService;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -77,6 +78,15 @@ public class ServiceFactory implements ApplicationContextAware {
      */
     public PeliculaService getPeliculaService(){
     	return (PeliculaService)getBean("peliculaServiceCtx");
+    }
+
+
+    /**
+     *
+     * @return VentaService
+     */
+    public VentaService getVentaService(){
+    	return (VentaService)getBean("ventaServiceCtx");
     }
 
 
