@@ -55,41 +55,46 @@
                                     <h:form id="formPeli">
                                         <table border="0" cellpadding="0" cellspacing="0">
                                             <tr>
-                                                <td>Nombre:</td><td style="padding:2px;"><input id="tbxNombre" name='tbxNombre' type='text' size="50" maxlength="140"/></td>
+                                                <td>Nombre:</td><td style="padding:2px;"><h:inputText value="#{peliculaBean.nombre}" size="50" maxlength="140"></h:inputText></td>
                                             </tr>
                                             <tr>
-                                                <td>G&eacute;nero:</td><td style="padding:2px;"><select name="cbxGenero">
-                                                        <option value="DRAMA">Drama</option>
-                                                        <option value="COMEDIA">Comedia</option>
-                                                        <option value="ACCION">Acci&oacute;n</option>
-                                                        <option value="TERROR">Terror</option>
-                                                    </select></td>
+                                                <td>G&eacute;nero:</td><td style="padding:2px;">
+                                                    <h:selectOneMenu value="#{peliculaBean.genero}" id="genero">
+                                                        <f:selectItem itemLabel="Drama" itemValue="DRAMA"/>
+                                                        <f:selectItem itemLabel="Comedia" itemValue="COMEDIA"/>
+                                                        <f:selectItem itemLabel="Acci&oacute;n" itemValue="ACCION"/>
+                                                        <f:selectItem itemLabel="Terror" itemValue="TERROR"/>
+                                                    </h:selectOneMenu>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Duraci&oacute;n (minutos):</td>
-                                                <td style="padding:2px;"><input id="tbxDuracion" name='tbxDuracion' type='text' size="20" maxlength="4" onkeypress="return soloNumeros(event)"/></td></tr>
+                                                <td style="padding:2px;"><h:inputText value="#{peliculaBean.duracion}" size="20" maxlength="4" onkeypress="return soloNumeros(event)"></h:inputText></td></tr>
                                             <tr>
                                                 <td>Director:</td>
-                                                <td style="padding:2px;"><input id="tbxDirector" name='tbxDirector' type='text' size="50" maxlength="200"/></td></tr>
+                                                <td style="padding:2px;"><h:inputText value="#{peliculaBean.director}" size="50" maxlength="200"></h:inputText></td></tr>
                                             <tr>
                                                 <td>Actores Principales:</td>
-                                                <td style="padding:2px;"><textarea  id="tbxActores" name="tbxActores" cols="40"></textarea></td></tr>
+                                                <td style="padding:2px;"><h:inputTextarea value="#{peliculaBean.actores}" cols="40"></h:inputTextarea></td></tr>
                                             <tr>
                                                 <td>Censura:</td>
-                                                <td style="padding:2px;"><select name="cbxCensura">
-                                                        <option value="NINGUNA">Ninguna</option>
-                                                        <option value="M14">Mayores 14</option>
-                                                        <option value="M18">Mayores 18</option>
-                                                    </select></td></tr>
+                                                <td style="padding:2px;">
+                                                    <h:selectOneMenu value="#{peliculaBean.censura}" id="censura">
+                                                        <f:selectItem itemLabel="Ninguna" itemValue="NINGUNA"/>
+                                                        <f:selectItem itemLabel="Mayores 14" itemValue="M14"/>
+                                                        <f:selectItem itemLabel="Mayores 18" itemValue="M18"/>
+                                                    </h:selectOneMenu>
+                                                </td>
+                                            </tr>
                                             <tr>
                                                 <td>Sitio web:</td>
-                                                <td style="padding:2px;"><input  id="tbxSitioWeb" name='tbxSitioWeb' type='text' size="50" maxlength="200"/></td></tr>
+                                                <td style="padding:2px;"><h:inputText value="#{peliculaBean.sitioWeb}" size="50" maxlength="200"></h:inputText></td></tr>
                                             <tr>
                                                 <td>Sinopsis:</td>
-                                                <td style="padding:2px;"><textarea  id="tbxSinopsis" name="tbxSinopsis" cols="40"></textarea></td></tr>
+                                                <td style="padding:2px;"><h:inputTextarea value="#{peliculaBean.sinopsis}" cols="40"></td></tr>
                                             <tr>
                                                 <td>Ruta Foto:</td>
-                                                <td style="padding:2px;"><input  id="ruta_foto" name='ruta_foto' type='text' size="50" maxlength="200"/></td></tr>
+                                                <td style="padding:2px;"><h:inputText value="#{peliculaBean.rutaFoto}" size="50" maxlength="200"></h:inputText></td></tr>
                                             <tr>
                                                 <td></td>
                                                 <td style="padding:2px;">&nbsp;</td>
@@ -97,14 +102,13 @@
                                             <tr>
                                                 <td></td>
                                                 <td>
-                                                    <input type="submit" value="Guardar" onclick="return validarForm();" />
+                                                    <h:commandButton action="#{peliculaBean.guardarPelicula}" value="Guardar" onclick="return validarForm();"/>
                                                     <input type="button" value="Cancelar" />
                                                 </td>
                                             </tr>
                                         </table>
                                         <br/>
-                                        <h:dataTable id="peliculas"  value="#{peliculaBean.lstPelicula}"
-                                                     var="pelicula"  border="1" rows="5" headerClass="cabeceratabla">
+                                        <h:dataTable id="peliculas"  value="#{peliculaBean.lstPelicula}" var="pelicula"  border="1" rows="5" headerClass="cabeceratabla">
                                             <h:column>
                                                 <f:facet name="header"> <h:outputText  value="Nombre"/> </f:facet>
                                                 <h:outputText value="#{pelicula.nombre}" />
@@ -122,11 +126,8 @@
                                                 <h:outputText value="#{pelicula.tipoCensura}" />
                                             </h:column>
                                         </h:dataTable>
-
                                     </h:form>
-
                                 </div>
-
                             </div>
                             <div style="clear: both;">&nbsp;</div>
                         </div>
@@ -142,7 +143,7 @@
                                             <h:commandLink action="#{utilBean.logout}"><span style="color: #FFFFFF">Cerrar Sesi&oacute;n</span></h:commandLink>
                                         </div>
                                     </div>
-                                    </p>
+                                   
                                 </li>
                             </ul>
                         </div>
