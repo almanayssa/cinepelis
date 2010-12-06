@@ -14,6 +14,10 @@
                      if(blancoJSF('formVenta:numTarjeta', "Ingrese número de tarjeta") == false)return false;
                 }
 
+                function validarEntrada(){
+                       if(blancoJSF('formVenta:nomCliente', "Tiene que buscar al Titular de la Tarjeta.") == false)return false;
+                }
+
                  function validarForm(){
                     if(blancoJSF('formVenta:numTarjeta', "Ingrese número de tarjeta") == false)return false;
                   
@@ -90,17 +94,14 @@
                                         <tr>
                                             <td>Pel&iacute;cula:</td>
                                             <td style="padding:2px;">
-                                                <h:selectOneMenu id="menu1" value="#{ventaBean.codeCartelera}" style="width:220px;height:22px;font-size:10pt;font-family:arial;font-weight:normal;">
+                                            <h:selectOneMenu id="menu1" value="#{ventaBean.codeCartelera}" style="width:220px;height:22px;font-size:10pt;font-family:arial;font-weight:normal;">
                                                 <s:selectItems value="#{ventaBean.lstCombo}" var="Combo" itemLabel="#{Combo.label}" itemValue="#{Combo.code}"/>
                                             </h:selectOneMenu>
 
 
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>N&uacute;mero de entradas:</td>
-                                            <td style="padding:2px;"><input disabled="disabled" id="tbxEntradas" name='tbxEntradas' type='text' value="0" onkeypress="return soloNumeros(event)"/></td>
-                                        </tr>
+                                        
                                         <tr>
                                         <td valign="top">Ubicaci&oacute;n:</td>
                                         <td style="padding:2px;"><table width="269" border="1">
@@ -121,33 +122,43 @@
                                              <legend style="color: #FFFFFF">Selecci&oacute;n de butacas</legend>
                                              <table border = 0>
                                                  <tr>
+                                             <td>N&uacute;mero de entradas:</td>
+                                                <td style="padding:2px;"><input disabled="disabled" id="tbxEntradas" name='tbxEntradas' type='text' value="0" onkeypress="return soloNumeros(event)"/></td>
+                                            </tr>
+                                                 <tr>
                                                      <td>Butaca:</td>
-                                                     <td><select>
-                                                    <option value="1">A</option>
-                                                    <option value="1">B</option>
-                                                    <option value="1">C</option>
-                                                    <option value="1">D</option>
-                                                    <option value="1">F</option>
-                                                    <option value="1">G</option>
-                                                    <option value="1">H</option>
-                                                    <option value="1">I</option>
-                                                    </select>
-                                                         <select>
-                                                    <option value="1">1</option>
-                                                    <option value="1">2</option>
-                                                    <option value="1">3</option>
-                                                    <option value="1">4</option>
-                                                    <option value="1">5</option>
-                                                    <option value="1">6</option>
-                                                    <option value="1">7</option>
-                                                    <option value="1">8</option>
-                                                    <option value="1">9</option>
-                                                    <option value="1">10</option>
-                                                    <option value="1">11</option>
-                                                    <option value="1">12</option>
-                                                    </select>
+                                                     <td>
+
+                                                         <h:selectOneMenu id="filaButaca" value="#{ventaBean.filaButaca}">
+                                                             <f:selectItem  itemValue="A"  itemLabel="A"/>
+                                                             <f:selectItem  itemValue="B"  itemLabel="B"/>
+                                                             <f:selectItem  itemValue="C"  itemLabel="C"/>
+                                                             <f:selectItem  itemValue="D"  itemLabel="D"/>
+                                                             <f:selectItem  itemValue="E"  itemLabel="E"/>
+                                                             <f:selectItem  itemValue="F"  itemLabel="F"/>
+                                                             <f:selectItem  itemValue="G"  itemLabel="G"/>
+                                                             <f:selectItem  itemValue="H"  itemLabel="H"/>
+                                                             <f:selectItem  itemValue="I"  itemLabel="I"/>
+                                                         </h:selectOneMenu>
+                                                         &nbsp;&nbsp;
+                                                         <h:selectOneMenu id="columnaButaca" value="#{ventaBean.columnaButaca}">
+                                                             <f:selectItem  itemValue="1"  itemLabel="1"/>
+                                                             <f:selectItem  itemValue="2"  itemLabel="2"/>
+                                                             <f:selectItem  itemValue="3"  itemLabel="3"/>
+                                                             <f:selectItem  itemValue="4"  itemLabel="4"/>
+                                                             <f:selectItem  itemValue="5"  itemLabel="5"/>
+                                                             <f:selectItem  itemValue="6"  itemLabel="6"/>
+                                                             <f:selectItem  itemValue="7"  itemLabel="7"/>
+                                                             <f:selectItem  itemValue="8"  itemLabel="8"/>
+                                                             <f:selectItem  itemValue="9"  itemLabel="9"/>
+                                                             <f:selectItem  itemValue="10"  itemLabel="10"/>
+                                                             <f:selectItem  itemValue="11"  itemLabel="11"/>
+                                                             <f:selectItem  itemValue="12"  itemLabel="12"/>
+                                                         </h:selectOneMenu>
+                                                       
                                                      </td>
-                                                     <td><input type="button" value="Agregar"> </td>
+                                                     <td>  <h:commandButton  value="Agregar" action="#{ventaBean.agregarEntrada}"
+                                                                      onclick="return validarEntrada();"/> </td>
                                                  </tr>
                                              </table><BR>
 
