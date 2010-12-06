@@ -41,4 +41,10 @@ public class PeliculaServiceImpl implements PeliculaService{
         return null;
 
     }
+
+    public void guardarPelicula(PeliculaBean pelicula) {
+
+
+        
+    }
 }

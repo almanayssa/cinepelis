@@ -179,6 +179,17 @@ public class PeliculaJSF extends GenericBean {
     }
 
     public void guardarPelicula(){
-        System.out.println("estrellada :)");
+        PeliculaBean pelicula = new PeliculaBean();
+        pelicula.setNombre(nombre);
+        pelicula.setGenero(genero);
+        pelicula.setDuracionMinutos(Integer.parseInt(duracion));
+        pelicula.setDirector(director);
+        pelicula.setActoresPrincipales(actores);
+        pelicula.setTipoCensura(censura);
+        pelicula.setSitioWeb(sitioWeb);
+        pelicula.setSinopsis(sinopsis);
+        pelicula.setRutaImagen(null);
+        pelicula.setIsVigente(true);
+        serviceFactory.getPeliculaService().guardarPelicula(pelicula);
     }
 }
