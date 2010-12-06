@@ -62,7 +62,7 @@
                                                     <h:selectOneMenu value="#{peliculaBean.genero}" id="genero">
                                                         <f:selectItem itemLabel="Drama" itemValue="DRAMA"/>
                                                         <f:selectItem itemLabel="Comedia" itemValue="COMEDIA"/>
-                                                        <f:selectItem itemLabel="Acci&oacute;n" itemValue="ACCION"/>
+                                                        <f:selectItem itemLabel="Accion" itemValue="ACCION"/>
                                                         <f:selectItem itemLabel="Terror" itemValue="TERROR"/>
                                                     </h:selectOneMenu>
                                                 </td>
@@ -91,7 +91,7 @@
                                                 <td style="padding:2px;"><h:inputText value="#{peliculaBean.sitioWeb}" size="50" maxlength="200"></h:inputText></td></tr>
                                             <tr>
                                                 <td>Sinopsis:</td>
-                                                <td style="padding:2px;"><h:inputTextarea value="#{peliculaBean.sinopsis}" cols="40"></td></tr>
+                                                <td style="padding:2px;"><h:inputTextarea value="#{peliculaBean.sinopsis}" cols="40"></h:inputTextarea></td></tr>
                                             <tr>
                                                 <td>Ruta Foto:</td>
                                                 <td style="padding:2px;"><h:inputText value="#{peliculaBean.rutaFoto}" size="50" maxlength="200"></h:inputText></td></tr>
@@ -143,7 +143,7 @@
                                             <h:commandLink action="#{utilBean.logout}"><span style="color: #FFFFFF">Cerrar Sesi&oacute;n</span></h:commandLink>
                                         </div>
                                     </div>
-                                   
+                                    <p/>
                                 </li>
                             </ul>
                         </div>
