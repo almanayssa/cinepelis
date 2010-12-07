@@ -13,6 +13,7 @@ import edu.upc.dew.cinepelis.model.ClienteBean;
 import edu.upc.dew.cinepelis.model.DetalleVentaBean;
 import edu.upc.dew.cinepelis.model.UsuarioBean;
 import java.util.List;
+import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -23,6 +24,7 @@ import javax.servlet.http.HttpSession;
  */
 public class VentaJSF extends  GenericBean{
 
+    private List<DetalleVentaBean> lstEntradas;
     private String numTarjeta;
     private String nomCliente;
     private String codeCartelera;
@@ -109,6 +111,14 @@ public class VentaJSF extends  GenericBean{
         this.montoTotal = montoTotal;
     }
 
+    public List<DetalleVentaBean> getLstEntradas() {
+        return lstEntradas;
+    }
+
+    public void setLstEntradas(List<DetalleVentaBean> lstEntradas) {
+        this.lstEntradas = lstEntradas;
+    }
+
     
 
     
@@ -129,6 +139,12 @@ public class VentaJSF extends  GenericBean{
 
         ClienteBean cliente = serviceFactory.getClienteService().findCustomerByTarjeta(Long.valueOf(numTarjeta));
 
+        if(cliente==null){
+           FacesContext.getCurrentInstance().addMessage("formVenta",
+                    new FacesMessage(FacesMessage.SEVERITY_ERROR, "Numero de Tarjeta no existe.", null));
+            return null;
+        }
+
         String nombreCompleto = cliente.getNombre()+" "+cliente.getApe_paterno()+" "+cliente.getApe_materno();
 
         idCliente=cliente.getId_cliente();
@@ -147,7 +163,7 @@ public class VentaJSF extends  GenericBean{
 
          UsuarioBean usuario = (UsuarioBean)session.getAttribute("beanUsuario");
 
-         if(!operacion_is_activa){
+         if(operacion_is_activa==false){
              String[] datos = codeCartelera.split("&");
 
              String idCartelera = datos[0];
@@ -179,10 +195,14 @@ public class VentaJSF extends  GenericBean{
          detalle.setNum_butaca(filaButaca+"&"+columnaButaca);
 
          boolean insert = serviceFactory.getVentaService().insertDetalleVenta(detalle);
+         operacion_is_activa = insert;
          cantidadEntradas++;
          montoTotal= ""+(cantidadEntradas * Utils.PRECIO_ENTRADA);
          
-         if(insert) return "venta";
+         if(insert){
+             lstEntradas = serviceFactory.getVentaService().getEntradasByCabecera(idCabecera);
+             return "venta";
+         }
          else{
              resetForm();
              return "inicio";
@@ -203,6 +223,7 @@ public class VentaJSF extends  GenericBean{
         numTarjeta = null;
         idCliente = null;
         nomCliente = null;
+        lstEntradas= null;
     }
 
 

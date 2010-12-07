@@ -43,6 +43,10 @@ public class VentaServiceImpl implements  VentaService{
     public boolean insertDetalleVenta(DetalleVentaBean detalle) {
         return getVentaDAO().insertDetalleVenta(detalle);
     }
+
+    public List<DetalleVentaBean> getEntradasByCabecera(Long idCabecera) {
+        return getVentaDAO().getEntradasByCabecera(idCabecera);
+    }
     
 
 

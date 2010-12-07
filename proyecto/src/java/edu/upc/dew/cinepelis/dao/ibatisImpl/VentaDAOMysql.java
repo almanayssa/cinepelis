@@ -52,6 +52,16 @@ public class VentaDAOMysql extends SqlMapClientDaoSupport implements VentaDAO{
 
     }
 
+    public List<DetalleVentaBean> getEntradasByCabecera(Long idCabecera) {
+         try{
+            return (List<DetalleVentaBean>)getSqlMapClientTemplate().queryForList("getEntradasByCabecera", idCabecera);
+	 }catch (Exception e) {
+		e.printStackTrace();
+		System.out.println("Error en el ibatis - method getEntradasByCabecera()");
+		return null;
+	}
+    }
+
 
 
     

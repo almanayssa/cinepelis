@@ -43,6 +43,7 @@
             <hr />
             <!-- end #logo -->
             <!-- end #header -->
+            <h:form id="formPeli">
             <div id="page">
                 <div id="page-bgtop">
                     <div id="page-bgbtm">
@@ -52,7 +53,7 @@
 
                                 <h2 class="title"><a href="#">Gesti&oacute;n Pelicula</a></h2>
                                 <div class="entry">
-                                    <h:form id="formPeli">
+                                 
                                         <table border="0" cellpadding="0" cellspacing="0">
                                             <tr>
                                                 <td>Nombre:</td><td style="padding:2px;"><h:inputText value="#{peliculaBean.nombre}" size="50" maxlength="140"></h:inputText></td>
@@ -126,7 +127,7 @@
                                                 <h:outputText value="#{pelicula.tipoCensura}" />
                                             </h:column>
                                         </h:dataTable>
-                                    </h:form>
+                                   
                                 </div>
                             </div>
                             <div style="clear: both;">&nbsp;</div>
@@ -153,6 +154,7 @@
                 </div>
                 <!-- end #content -->
             </div>
+            </h:form>
             <!-- end #page -->
             <div id="footer">
                 <p>Copyright (c) 2010 Cinepelis.com. All rights reserved.</p>
