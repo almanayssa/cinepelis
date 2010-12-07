@@ -42,9 +42,7 @@ public class PeliculaServiceImpl implements PeliculaService{
 
     }
 
-    public void guardarPelicula(PeliculaBean pelicula) {
-
-
-        
+    public Long guardarPelicula(PeliculaBean pelicula) {
+        return getPeliculaDAO().guardarPelicula(pelicula);
     }
 }

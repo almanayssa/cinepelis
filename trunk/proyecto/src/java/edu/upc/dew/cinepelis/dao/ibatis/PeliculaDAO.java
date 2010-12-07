@@ -18,5 +18,5 @@ public interface PeliculaDAO {
 
      public PeliculaBean getPeliculaById(String id);
 
-     public void guardarPelicula(PeliculaBean pelicula);
+     public Long guardarPelicula(PeliculaBean pelicula);
 }

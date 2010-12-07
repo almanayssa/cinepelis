@@ -69,17 +69,17 @@
                                             </tr>
                                             <tr>
                                                 <td>Duraci&oacute;n (minutos):</td>
-                                                <td style="padding:2px;"><h:inputText value="#{peliculaBean.duracion}" size="20" maxlength="4" onkeypress="return soloNumeros(event)"></h:inputText></td></tr>
+                                                <td style="padding:2px;"><h:inputText value="#{peliculaBean.duracionMinutos}" size="20" maxlength="4" onkeypress="return soloNumeros(event)"></h:inputText></td></tr>
                                             <tr>
                                                 <td>Director:</td>
                                                 <td style="padding:2px;"><h:inputText value="#{peliculaBean.director}" size="50" maxlength="200"></h:inputText></td></tr>
                                             <tr>
                                                 <td>Actores Principales:</td>
-                                                <td style="padding:2px;"><h:inputTextarea value="#{peliculaBean.actores}" cols="40"></h:inputTextarea></td></tr>
+                                                <td style="padding:2px;"><h:inputTextarea value="#{peliculaBean.actoresPrincipales}" cols="40"></h:inputTextarea></td></tr>
                                             <tr>
                                                 <td>Censura:</td>
                                                 <td style="padding:2px;">
-                                                    <h:selectOneMenu value="#{peliculaBean.censura}" id="censura">
+                                                    <h:selectOneMenu value="#{peliculaBean.tipoCensura}" id="censura">
                                                         <f:selectItem itemLabel="Ninguna" itemValue="NINGUNA"/>
                                                         <f:selectItem itemLabel="Mayores 14" itemValue="M14"/>
                                                         <f:selectItem itemLabel="Mayores 18" itemValue="M18"/>
@@ -94,7 +94,7 @@
                                                 <td style="padding:2px;"><h:inputTextarea value="#{peliculaBean.sinopsis}" cols="40"></h:inputTextarea></td></tr>
                                             <tr>
                                                 <td>Ruta Foto:</td>
-                                                <td style="padding:2px;"><h:inputText value="#{peliculaBean.rutaFoto}" size="50" maxlength="200"></h:inputText></td></tr>
+                                                <td style="padding:2px;"><h:inputText value="#{peliculaBean.rutaImagen}" size="50" maxlength="200"></h:inputText></td></tr>
                                             <tr>
                                                 <td></td>
                                                 <td style="padding:2px;">&nbsp;</td>

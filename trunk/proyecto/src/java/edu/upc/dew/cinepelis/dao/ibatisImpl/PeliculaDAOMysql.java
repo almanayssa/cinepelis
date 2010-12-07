@@ -22,7 +22,15 @@ public class PeliculaDAOMysql extends SqlMapClientDaoSupport implements Pelicula
 
     public List<PeliculaBean> getPeliculas() {
 
-       List<PeliculaBean> lstPelicula = new ArrayList<PeliculaBean>();
+        try{
+            return (List<PeliculaBean>)getSqlMapClientTemplate().queryForList("listarPeliculas", null);
+	 }catch (Exception e) {
+		e.printStackTrace();
+		System.out.println("Error en el ibatis - method getPeliculas()");
+		return null;
+	}
+
+       /*List<PeliculaBean> lstPelicula = new ArrayList<PeliculaBean>();
        PeliculaBean pel = new PeliculaBean();
        pel.setId_pelicula(Long.valueOf(3));
        pel.setNombre("Una Loca Pelicula de Vampiros");
@@ -77,7 +85,7 @@ public class PeliculaDAOMysql extends SqlMapClientDaoSupport implements Pelicula
        pel.setRutaImagen("/images/min03.jpg");
        lstPelicula.add(pel);
 
-       return lstPelicula;
+       return lstPelicula;*/
     }
 
     public PeliculaBean getPeliculaById(String id) {
@@ -90,9 +98,14 @@ public class PeliculaDAOMysql extends SqlMapClientDaoSupport implements Pelicula
         return null;
     }
 
-    public void guardarPelicula(PeliculaBean pelicula) {
-       
-       getSqlMapClientTemplate().insert("guardarPelicula",pelicula);
+    public Long guardarPelicula(PeliculaBean pelicula) {
+       try{
+		return (Long)getSqlMapClientTemplate().insert("guardarPelicula", pelicula);
+	}catch (Exception e) {
+		e.printStackTrace();
+		System.out.println("Error en el ibatis - method guardarPelicula()");
+		return null;
+	}
     }
 
 

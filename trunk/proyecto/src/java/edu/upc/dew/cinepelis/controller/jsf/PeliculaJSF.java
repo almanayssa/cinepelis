@@ -15,16 +15,17 @@ import java.util.List;
  */
 public class PeliculaJSF extends GenericBean {
 
-    List<PeliculaBean> lstPelicula;
+    private List<PeliculaBean> lstPelicula;
     private String nombre;
     private String genero;
-    private String duracion;
+    private int duracionMinutos;
     private String director;
-    private String actores;
-    private String censura;
+    private String actoresPrincipales;
+    private String tipoCensura;
     private String sitioWeb;
     private String sinopsis;
-    private String rutaFoto;
+    private String rutaImagen;
+    private boolean isVigente;
     
     public String initPeliculas(){
         log.info("Entrando ... initPeliculas() - PeliculaJSF");
@@ -34,7 +35,7 @@ public class PeliculaJSF extends GenericBean {
         try {
 
             lstPelicula = serviceFactory.getPeliculaService().getPeliculas();
-            for(PeliculaBean pelicula: lstPelicula){
+            for(PeliculaBean pelicula: getLstPelicula()){
                 System.out.println(pelicula.getNombre());
             }
 
@@ -81,20 +82,6 @@ public class PeliculaJSF extends GenericBean {
     }
 
     /**
-     * @return the duracion
-     */
-    public String getDuracion() {
-        return duracion;
-    }
-
-    /**
-     * @param duracion the duracion to set
-     */
-    public void setDuracion(String duracion) {
-        this.duracion = duracion;
-    }
-
-    /**
      * @return the director
      */
     public String getDirector() {
@@ -106,34 +93,6 @@ public class PeliculaJSF extends GenericBean {
      */
     public void setDirector(String director) {
         this.director = director;
-    }
-
-    /**
-     * @return the actores
-     */
-    public String getActores() {
-        return actores;
-    }
-
-    /**
-     * @param actores the actores to set
-     */
-    public void setActores(String actores) {
-        this.actores = actores;
-    }
-
-    /**
-     * @return the censura
-     */
-    public String getCensura() {
-        return censura;
-    }
-
-    /**
-     * @param censura the censura to set
-     */
-    public void setCensura(String censura) {
-        this.censura = censura;
     }
 
     /**
@@ -164,32 +123,107 @@ public class PeliculaJSF extends GenericBean {
         this.sinopsis = sinopsis;
     }
 
-    /**
-     * @return the rutaFoto
+        /**
+     * @return the duracionMinutos
      */
-    public String getRutaFoto() {
-        return rutaFoto;
+    public int getDuracionMinutos() {
+        return duracionMinutos;
     }
 
     /**
-     * @param rutaFoto the rutaFoto to set
+     * @param duracionMinutos the duracionMinutos to set
      */
-    public void setRutaFoto(String rutaFoto) {
-        this.rutaFoto = rutaFoto;
+    public void setDuracionMinutos(int duracionMinutos) {
+        this.duracionMinutos = duracionMinutos;
     }
 
-    public void guardarPelicula(){
+    /**
+     * @return the actoresPrincipales
+     */
+    public String getActoresPrincipales() {
+        return actoresPrincipales;
+    }
+
+    /**
+     * @param actoresPrincipales the actoresPrincipales to set
+     */
+    public void setActoresPrincipales(String actoresPrincipales) {
+        this.actoresPrincipales = actoresPrincipales;
+    }
+
+    /**
+     * @return the tipoCensura
+     */
+    public String getTipoCensura() {
+        return tipoCensura;
+    }
+
+    /**
+     * @param tipoCensura the tipoCensura to set
+     */
+    public void setTipoCensura(String tipoCensura) {
+        this.tipoCensura = tipoCensura;
+    }
+
+    /**
+     * @return the rutaImagen
+     */
+    public String getRutaImagen() {
+        return rutaImagen;
+    }
+
+    /**
+     * @param rutaImagen the rutaImagen to set
+     */
+    public void setRutaImagen(String rutaImagen) {
+        this.rutaImagen = rutaImagen;
+    }
+
+    /**
+     * @return the isVigente
+     */
+    public boolean isIsVigente() {
+        return isVigente;
+    }
+
+    /**
+     * @param isVigente the isVigente to set
+     */
+    public void setIsVigente(boolean isVigente) {
+        this.isVigente = isVigente;
+    }
+
+    public String guardarPelicula(){
+        log.info("Entrando ... guardarPelicula() - PeliculaJSF");
+
         PeliculaBean pelicula = new PeliculaBean();
-        pelicula.setNombre(nombre);
-        pelicula.setGenero(genero);
-        pelicula.setDuracionMinutos(Integer.parseInt(duracion));
-        pelicula.setDirector(director);
-        pelicula.setActoresPrincipales(actores);
-        pelicula.setTipoCensura(censura);
-        pelicula.setSitioWeb(sitioWeb);
-        pelicula.setSinopsis(sinopsis);
+        pelicula.setNombre(getNombre());
+        pelicula.setGenero(getGenero());
+        pelicula.setDuracionMinutos(duracionMinutos);
+        pelicula.setDirector(getDirector());
+        pelicula.setActoresPrincipales(actoresPrincipales);
+        pelicula.setTipoCensura(tipoCensura);
+        pelicula.setSitioWeb(getSitioWeb());
+        pelicula.setSinopsis(getSinopsis());
         pelicula.setRutaImagen(null);
         pelicula.setIsVigente(true);
-        serviceFactory.getPeliculaService().guardarPelicula(pelicula);
+        
+        Long idPelicula = serviceFactory.getPeliculaService().guardarPelicula(pelicula);
+        resetForm();
+
+        return "peliculas";
     }
+
+    public void resetForm(){
+        nombre = null;
+        genero = null;
+        duracionMinutos = 0;
+        director = null;
+        actoresPrincipales = null;
+        tipoCensura = null;
+        sitioWeb = null;
+        sinopsis = null;
+        rutaImagen = null;
+    }
+
 }
