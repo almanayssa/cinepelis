@@ -116,5 +116,11 @@
         </navigation-case>
     </navigation-rule>
 
-
+    <navigation-rule>
+        <from-view-id>/venta_entrada.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>inicio</from-outcome>
+            <to-view-id>/inicio.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
 </faces-config>

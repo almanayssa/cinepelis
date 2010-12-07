@@ -123,7 +123,7 @@
                                              <table border = 0>
                                                  <tr>
                                              <td>N&uacute;mero de entradas:</td>
-                                                <td style="padding:2px;"><input disabled="disabled" id="tbxEntradas" name='tbxEntradas' type='text' value="0" onkeypress="return soloNumeros(event)"/></td>
+                                                <td style="padding:2px;"><h:inputText id="cantidadEntradas"  value="#{ventaBean.cantidadEntradas}" size="10" readonly="true"/></td>
                                             </tr>
                                                  <tr>
                                                      <td>Butaca:</td>
@@ -169,15 +169,15 @@
                                         </tr>
                                         <tr><td>&nbsp;</td></tr>
                                         <tr>
-                                        <td>Monto Total:</td>
-                                        <td style="padding:2px;"><input id="tbxMonto" name='tbxMonto' type='text'/></td>
+                                        <td>Monto Total (s/.):</td>
+                                        <td style="padding:2px;"><h:inputText id="montoTotal"   value="#{ventaBean.montoTotal}" size="10" readonly="true"/></td>
                                         </tr>
 
                                         <tr>
                                         <td></td>
                                         <td style="padding:2px;">&nbsp;</td>
                                         </tr>
-                                        <tr><td></td><td><input type="submit" value="Aceptar" onclick="return validarForm();" /><input type="submit" value="Cancelar" /></td></tr>
+                                        <tr><td></td><td> <h:commandButton  value="Terminar Operacion" action="#{ventaBean.terminarOperacion}"/></td></tr>
                                     </table> 
                             </div>
 

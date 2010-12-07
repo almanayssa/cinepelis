@@ -5,12 +5,12 @@
     <typeAlias alias="beanPelicula" type="edu.upc.dew.cinepelis.model.PeliculaBean"/>
 
     <select id="listarPeliculas" parameterClass="java.lang.Long" resultClass="beanPelicula">
-		<![CDATA[
+            <![CDATA[
 		SELECT nombre, duracion, director, censura
                 FROM tb_pelicula
                 WHERE is_vigente=1
                 ORDER BY nombre
-		]]>
+            ]]>
     </select>
 
     <insert id="guardarPelicula" parameterClass="beanPelicula">

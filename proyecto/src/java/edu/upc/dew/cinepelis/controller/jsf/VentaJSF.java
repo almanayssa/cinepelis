@@ -10,6 +10,7 @@ import edu.upc.dew.cinepelis.common.util.GenericBean;
 import edu.upc.dew.cinepelis.common.util.Utils;
 import edu.upc.dew.cinepelis.model.CabeceraVentaBean;
 import edu.upc.dew.cinepelis.model.ClienteBean;
+import edu.upc.dew.cinepelis.model.DetalleVentaBean;
 import edu.upc.dew.cinepelis.model.UsuarioBean;
 import java.util.List;
 import javax.faces.context.FacesContext;
@@ -29,6 +30,11 @@ public class VentaJSF extends  GenericBean{
     private Long idCliente;
     private String filaButaca;
     private String columnaButaca;
+    private int cantidadEntradas = 0;
+    private String montoTotal = "0.00";
+
+    private boolean operacion_is_activa = false;
+    private Long idCabecera;
 
 
     public String getNumTarjeta() {
@@ -87,6 +93,22 @@ public class VentaJSF extends  GenericBean{
         this.columnaButaca = columnaButaca;
     }
 
+    public int getCantidadEntradas() {
+        return cantidadEntradas;
+    }
+
+    public void setCantidadEntradas(int cantidadEntradas) {
+        this.cantidadEntradas = cantidadEntradas;
+    }
+
+    public String getMontoTotal() {
+        return montoTotal;
+    }
+
+    public void setMontoTotal(String montoTotal) {
+        this.montoTotal = montoTotal;
+    }
+
     
 
     
@@ -125,36 +147,59 @@ public class VentaJSF extends  GenericBean{
 
          UsuarioBean usuario = (UsuarioBean)session.getAttribute("beanUsuario");
 
-         String[] datos = codeCartelera.split("&");
+         if(!operacion_is_activa){
+             String[] datos = codeCartelera.split("&");
 
-         String idCartelera = datos[0];
-         String idPelicula = datos[1];
-         String numSala = datos[2];
+             String idCartelera = datos[0];
+             String idPelicula = datos[1];
+             String numSala = datos[2];
+
+             log.info("idCliente:"+idCliente);
+             log.info("code:"+codeCartelera);
+             log.info("Nombre:"+usuario.getNombre());
+             log.info("idCartelera:"+idCartelera);
+             log.info("idPelicula:"+idPelicula);
+             log.info("numSala:"+numSala);
+
+             CabeceraVentaBean cabeceraVenta = new CabeceraVentaBean();
+
+             cabeceraVenta.setCant_entradas(2);
+             cabeceraVenta.setFecha_venta(Utils.getNowTimestamp());
+             cabeceraVenta.setId_cartelera(Long.valueOf(idCartelera));
+             cabeceraVenta.setId_cliente(Long.valueOf(idCliente));
+             cabeceraVenta.setId_usuario(usuario.getId_usuario());
+             cabeceraVenta.setMonto_total(cabeceraVenta.getCant_entradas() * Utils.PRECIO_ENTRADA);
+
+             idCabecera = serviceFactory.getVentaService().insertCabecera(cabeceraVenta);
+         }
          
-         log.info("idCliente:"+idCliente);
-         log.info("code:"+codeCartelera);
-         log.info("Nombre:"+usuario.getNombre());
-         log.info("idCartelera:"+idCartelera);
-         log.info("idPelicula:"+idPelicula);
-         log.info("numSala:"+numSala);
+
+         DetalleVentaBean detalle = new DetalleVentaBean();
+         detalle.setId_venta(idCabecera);
+         detalle.setNum_butaca(filaButaca+"&"+columnaButaca);
+
+         boolean insert = serviceFactory.getVentaService().insertDetalleVenta(detalle);
+         cantidadEntradas++;
+         montoTotal= ""+(cantidadEntradas * Utils.PRECIO_ENTRADA);
          
-         CabeceraVentaBean cabeceraVenta = new CabeceraVentaBean();
-         
-         cabeceraVenta.setCant_entradas(2);
-         cabeceraVenta.setFecha_venta(Utils.getNowTimestamp());
-         cabeceraVenta.setId_cartelera(Long.valueOf(idCartelera));
-         cabeceraVenta.setId_cliente(Long.valueOf(idCliente));
-         cabeceraVenta.setId_usuario(usuario.getId_usuario());
-         cabeceraVenta.setMonto_total(cabeceraVenta.getCant_entradas() * Utils.PRECIO_ENTRADA);
+         if(insert) return "venta";
+         else{
+             resetForm();
+             return "inicio";
+         }
 
-         Long idCabecera = serviceFactory.getVentaService().insertCabecera(cabeceraVenta);
 
-         resetForm();
+    }
 
-        return "venta";
+    public String terminarOperacion(){
+        resetForm();
+        return "inicio";
     }
 
     public void resetForm(){
+        cantidadEntradas = 0;
+        montoTotal="0.00";
+        operacion_is_activa = false;
         numTarjeta = null;
         idCliente = null;
         nomCliente = null;
