@@ -8,6 +8,7 @@ package edu.upc.dew.cinepelis.dao.ibatisImpl;
 import edu.upc.dew.cinepelis.common.util.ComboBean;
 import edu.upc.dew.cinepelis.dao.ibatis.VentaDAO;
 import edu.upc.dew.cinepelis.model.CabeceraVentaBean;
+import edu.upc.dew.cinepelis.model.DetalleVentaBean;
 
 import java.util.List;
 import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
@@ -36,6 +37,18 @@ public class VentaDAOMysql extends SqlMapClientDaoSupport implements VentaDAO{
 		System.out.println("Error en el ibatis - method insertCabecera()");
 		return null;
 	}
+
+    }
+
+    public boolean insertDetalleVenta(DetalleVentaBean detalle) {
+            try{
+		getSqlMapClientTemplate().insert("insertDetalleVenta",detalle);
+		return true;
+            }catch (Exception e) {
+            	e.printStackTrace();
+		System.out.println("Error en el ibatis - method insertDetalleVenta()");
+		return false;
+            }
 
     }
 

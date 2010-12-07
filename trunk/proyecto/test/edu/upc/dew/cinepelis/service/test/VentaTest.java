@@ -9,6 +9,7 @@ import edu.upc.dew.cinepelis.common.test.TestTransactional;
 import edu.upc.dew.cinepelis.common.util.ComboBean;
 import edu.upc.dew.cinepelis.common.util.Utils;
 import edu.upc.dew.cinepelis.model.CabeceraVentaBean;
+import edu.upc.dew.cinepelis.model.DetalleVentaBean;
 import edu.upc.dew.cinepelis.service.VentaService;
 import java.util.List;
 
@@ -58,7 +59,8 @@ public class VentaTest extends  TestTransactional {
 
         Assert.assertNotNull(lstCartelera);
     }
-
+    
+    @Ignore
     @Test
     @Rollback(false)
     public void testInsertaCabecera(){
@@ -67,6 +69,21 @@ public class VentaTest extends  TestTransactional {
 
         Assert.assertEquals(idCabecera, Long.valueOf(1));
     }
+
+
+    @Test
+    @Rollback(false)
+    public void testInsertaDetalle(){
+
+        DetalleVentaBean detalle = new DetalleVentaBean();
+        detalle.setId_venta(1L);
+        detalle.setNum_butaca("A&1");
+
+        boolean insert = ventaServiceCtx.insertDetalleVenta(detalle);
+
+        Assert.assertEquals(true, insert);
+    }
+
 
     
 

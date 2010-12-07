@@ -4,6 +4,7 @@
 
      <typeAlias alias="beanCombo" type="edu.upc.dew.cinepelis.common.util.ComboBean"/>
      <typeAlias alias="beanCabeceraVenta" type="edu.upc.dew.cinepelis.model.CabeceraVentaBean"/>
+     <typeAlias alias="beanDetalleVenta" type="edu.upc.dew.cinepelis.model.DetalleVentaBean"/>
 
     <!-- Obtiene la Data del Reporte en una lista de mapas -->
         <select id="getCarteleraForCombo" parameterClass="java.lang.Long" resultClass="beanCombo">
@@ -40,6 +41,26 @@
       		select last_insert_id() as id_venta
                 </selectKey>
 	</insert>
+
+        <!-- inserta un registro en la tabla tb_venta a partir del beanDetalleVenta-->
+	<insert id="insertDetalleVenta" parameterClass="beanDetalleVenta">
+		<![CDATA[
+			INSERT	tb_detalle_venta(
+				id_venta ,
+  				num_butaca)
+  			VALUES( #id_venta#,
+  				#num_butaca#)
+		]]>
+	</insert>
+
+
+        <select id="listarEntradas" parameterClass="java.lang.Long" resultClass="beanPelicula">
+            <![CDATA[
+		SELECT @row:=@row + 1 as row, d.*
+                FROM tb_detalle_venta d,(SELECT @row:= 0) r
+                WHERE d.id_venta = #value#
+            ]]>
+    </select>
 
 
 	

@@ -14,7 +14,7 @@ import java.util.Date;
  * @author edison
  */
 public class Utils {
-    public static final double PRECIO_ENTRADA= 10.00;
+    public static final double PRECIO_ENTRADA= 10.50;
 
     /**
     * @return Fecha y Hora Actual en Timestamp
