@@ -70,11 +70,11 @@ public class VentaTest extends  TestTransactional {
         Assert.assertEquals(idCabecera, Long.valueOf(1));
     }
 
-
+    @Ignore
     @Test
     @Rollback(false)
     public void testInsertaDetalle(){
-
+        log.info("entro testInsertaDetalle");
         DetalleVentaBean detalle = new DetalleVentaBean();
         detalle.setId_venta(1L);
         detalle.setNum_butaca("A&1");
@@ -82,6 +82,20 @@ public class VentaTest extends  TestTransactional {
         boolean insert = ventaServiceCtx.insertDetalleVenta(detalle);
 
         Assert.assertEquals(true, insert);
+    }
+
+
+    @Test
+    @Rollback(false)
+    public void testListadoEntradas(){
+        log.info("entro testListadoEntradas");
+        List <DetalleVentaBean> lst = ventaServiceCtx.getEntradasByCabecera(1L);
+
+        for(DetalleVentaBean obj : lst){
+            log.info("butaca: "+obj.getNum_butaca());
+        }
+
+        Assert.assertNotNull(lst);
     }
 
 

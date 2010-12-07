@@ -23,4 +23,6 @@ public interface VentaDAO {
 
     public boolean insertDetalleVenta(DetalleVentaBean detalle);
 
+    public List<DetalleVentaBean> getEntradasByCabecera(Long idCabecera);
+
 }

@@ -80,6 +80,8 @@
                             <div class="entry">
                                
                                     <table border="0" cellpadding="0" cellspacing="0">
+                                        <tr><td colspan="3"> <h:message for="formVenta" errorStyle="color:red; font-size:11px;"/></td></tr>
+
                                         <tr>
                                             <td>N&uacute;mero de Tarjeta:</td>
                                             <td style="padding:2px;"><h:inputText id="numTarjeta" value="#{ventaBean.numTarjeta}" onkeypress="return soloNumeros(event)" maxlength="20"/>&nbsp;&nbsp;&nbsp;
@@ -161,6 +163,22 @@
                                                                       onclick="return validarEntrada();"/> </td>
                                                  </tr>
                                              </table><BR>
+                                             <br>
+                                             <h:dataTable id="entradas"  value="#{ventaBean.lstEntradas}"
+                                                     var="entrada"  border="1" rows="5" headerClass="cabeceratabla"
+                                                     rendered="#{not empty ventaBean.lstEntradas}">
+                                            <h:column>
+                                                <f:facet name="header"> <h:outputText  value="N."/> </f:facet>
+                                                <f:attribute name="width" value="40" />
+                                                <h:outputText value="#{entrada.row}" />
+                                            </h:column>
+                                            <h:column>
+                                                <f:facet name="header"> <h:outputText  value="Butaca"/> </f:facet>
+                                                <f:attribute name="width" value="40" />
+                                                <h:outputText value="#{entrada.num_butaca}" />
+                                            </h:column>
+
+                                        </h:dataTable>
 
 
 

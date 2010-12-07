@@ -25,6 +25,7 @@ public class DetalleVentaBean implements  Serializable{
 
     private Long id_venta;
     private String num_butaca;
+    private String row;
 
     public Long getId_venta() {
         return id_venta;
@@ -41,6 +42,17 @@ public class DetalleVentaBean implements  Serializable{
     public void setNum_butaca(String num_butaca) {
         this.num_butaca = num_butaca;
     }
+
+    public String getRow() {
+        return row;
+    }
+
+    public void setRow(String row) {
+        this.row = row;
+    }
+
+    
+
 
 
     

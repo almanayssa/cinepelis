@@ -2,19 +2,19 @@
 <Scene Scope="Project" version="2">
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
-        <Node id="inicio.jsp" x="900" y="150" zoom="true"/>
-        <Node id="venta_entrada.jsp" x="477" y="160" zoom="false"/>
-        <Node id="index.jsp" x="150" y="150" zoom="true"/>
-        <Node id="common/menu_include.jsp" x="231" y="85" zoom="true"/>
-        <Node id="common/header_include.jsp" x="650" y="300" zoom="true"/>
+        <Node id="inicio.jsp" x="299" y="124" zoom="true"/>
+        <Node id="venta_entrada.jsp" x="572" y="182" zoom="true"/>
+        <Node id="index.jsp" x="951" y="115" zoom="true"/>
+        <Node id="common/menu_include.jsp" x="968" y="151" zoom="true"/>
         <Node id="*" x="400" y="450" zoom="false"/>
+        <Node id="common/header_include.jsp" x="976" y="359" zoom="true"/>
         <Node id="estadistica_salas.jsp" x="650" y="450" zoom="false"/>
-        <Node id="premium.jsp" x="400" y="300" zoom="false"/>
-        <Node id="mantenimiento_pelicula.jsp" x="1150" y="150" zoom="true"/>
-        <Node id="detalles.jsp" x="900" y="300" zoom="true"/>
-        <Node id="mantenimiento_cliente.jsp" x="150" y="300" zoom="true"/>
-        <Node id="login.jsp" x="150" y="450" zoom="true"/>
-        <Node id="mantenimiento_cartelera.jsp" x="150" y="600" zoom="true"/>
+        <Node id="premium.jsp" x="985" y="228" zoom="false"/>
+        <Node id="mantenimiento_pelicula.jsp" x="661" y="355" zoom="true"/>
+        <Node id="detalles.jsp" x="982" y="307" zoom="true"/>
+        <Node id="mantenimiento_cliente.jsp" x="107" y="286" zoom="true"/>
+        <Node id="login.jsp" x="183" y="456" zoom="true"/>
+        <Node id="mantenimiento_cartelera.jsp" x="539" y="562" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations"/>
 </Scene>
