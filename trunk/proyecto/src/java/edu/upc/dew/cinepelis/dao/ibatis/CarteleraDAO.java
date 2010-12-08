@@ -15,4 +15,6 @@ import java.util.List;
 public interface CarteleraDAO {
 
      public List<CarteleraBean> getCartelera();
+
+     public Long guardarCartelera(CarteleraBean cartelera);
 }
