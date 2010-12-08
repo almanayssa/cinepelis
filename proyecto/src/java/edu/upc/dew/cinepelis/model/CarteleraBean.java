@@ -6,7 +6,6 @@
 package edu.upc.dew.cinepelis.model;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  *
@@ -14,59 +13,23 @@ import java.util.Date;
  */
 public class CarteleraBean  implements Serializable{
 
+    private Long id_cartelera;
     private Long id_pelicula;
-    private int num_Sala;
-    private String hora;
-    private Date fecha_inicio;
-    private Date fecha_fin;
-    private String nom_pelicula;
+    private int numSala; 
+    private String hora_inicio;
+    private boolean isActivo;
+    private String nombre;
 
     public CarteleraBean() {
     }
 
-
-
-    public CarteleraBean(Long id_pelicula, int num_Sala, String hora, Date fecha_inicio, Date fecha_fin,String nom_pelicula) {
+    public CarteleraBean(Long id_pelicula, int num_Sala, String hora) {
         this.id_pelicula = id_pelicula;
-        this.num_Sala = num_Sala;
-        this.hora = hora;
-        this.fecha_inicio = fecha_inicio;
-        this.fecha_fin = fecha_fin;
-        this.nom_pelicula=nom_pelicula;
-    }
+        this.numSala = num_Sala;
+        this.hora_inicio = hora;
+    }   
 
-    public String getNom_pelicula() {
-        return nom_pelicula;
-    }
-
-    public void setNom_pelicula(String nom_pelicula) {
-        this.nom_pelicula=nom_pelicula;
-    }
-
-    public Date getFecha_fin() {
-        return fecha_fin;
-    }
-
-    public void setFecha_fin(Date fecha_fin) {
-        this.fecha_fin = fecha_fin;
-    }
-
-    public Date getFecha_inicio() {
-        return fecha_inicio;
-    }
-
-    public void setFecha_inicio(Date fecha_inicio) {
-        this.fecha_inicio = fecha_inicio;
-    }
-
-    public String getHora() {
-        return hora;
-    }
-
-    public void setHora(String hora) {
-        this.hora = hora;
-    }
-
+   
     public Long getId_pelicula() {
         return id_pelicula;
     }
@@ -75,12 +38,68 @@ public class CarteleraBean  implements Serializable{
         this.id_pelicula = id_pelicula;
     }
 
-    public int getNum_Sala() {
-        return num_Sala;
+    public int getNumSala() {
+        return numSala;
     }
 
-    public void setNum_Sala(int num_Sala) {
-        this.num_Sala = num_Sala;
+    public void setNumSala(int numSala) {
+        this.numSala = numSala;
+    }
+
+    /**
+     * @return the hora_inicio
+     */
+    public String getHora_inicio() {
+        return hora_inicio;
+    }
+
+    /**
+     * @param hora_inicio the hora_inicio to set
+     */
+    public void setHora_inicio(String hora_inicio) {
+        this.hora_inicio = hora_inicio;
+    }
+
+    /**
+     * @return the isActivo
+     */
+    public boolean isIsActivo() {
+        return isActivo;
+    }
+
+    /**
+     * @param isActivo the isActivo to set
+     */
+    public void setIsActivo(boolean isActivo) {
+        this.isActivo = isActivo;
+    }
+
+    /**
+     * @return the id_cartelera
+     */
+    public Long getId_cartelera() {
+        return id_cartelera;
+    }
+
+    /**
+     * @param id_cartelera the id_cartelera to set
+     */
+    public void setId_cartelera(Long id_cartelera) {
+        this.id_cartelera = id_cartelera;
+    }
+
+    /**
+     * @return the nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
 
