@@ -16,4 +16,6 @@ public interface CarteleraService {
 
     public List<CarteleraBean> getCartelera();
 
+    public Long guardarCartelera(CarteleraBean cartelera);
+
 }
