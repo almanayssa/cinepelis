@@ -30,5 +30,9 @@ public class CarteleraServiceImpl implements CarteleraService {
         return getCarteleraDAO().getCartelera();
     }
 
+    public Long guardarCartelera(CarteleraBean cartelera) {
+        return getCarteleraDAO().guardarCartelera(cartelera);
+    }
+
 
 }
