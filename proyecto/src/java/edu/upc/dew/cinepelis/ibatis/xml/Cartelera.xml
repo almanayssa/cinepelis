@@ -2,6 +2,26 @@
 <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
 <sqlMap namespace="Cartelera" >
 
-   
-	
-</sqlMap>    
+   <typeAlias alias="beanCartelera" type="edu.upc.dew.cinepelis.model.CarteleraBean"/>
+
+
+    <select id="listarCartelera"  resultClass="beanCartelera">
+            <![CDATA[
+		select tb_pelicula.nombre, tb_cartelera.num_Sala, tb_cartelera.hora_inicio
+                from tb_cartelera inner join tb_pelicula on tb_cartelera.id_pelicula = tb_pelicula.id_pelicula
+                where tb_cartelera.is_activo = 1
+            ]]>
+    </select>
+
+    <insert id="guardarCartelera" parameterClass="beanCartelera">
+        <![CDATA[
+		INSERT tb_cartelera(id_pelicula,num_sala,hora_inicio,is_activo)
+                VALUES (#id_pelicula#,#numSala#,#hora_inicio#,#isActivo#);
+	]]>
+        <selectKey resultClass="java.lang.Long" keyProperty="id_cartelera" >
+            select last_insert_id() as id_cartelera
+        </selectKey>
+    </insert>
+    
+</sqlMap>
+
