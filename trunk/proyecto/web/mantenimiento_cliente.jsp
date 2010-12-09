@@ -3,6 +3,7 @@
 <html>
     <f:view>
         <f:loadBundle basename="messages" var="msgs"/>
+        
         <head>
             <meta http-equiv="content-type" content="text/html;charset=utf-8" />
             <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
@@ -78,13 +79,14 @@
             <!-- end #header -->
             <hr />
             <!-- end #logo -->
+            <h:form id="frmClientes">
             <div id="page">
                 <div id="page-bgtop">
                     <div id="content">
                         <div class="post">
                             <h2 class="title"><a href="#">Gesti&oacute;n Clientes</a></h2>
                             <div class="entry">
-                                <h:form id="frmClientes">
+                                
                                     <table border="0" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td>Nombre:</td><td style="padding:2px;"><input name='tbxNombre' id='tbxNombre' type='text' size="50" maxlength="50"/></td>
@@ -147,7 +149,7 @@
                                         </h:column>
                                     </h:dataTable>
 
-                                </h:form>
+                                
 
                             </div>
                         </div>
@@ -178,5 +180,6 @@
             </div>
             <!-- end #footer -->
         </body>
+        </h:form>
     </f:view>
 </html>
