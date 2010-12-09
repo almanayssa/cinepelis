@@ -2,15 +2,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
  <f:view>
-     <h:form id="formCartelera">
+    
  <f:loadBundle basename="messages" var="msgs"/>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-<style type="text/css">
-@import "slidertron.css";
-</style>
+ <link href="<%=request.getContextPath()%>/faces/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
     <div id="logo">
@@ -22,6 +19,7 @@
 <!-- end #header -->
 <hr />
 <!-- end #logo -->
+ <h:form id="formCartelera">
 <div id="page">
 	<div id="page-bgtop">
 		<div id="content">
