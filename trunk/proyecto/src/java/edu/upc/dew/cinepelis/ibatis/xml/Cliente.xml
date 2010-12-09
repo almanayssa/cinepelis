@@ -4,6 +4,15 @@
 
     <typeAlias alias="beanCliente" type="edu.upc.dew.cinepelis.model.ClienteBean"/>
 
+     <select id="listarCliente" parameterClass="java.lang.Long" resultClass="beanCliente">
+            <![CDATA[
+		SELECT nombre, ape_paterno, ape_materno, email
+                FROM tb_cliente
+                ORDER BY ape_paterno
+            ]]>
+    </select>
+
+
      <!-- retorna un objeto del tipo beanUsuario-->
      <select id="findCustomerByTarjeta" parameterClass="java.lang.Long" resultClass="beanCliente">
 	 <![CDATA[
