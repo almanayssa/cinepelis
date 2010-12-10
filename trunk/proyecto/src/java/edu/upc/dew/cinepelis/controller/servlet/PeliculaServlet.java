@@ -6,8 +6,6 @@
 package edu.upc.dew.cinepelis.controller.servlet;
 
 import edu.upc.dew.cinepelis.common.util.GenericoServlet;
-import edu.upc.dew.cinepelis.dao.ibatis.PeliculaDAO;
-import edu.upc.dew.cinepelis.dao.ibatisImpl.PeliculaDAOMysql;
 import edu.upc.dew.cinepelis.model.PeliculaBean;
 import java.io.IOException;
 import javax.servlet.ServletException;

@@ -29,7 +29,7 @@
                     <div class="post">
                         <h2 class="title"><a href="#">${pelicula.nombre}</a></h2>
                         <p><img src="<%=request.getContextPath()%>${pelicula.rutaImagen}"/></p>
-                        <p>Despu&eacute;s de a&ntilde;os de corrupci&oacute;n y asesinatos de rehenes, Estados Unidos, con la   ayuda de otras naciones, arma en secreto un equipo con su personal militar m&aacute;s   capacitado para derrocar a un dictador que ha causado estragos en un pa&iacute;s de   Am&eacute;rica latina durante m&aacute;s de 20 aÃ±os.</p>
+                        <p>${pelicula.sinopsis}</p>
                         <ul>
                             <li><strong>Pa&iacute;s:</strong> Estados Unidos</li>
                         </ul>
@@ -38,9 +38,6 @@
                         </ul>
                         <ul>
                             <li><strong>Director:</strong> ${pelicula.director}</li>
-                        </ul>
-                        <ul>
-                            <li><strong>Gui&oacute;n: </strong>Dave Callaham, Sylvester Stallone</li>
                         </ul>
                         <ul>
                             <li><strong>Actores:</strong> Sylvester Stallone, Bruce Willis, Arnold   Schwarzenegger, Jason Statham, Jet Li, Terry Crews, Randy Couture, Mickey   Rourke, Dolph Lundgren, Steve Austin.</li>
@@ -53,13 +50,8 @@
                             <li><strong>Calificaci&oacute;n:</strong> ${pelicula.tipoCensura}</li>
                         </ul>
                         <ul>
-                            <li><strong>Sitio Oficial:</strong> <a href="http://www.widepictures.es/losmercenarios/" rel="nofollow">http://www.widepictures.es/losmercenarios/</a></li>
-                        </ul>
-                        <ul>
                             <li><strong>Horarios:</strong> 18:30 / 20:30</li>
                         </ul>
-                        <ul> <li><strong>Disponibilidad:</strong> 20/50</li></ul>
-
                         </div>
           </div>
 		</div>

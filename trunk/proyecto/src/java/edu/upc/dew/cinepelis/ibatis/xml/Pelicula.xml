@@ -6,7 +6,8 @@
 
     <select id="listarPeliculas" parameterClass="java.lang.Long" resultClass="beanPelicula">
             <![CDATA[
-		SELECT id_pelicula, nombre, duracion as duracionMinutos, director, censura as tipoCensura
+		SELECT id_pelicula, nombre, duracion as duracionMinutos, director, 
+                censura as tipoCensura,ruta_foto as rutaImagen,sinopsis
                 FROM tb_pelicula
                 WHERE is_vigente=1
                 ORDER BY nombre

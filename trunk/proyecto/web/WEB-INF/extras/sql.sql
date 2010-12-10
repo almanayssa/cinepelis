@@ -18,9 +18,17 @@ CREATE TABLE cinepelis.tb_pelicula (
   PRIMARY KEY(id_pelicula)
 );
 
-insert into cinepelis.tb_pelicula(nombre,genero,duracion,director,actores,censura,web,sinopsis,periodo,is_vigente)
+insert into cinepelis.tb_pelicula(nombre,genero,duracion,director,actores,censura,web,sinopsis,periodo,ruta_foto,is_vigente)
 values ('Machete','ACCION','105','Robert Rodriguez','Danny Trejo,Steven Seagal,Robert De Niro,Michelle Rodriguez,Jessica Alba','M14','www.vivamachete.com',
-'Machete es un policia federal de Mexico que ha sido expulsado del cuerpo tras un chantaje que le ha hecho el capo Torrez.','DICIEMBRE 2010','1');
+'Machete es un policia federal de Mexico que ha sido expulsado del cuerpo tras un chantaje que le ha hecho el capo Torrez.','DICIEMBRE 2010','/images/min07.jpg','1');
+
+insert into cinepelis.tb_pelicula(nombre,genero,duracion,director,actores,censura,web,sinopsis,periodo,ruta_foto,is_vigente)
+values ('Los Indestructibles','ACCION','105','Sylvester Stallone','Sylvester Stallone,Jason Statham,Jet Li','M14',null,
+'Despues de anios de corrupcion, asesinato de rehenes y de traicion de la politica exterior, Estados Unidos, con la ayuda de otras naciones, arma en secreto un equipo con su personal militar mas capacitado para finalmente derrocar a un dictador que ha causado estragos en algun pais de America latina, durante mas de 20 anios.','NOVIEMBRE 2010','/images/min02.jpg','1');
+
+insert into cinepelis.tb_pelicula(nombre,genero,duracion,director,actores,censura,web,sinopsis,periodo,ruta_foto,is_vigente)
+values ('Una Loca Pelicula de Vampiros','ACCION','124','Jason Friedberg','Ken Jeong, Matt Lanter, Anneliese van der Pol','M14',null,
+'Vampires Suck es una comedia sobre la ansiedad adolescente. Becca es una adolescente no vampiro que se debate entre dos chicos. Antes de que pueda elegir, Becca debe sortear a su padre, quien averguenza a su hija por tratarla como si fuera una ninia. Mientras tanto, los amigos de Becca deberan lidiar con sus propios problemas amorosos, chocando todos ellos en el baile de graduacion.','NOVIEMBRE 2010','/images/min01.jpg','1');
 
 
 CREATE TABLE cinepelis.tb_sala (
