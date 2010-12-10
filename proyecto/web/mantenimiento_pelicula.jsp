@@ -109,7 +109,11 @@
                                             </tr>
                                         </table>
                                         <br/>
-                                        <h:dataTable id="peliculas"  value="#{peliculaBean.lstPelicula}" var="pelicula"  border="1" rows="5" headerClass="cabeceratabla">
+                                        <h:dataTable id="peliculas"  value="#{peliculaBean.lstPelicula}" var="pelicula"  border="1" headerClass="cabeceratabla">
+                                            <h:column>
+                                                <f:facet name="header"> <h:outputText  value="Id"/> </f:facet>
+                                                <h:outputText value="#{pelicula.id_pelicula}" />
+                                            </h:column>
                                             <h:column>
                                                 <f:facet name="header"> <h:outputText  value="Nombre"/> </f:facet>
                                                 <h:outputText value="#{pelicula.nombre}" />
@@ -126,6 +130,7 @@
                                                 <f:facet name="header"> <h:outputText  value="Censura"/> </f:facet>
                                                 <h:outputText value="#{pelicula.tipoCensura}" />
                                             </h:column>
+                                            <h:commandLink action="#{peliculaBean.eliminarPelicula}" value="Eliminar"></h:commandLink>
                                         </h:dataTable>
                                    
                                 </div>

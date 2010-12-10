@@ -108,5 +108,13 @@ public class PeliculaDAOMysql extends SqlMapClientDaoSupport implements Pelicula
 	}
     }
 
+    public void eliminarPelicula(int id){
+        try{
+		getSqlMapClientTemplate().delete("eliminarPelicula");
+	}catch (Exception e) {
+		e.printStackTrace();
+		System.out.println("Error en el ibatis - method eliminarPelicula()");
+	}
+    }
 
 }

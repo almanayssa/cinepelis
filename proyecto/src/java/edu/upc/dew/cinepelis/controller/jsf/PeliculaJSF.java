@@ -211,6 +211,8 @@ public class PeliculaJSF extends GenericBean {
         Long idPelicula = serviceFactory.getPeliculaService().guardarPelicula(pelicula);
         resetForm();
 
+        lstPelicula = serviceFactory.getPeliculaService().getPeliculas();
+        
         return "peliculas";
     }
 
@@ -226,4 +228,7 @@ public class PeliculaJSF extends GenericBean {
         rutaImagen = null;
     }
 
+    public void eliminarPelicula(int id){
+        serviceFactory.getPeliculaService().eliminarPelicula(id);
+    }
 }
