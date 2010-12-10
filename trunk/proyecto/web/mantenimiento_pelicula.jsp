@@ -131,7 +131,9 @@
                                                 <h:outputText value="#{pelicula.tipoCensura}" />
                                             </h:column>
                                             <h:column>
-                                                <h:commandLink action="#{peliculaBean.eliminarPelicula}" value="Eliminar"></h:commandLink>
+                                                <h:commandLink action="#{peliculaBean.eliminarPelicula}" value="Eliminar" >
+                                                      <f:param name="idPeliculaRow"  value="#{pelicula.id_pelicula}" />
+                                                </h:commandLink>
                                             </h:column>
                                         </h:dataTable>
                                    
