@@ -28,4 +28,12 @@ Además, este sistema permite a los clientes del cine consultar la cartelera a t
   * Frameworks : Ibatis, Spring, JSF(MVC)
   * Bitácora : log4j
  
-  
+*Principales Opciones del Sistema Cinepelis*<br>
+
+Pantalla Inicial: En la pantalla inicial se muestra las imágenes de las películas que se      encuentran en la cartelera. Además, muestra las características de la película como género, horarios y las restricciones. 
+
+http://lh4.ggpht.com/_-OCxitGNEHk/TQHPtcOZ_5I/AAAAAAAAA4s/-4GdjRmGKvY/ScreenHunter_04%20Dec.%2010%2001.57.gif
+
+Cada imagen de película cuenta con un link para ver en otra pantalla la sinopsis y más detalles de la película.
+
+http://lh3.ggpht.com/_-OCxitGNEHk/TQHPtWe0AKI/AAAAAAAAA4w/DdvKEBwiHH0/ScreenHunter_05%20Dec.%2010%2001.58.gif
