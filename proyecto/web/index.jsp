@@ -90,9 +90,9 @@ Released   : 20100707
 	<div id="page-bgtop">
 		<div id="content">
                     <div class="post">
-                        <h2 class="title"><a href="peliculaServlet?id=1">Los Indestructibles</a></h2>
+                        <h2 class="title"><a href="peliculaServlet?id=1">Machete</a></h2>
                         <div class="entry">
-                            <p><img src="images/min02.jpg" alt="" width="163" height="227" /></p>                           </p>
+                            <p><img src="images/min07.jpg" alt="" width="163" height="227" /></p>                           </p>
                       <ul>
                                 <li><strong>G&eacute;nero:</strong> Acci&oacute;n.</li>
 
@@ -104,20 +104,20 @@ Released   : 20100707
                         <div><a href="peliculaServlet?id=1" class="links">Ver m&aacute;s</a></div>
                     </div>
                     <div class="post">
-                        <h2 class="title"><a href="peliculaServlet?id=2">Casi Embarazada</a></h2>
+                        <h2 class="title"><a href="peliculaServlet?id=2">Los Indestructibles</a></h2>
                         <div class="entry">
-                            <p><img src="images/min03.jpg" alt="" width="163" height="227" />
-                            </p>
-                            <ul>
-                            <li><strong>G&eacute;nero:</strong> Comedia</li>
+                            <p><img src="images/min02.jpg" alt="" width="163" height="227" /></p>                           </p>
+                      <ul>
+                                <li><strong>G&eacute;nero:</strong> Acci&oacute;n.</li>
 
-                            <li><strong>Censura:</strong> Mayores de 14 años</li>
-                            <li><strong>Horarios: </strong> 18:30 / 20:30</li>
+                                <li><strong>Censura:</strong> Mayores de 14 años</li>
+
+                                <li><strong>Horarios: </strong> 18:30 / 20:30</li>
                             </ul>
                         </div>
-
                         <div><a href="peliculaServlet?id=2" class="links">Ver m&aacute;s</a></div>
                     </div>
+                   
                     <div class="post">
                         <h2 class="title"><a href="peliculaServlet?id=3">Una Loca Película de Vampiros</a></h2>
                         <div class="entry">
@@ -165,21 +165,7 @@ Released   : 20100707
 
                         <div><a href="peliculaServlet?id=5" class="links">Ver m&aacute;s</a></div>
                     </div>
-                    <div class="post">
-                        <h2 class="title"><a href="peliculaServlet?id=6">Enamorada de mi Ex</a></h2>
-                        <div class="entry">
-                            <p><img src="images/min05.jpg" alt="" width="163" height="227" />
-                            </p>
-                            <ul>
-                            <li><strong>G&eacute;nero:</strong> Comedia</li>
-                            <li><strong>Censura: </strong>Mayores de 14 años</li>
-
-                            <li><strong>Horarios:</strong> 18:30 / 20:30</li>
-                            </ul>
-                        </div>
-
-                        <div><a href="peliculaServlet?id=6" class="links">Ver m&aacute;s</a></div>
-                    </div>
+                 
 		</div>
 		<!-- end #content -->
 		<div id="sidebar">
