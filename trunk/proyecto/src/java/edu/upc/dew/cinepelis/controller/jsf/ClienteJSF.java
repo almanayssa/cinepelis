@@ -49,91 +49,88 @@ public class ClienteJSF extends  GenericBean{
 
         return forward;
     }
-    
-    public void setApe_materno(String ape_materno) {
-        this.ape_materno = ape_materno;
-    }
-
-    public void setApe_paterno(String ape_paterno) {
-        this.ape_paterno = ape_paterno;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setId_cliente(Long id_cliente) {
-        this.id_cliente = id_cliente;
-    }
-
-    public void setLstCliente(List<ClienteBean> lstCliente) {
-        this.lstCliente = lstCliente;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setNum_tarjeta(String num_tarjeta) {
-        this.num_tarjeta = num_tarjeta;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public void setTipo_tarjeta(String tipo_tarjeta) {
-        this.tipo_tarjeta = tipo_tarjeta;
-    }
-
-
-
-     
-
-    public List<ClienteBean> getLstCliente() {
-        return lstCliente;
-    }
-
 
     public String getApe_materno() {
         return ape_materno;
+    }
+
+    public void setApe_materno(String ape_materno) {
+        this.ape_materno = ape_materno;
     }
 
     public String getApe_paterno() {
         return ape_paterno;
     }
 
+    public void setApe_paterno(String ape_paterno) {
+        this.ape_paterno = ape_paterno;
+    }
+
     public String getDni() {
         return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 
     public String getEmail() {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public Long getId_cliente() {
         return id_cliente;
+    }
+
+    public void setId_cliente(Long id_cliente) {
+        this.id_cliente = id_cliente;
+    }
+
+    public List<ClienteBean> getLstCliente() {
+        return lstCliente;
+    }
+
+    public void setLstCliente(List<ClienteBean> lstCliente) {
+        this.lstCliente = lstCliente;
     }
 
     public String getNombre() {
         return nombre;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getNum_tarjeta() {
         return num_tarjeta;
+    }
+
+    public void setNum_tarjeta(String num_tarjeta) {
+        this.num_tarjeta = num_tarjeta;
     }
 
     public String getTelefono() {
         return telefono;
     }
 
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
     public String getTipo_tarjeta() {
         return tipo_tarjeta;
     }
+
+    public void setTipo_tarjeta(String tipo_tarjeta) {
+        this.tipo_tarjeta = tipo_tarjeta;
+    }
+    
+    
 
 
     public String guardarCliente(){
@@ -143,14 +140,16 @@ public class ClienteJSF extends  GenericBean{
         cliente.setNombre(getNombre());
         cliente.setApe_paterno(getApe_paterno());
         cliente.setApe_materno(getApe_materno());
-        cliente.setDni(dni);
-        cliente.setTelefono(telefono);
+        cliente.setDni(getDni());
+        cliente.setTelefono(getTelefono());
         cliente.setEmail(getEmail());
         cliente.setTipo_tarjeta(getTipo_tarjeta());
         cliente.setNum_tarjeta(getNum_tarjeta());
 
         Long idCliente = serviceFactory.getClienteService().guardarCliente(cliente);
         resetForm();
+
+        lstCliente = serviceFactory.getClienteService().getClientes();
 
         return "clientes";
     }

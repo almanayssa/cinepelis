@@ -93,8 +93,8 @@
                                             <td>Tipo Tarjeta:</td>
                                             <td style="padding:2px;">
                                                 <h:selectOneMenu value="#{clienteBean.tipo_tarjeta}" id="censura">
-                                                        <f:selectItem itemLabel="CLASICA" itemValue="CLASICA"/>
-                                                        <f:selectItem itemLabel="Premium" itemValue="Premium"/>
+                                                        <f:selectItem itemLabel="CLASICA" itemValue="C"/>
+                                                        <f:selectItem itemLabel="Premium" itemValue="P"/>
                                                 </h:selectOneMenu>
                                             </td>
                                         </tr>
@@ -116,7 +116,7 @@
 
 
                                     <h:dataTable id="clientes"  value="#{clienteBean.lstCliente}"
-                                                 var="cliente"  border="1" rows="5" headerClass="cabeceratabla">
+                                                 var="cliente"  border="1" headerClass="cabeceratabla">
                                         <h:column>
                                             <f:facet name="header"> <h:outputText  value="Nombre"/> </f:facet>
                                             <f:attribute name="width" value="40" />
@@ -153,7 +153,7 @@
                                             <h:commandLink action="#{utilBean.logout}"><span style="color: #FFFFFF">Cerrar Sesi&oacute;n</span></h:commandLink>
                                         </div>
                                 </div>
-                                </p>
+                                <p/>
                             </li>
                         </ul>
                     </div>
