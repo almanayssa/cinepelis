@@ -28,9 +28,7 @@ public class ClienteJSF extends  GenericBean{
     private String tipo_tarjeta;
     private String num_tarjeta;
 
-
-
-     public String initClientes(){
+    public String initClientes(){
         log.info("Entrando ... initClientes() - ClienteJSF");
 
         String forward="clientes";
@@ -51,6 +49,50 @@ public class ClienteJSF extends  GenericBean{
 
         return forward;
     }
+    
+    public void setApe_materno(String ape_materno) {
+        this.ape_materno = ape_materno;
+    }
+
+    public void setApe_paterno(String ape_paterno) {
+        this.ape_paterno = ape_paterno;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setId_cliente(Long id_cliente) {
+        this.id_cliente = id_cliente;
+    }
+
+    public void setLstCliente(List<ClienteBean> lstCliente) {
+        this.lstCliente = lstCliente;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setNum_tarjeta(String num_tarjeta) {
+        this.num_tarjeta = num_tarjeta;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public void setTipo_tarjeta(String tipo_tarjeta) {
+        this.tipo_tarjeta = tipo_tarjeta;
+    }
+
+
+
+     
 
     public List<ClienteBean> getLstCliente() {
         return lstCliente;
@@ -63,6 +105,10 @@ public class ClienteJSF extends  GenericBean{
 
     public String getApe_paterno() {
         return ape_paterno;
+    }
+
+    public String getDni() {
+        return dni;
     }
 
     public String getEmail() {
@@ -88,6 +134,27 @@ public class ClienteJSF extends  GenericBean{
     public String getTipo_tarjeta() {
         return tipo_tarjeta;
     }
+
+
+    public String guardarCliente(){
+        log.info("Entrando ... guardarCliente() - ClienteJSF");
+
+        ClienteBean cliente = new ClienteBean();
+        cliente.setNombre(getNombre());
+        cliente.setApe_paterno(getApe_paterno());
+        cliente.setApe_materno(getApe_materno());
+        cliente.setDni(dni);
+        cliente.setTelefono(telefono);
+        cliente.setEmail(getEmail());
+        cliente.setTipo_tarjeta(getTipo_tarjeta());
+        cliente.setNum_tarjeta(getNum_tarjeta());
+
+        Long idCliente = serviceFactory.getClienteService().guardarCliente(cliente);
+        resetForm();
+
+        return "clientes";
+    }
+
 
          public void resetForm(){
          id_cliente=null;

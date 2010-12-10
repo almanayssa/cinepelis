@@ -36,6 +36,10 @@ public class ClienteServiceImpl implements  ClienteService{
       return getClienteDAO().findCustomerByTarjeta(numTarjeta);
     }
 
+    public Long guardarCliente(ClienteBean cliente) {
+        return getClienteDAO().guardarCliente(cliente);
+    }
+
 
  
 
