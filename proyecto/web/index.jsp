@@ -139,7 +139,7 @@ Released   : 20100707
                             <p><img src="images/min06.jpg" alt="" width="163" height="227" />
                             </p>
                             <ul>
-                            <li><strong>G&eacute;nero:</strong> Acci&oacute;n</li
+                            <li><strong>G&eacute;nero:</strong> Aventuras</li
 
                             ><li><strong>Censura:</strong> Apta para todos</li>
 
@@ -149,22 +149,7 @@ Released   : 20100707
 
                         <div><a href="peliculaServlet?id=4" class="links">Ver m&aacute;s</a></div>
                     </div>
-                    <div class="post">
-                        <h2 class="title"><a href="peliculaServlet?id=5">Como perros y gatos 2</a></h2>
-                        <div class="entry">
-                            <p><img src="images/min04.jpg" alt="" width="163" height="227" />
-                            </p>
-                            <ul>
-                            <li><strong>G&eacute;nero:</strong> Infantil</li>
-
-                            <li><strong>Censura:</strong> Apta para todos</li>
-
-                            <li><strong>Horarios:</strong> 18:30 / 20:30</li>
-                            </ul>
-                        </div>
-
-                        <div><a href="peliculaServlet?id=5" class="links">Ver m&aacute;s</a></div>
-                    </div>
+                   
                  
 		</div>
 		<!-- end #content -->

@@ -30,6 +30,9 @@ insert into cinepelis.tb_pelicula(nombre,genero,duracion,director,actores,censur
 values ('Una Loca Pelicula de Vampiros','ACCION','124','Jason Friedberg','Ken Jeong, Matt Lanter, Anneliese van der Pol','M14',null,
 'Vampires Suck es una comedia sobre la ansiedad adolescente. Becca es una adolescente no vampiro que se debate entre dos chicos. Antes de que pueda elegir, Becca debe sortear a su padre, quien averguenza a su hija por tratarla como si fuera una ninia. Mientras tanto, los amigos de Becca deberan lidiar con sus propios problemas amorosos, chocando todos ellos en el baile de graduacion.','NOVIEMBRE 2010','/images/min01.jpg','1');
 
+insert into cinepelis.tb_pelicula(nombre,genero,duracion,director,actores,censura,web,sinopsis,periodo,ruta_foto,is_vigente)
+values ('El ultimo maestro del aire','ACCION','116','M. Night Shyamalan','Jackson Rathbone, Cliff Curtis, Dev Patel, Nicola Peltz','NINGUNA',null,
+'La pelicula de M. Night Shaymalan narra las aventuras de Aang (Noah Ringer), el ultimo y mas joven descendiente de la estirpe de los avatares. Su mision es detener la guerra que ha empezado la Nacion del Fuego contra las naciones de Aire, Agua y Tierra. Aang es el unico que posee el don de dominar todos los elementos, pero necesitara la ayuda de Sokka (Jackson Rathone) y Katara (Nicola Peltz). Ademas, deberan escapar de las garras del malvado principe Zuko (Dev Patel), que quiere perpetuar el caos y la destruccion para aumentar su tenebroso poder.','NOVIEMBRE 2010','/images/min06.jpg','1');
 
 CREATE TABLE cinepelis.tb_sala (
   num_Sala INTEGER UNSIGNED NOT NULL,
