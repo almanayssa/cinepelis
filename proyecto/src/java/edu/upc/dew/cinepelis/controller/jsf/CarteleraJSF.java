@@ -7,7 +7,10 @@ package edu.upc.dew.cinepelis.controller.jsf;
 
 import edu.upc.dew.cinepelis.common.util.GenericBean;
 import edu.upc.dew.cinepelis.model.CarteleraBean;
+import edu.upc.dew.cinepelis.model.PeliculaBean;
+import java.util.ArrayList;
 import java.util.List;
+import javax.faces.model.SelectItem;
 
 /**
  *
@@ -16,6 +19,7 @@ import java.util.List;
 public class CarteleraJSF extends  GenericBean{
 
     List<CarteleraBean> lstCartelera;
+    private List<SelectItem> lstPelicula;
     private String codPelicula;
     private String numeroSala;
     private String horaInicio;
@@ -28,23 +32,17 @@ public class CarteleraJSF extends  GenericBean{
         String forward="cartelera";
 
          try {
-
             lstCartelera = serviceFactory.getCarteleraService().getCartelera();
-            for(CarteleraBean cartelera: lstCartelera){
-                System.out.println(cartelera.getHora_inicio());
-            }
-
 	} catch (Exception ex) {
             log.error(ex.getMessage(), ex);
 	}
 
-         log.info("Saliendo ... initCartelera() - CarteleraJSF");
-
+         log.info("Saliendo ... initCartelera() - CarteleraJSF");       
         return forward;
     }
             
 
-      public List<CarteleraBean> getLstCartelera() {
+    public List<CarteleraBean> getLstCartelera() {
         return lstCartelera;
     }
 
@@ -104,14 +102,41 @@ public class CarteleraJSF extends  GenericBean{
         this.isActivo = isActivo;
     }
 
-    public void grabarCartelera(){
-        System.out.println("ralfff");
+     /**
+     * @return the lstPelicula
+     */
+    public List<SelectItem> getLstPelicula() {
+        listarPeliculas();
+        return lstPelicula;
+    }
+
+    /**
+     * @param lstPelicula the lstPelicula to set
+     */
+    public void setLstPelicula(List<SelectItem> lstPelicula) {
+        this.lstPelicula = lstPelicula;
+    }
+
+    public void grabarCartelera(){        
         CarteleraBean c = new CarteleraBean();
         c.setId_pelicula(new Long(codPelicula));
-        c.setNumSala(Integer.parseInt(numeroSala));
+        c.setNum_sala(Integer.parseInt(numeroSala));
         c.setHora_inicio(horaInicio);
         c.setIsActivo(true);
         Long idCartelera = serviceFactory.getCarteleraService().guardarCartelera(c);
+        log.info("se insertó la cartelera "+ idCartelera);
         initCartelera();
     }
+
+    public void listarPeliculas(){
+       List<PeliculaBean> lista = serviceFactory.getPeliculaService().getPeliculas();
+       lstPelicula = new ArrayList<SelectItem>();
+       if(lista!=null){
+           for(PeliculaBean pb : lista){
+               lstPelicula.add(new SelectItem(pb.getId_pelicula(),pb.getNombre()));
+           }
+       }
+    }
+
+   
 }
