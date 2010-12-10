@@ -15,7 +15,7 @@ public class CarteleraBean  implements Serializable{
 
     private Long id_cartelera;
     private Long id_pelicula;
-    private int numSala; 
+    private int num_sala;
     private String hora_inicio;
     private boolean isActivo;
     private String nombre;
@@ -23,9 +23,9 @@ public class CarteleraBean  implements Serializable{
     public CarteleraBean() {
     }
 
-    public CarteleraBean(Long id_pelicula, int num_Sala, String hora) {
+    public CarteleraBean(Long id_pelicula, int num_sala, String hora) {
         this.id_pelicula = id_pelicula;
-        this.numSala = num_Sala;
+        this.num_sala = num_sala;
         this.hora_inicio = hora;
     }   
 
@@ -38,14 +38,7 @@ public class CarteleraBean  implements Serializable{
         this.id_pelicula = id_pelicula;
     }
 
-    public int getNumSala() {
-        return numSala;
-    }
-
-    public void setNumSala(int numSala) {
-        this.numSala = numSala;
-    }
-
+  
     /**
      * @return the hora_inicio
      */
@@ -100,6 +93,20 @@ public class CarteleraBean  implements Serializable{
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    /**
+     * @return the num_sala
+     */
+    public int getNum_sala() {
+        return num_sala;
+    }
+
+    /**
+     * @param num_sala the num_sala to set
+     */
+    public void setNum_sala(int num_sala) {
+        this.num_sala = num_sala;
     }
 
 
