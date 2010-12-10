@@ -12,9 +12,9 @@
             <script type="text/javascript" src="<%=request.getContextPath()%>/common/validaciones.js"></script>
             <script type="text/javascript">
                  function validarFormulario(){
-                    if (blancoJSF('tbxNombre', "Ingresar el Nombre") == false)return false;
-                    if (blancoJSF('tbxDuracion',"Ingrese duracion de la pelicula") == false)return false;
-                    if (blancoJSF('tbxDirector',"Ingrese el nombre del director de la pelicula") == false)return false;
+                    if (blancoJSF('formPeli:tbxNombre', "Ingresar el Nombre") == false)return false;
+                    if (blancoJSF('formPeli:tbxDuracion',"Ingrese duracion de la pelicula") == false)return false;
+                    if (blancoJSF('formPeli:tbxDirector',"Ingrese el nombre del director de la pelicula") == false)return false;
                 }
             </script>
 
