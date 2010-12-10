@@ -10,6 +10,8 @@ Cinepelis es un sistema Web de gestión de los principales procesos de un Cine; 
 *Home*<br>
 Esta opción muestra las películas en cartelera, con su respectiva sinopsis. Cuando el usuario desea obtener una descripción más detallada, se selecciona la imagen de la película y se podrá visualizar más detalles como el director, país, año, duración, entre otros.
 
+[http://lh4.ggpht.com/_-OCxitGNEHk/TQHPtcOZ_5I/AAAAAAAAA4s/-4GdjRmGKvY/ScreenHunter_04%20Dec.%2010%2001.57.gif]
+
 *Información Premium*<br>
 Describe los beneficios adicionales que brinde el cine. En esta opción, actualmente, muestra los beneficios de la Tarjeta Premium de Cinepelis y sus distintas modalidades.
 
@@ -17,6 +19,7 @@ Describe los beneficios adicionales que brinde el cine. En esta opción, actualm
 Esta pantalla solicita un usuario y password para que el usuario utilice el sistema de venta de entradas.
 
 <font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Ventajas del Sistema Cinepelis</font><br><br>
+
 Los cines que son empresas del rubro del Entretenimiento que necesitan contar con información actualizada en tiempo real. Es por ello que con el Sistema Cinepelis, la cantidad de entradas vendidas y la cantidad de butacas ocupadas, se podrán consultar en cualquier momento y así evitar vender más o menos entradas por sala.
 
 Además, este sistema permite a los clientes del cine consultar la cartelera a tiempo real, visualizar el detalle de las películas programadas y leer la sinopsis de cada una.
@@ -28,12 +31,4 @@ Además, este sistema permite a los clientes del cine consultar la cartelera a t
   * Frameworks : Ibatis, Spring, JSF(MVC)
   * Bitácora : log4j
  
-*Principales Opciones del Sistema Cinepelis*<br>
 
-Pantalla Inicial: En la pantalla inicial se muestra las imágenes de las películas que se      encuentran en la cartelera. Además, muestra las características de la película como género, horarios y las restricciones. 
-
-http://lh4.ggpht.com/_-OCxitGNEHk/TQHPtcOZ_5I/AAAAAAAAA4s/-4GdjRmGKvY/ScreenHunter_04%20Dec.%2010%2001.57.gif
-
-Cada imagen de película cuenta con un link para ver en otra pantalla la sinopsis y más detalles de la película.
-
-http://lh3.ggpht.com/_-OCxitGNEHk/TQHPtWe0AKI/AAAAAAAAA4w/DdvKEBwiHH0/ScreenHunter_05%20Dec.%2010%2001.58.gif
