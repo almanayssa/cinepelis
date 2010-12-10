@@ -11,7 +11,7 @@
             <script type="text/javascript" src="<%=request.getContextPath()%>/common/prototype.js"></script>
             <script type="text/javascript" src="<%=request.getContextPath()%>/common/validaciones.js"></script>
             <script type="text/javascript">
-                 function validarForm(){
+                 function validarFormulario(){
                     if (blancoJSF('tbxNombre', "Ingresar el Nombre") == false)return false;
                     if (blancoJSF('tbxDuracion',"Ingrese duracion de la pelicula") == false)return false;
                     if (blancoJSF('tbxDirector',"Ingrese el nombre del director de la pelicula") == false)return false;
@@ -56,7 +56,7 @@
                                  
                                         <table border="0" cellpadding="0" cellspacing="0">
                                             <tr>
-                                                <td>Nombre:</td><td style="padding:2px;"><h:inputText value="#{peliculaBean.nombre}" size="50" maxlength="140"></h:inputText></td>
+                                                <td>Nombre:</td><td style="padding:2px;"><h:inputText id="tbxNombre" value="#{peliculaBean.nombre}" size="50" maxlength="140"></h:inputText></td>
                                             </tr>
                                             <tr>
                                                 <td>G&eacute;nero:</td><td style="padding:2px;">
@@ -70,10 +70,10 @@
                                             </tr>
                                             <tr>
                                                 <td>Duraci&oacute;n (minutos):</td>
-                                                <td style="padding:2px;"><h:inputText value="#{peliculaBean.duracionMinutos}" size="20" maxlength="4" onkeypress="return soloNumeros(event)"></h:inputText></td></tr>
+                                                <td style="padding:2px;"><h:inputText id="tbxDuracion" value="#{peliculaBean.duracionMinutos}" size="20" maxlength="4" onkeypress="return soloNumeros(event)"></h:inputText></td></tr>
                                             <tr>
                                                 <td>Director:</td>
-                                                <td style="padding:2px;"><h:inputText value="#{peliculaBean.director}" size="50" maxlength="200"></h:inputText></td></tr>
+                                                <td style="padding:2px;"><h:inputText id="tbxDirector" value="#{peliculaBean.director}" size="50" maxlength="200"></h:inputText></td></tr>
                                             <tr>
                                                 <td>Actores Principales:</td>
                                                 <td style="padding:2px;"><h:inputTextarea value="#{peliculaBean.actoresPrincipales}" cols="40"></h:inputTextarea></td></tr>
@@ -103,7 +103,7 @@
                                             <tr>
                                                 <td></td>
                                                 <td>
-                                                    <h:commandButton action="#{peliculaBean.guardarPelicula}" value="Guardar" onclick="return validarForm();"/>
+                                                    <h:commandButton action="#{peliculaBean.guardarPelicula}" value="Guardar" onclick="return validarFormulario();"/>
                                                     <input type="button" value="Cancelar" />
                                                 </td>
                                             </tr>
@@ -130,7 +130,9 @@
                                                 <f:facet name="header"> <h:outputText  value="Censura"/> </f:facet>
                                                 <h:outputText value="#{pelicula.tipoCensura}" />
                                             </h:column>
-                                            <h:commandLink action="#{peliculaBean.eliminarPelicula}" value="Eliminar"></h:commandLink>
+                                            <h:column>
+                                                <h:commandLink action="#{peliculaBean.eliminarPelicula}" value="Eliminar"></h:commandLink>
+                                            </h:column>
                                         </h:dataTable>
                                    
                                 </div>
