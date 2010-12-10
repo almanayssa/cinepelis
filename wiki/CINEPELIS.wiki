@@ -15,8 +15,32 @@ Esta opción muestra las películas en cartelera, con su respectiva sinopsis. Cu
 *Información Premium*<br>
 Describe los beneficios adicionales que brinde el cine. En esta opción, actualmente, muestra los beneficios de la Tarjeta Premium de Cinepelis y sus distintas modalidades.
 
+[http://lh3.ggpht.com/_-OCxitGNEHk/TQHYo43y8nI/AAAAAAAAA44/GL8Ywz_Ef40/ScreenHunter_08%20Dec.%2010%2002.36.gif]
+
 *Ingresar*<br>
-Esta pantalla solicita un usuario y password para que el usuario utilice el sistema de venta de entradas.
+Esta pantalla solicita un usuario y password para que el usuario utilice el sistema de registro de venta de entradas, gestionar clientes, gestionar la cartelera y gestionar películas
+
+[http://lh6.ggpht.com/_-OCxitGNEHk/TQHaLSsHPeI/AAAAAAAAA48/8OJ0XH926s0/ScreenHunter_10%20Dec.%2010%2002.43.gif]
+
+*Registro de Venta*<br>
+En esta pantalla se registra la venta de entradas al cine, se escoge la película, butaca, número de entradas y el monto de la venta. Asimismo, si el cliente cuenta con la tarjeta Cinepelis, se ingresa el número de la misma.
+
+[http://lh6.ggpht.com/_-OCxitGNEHk/TQHh6p3-OBI/AAAAAAAAA5A/EC2aZ6WUJXM/ScreenHunter_11%20Dec.%2010%2003.11.gif]
+
+*Gestión de Películas*<br>
+En esta opción se registran las películas que estarán en cartelera. Se ingresa el nombre, género,duración, director, actores principales, restricciones, sitio web, sinopsis y ruta de la imagen de portada.
+
+[http://lh3.ggpht.com/_-OCxitGNEHk/TQHh62heuQI/AAAAAAAAA5I/XM4fUrwINAQ/ScreenHunter_15%20Dec.%2010%2003.14.gif]
+
+*Gestión de Clientes*<br>
+Esta opción se utiliza para ingresar los datos de los clientes.
+
+[http://lh3.ggpht.com/_-OCxitGNEHk/TQHmt9KqJwI/AAAAAAAAA5U/qkFG7Nm_ql4/ScreenHunter_14%20Dec.%2010%2003.14.gif]
+
+*Gestión de Cartelera*<br>
+Esta opción e utilizada para gestionar los horarios de las funciones
+
+http://lh5.ggpht.com/_-OCxitGNEHk/TQHh6i0tMpI/AAAAAAAAA5E/Zg_bUtzKiHQ/ScreenHunter_16%20Dec.%2010%2003.15.gif
 
 <font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Ventajas del Sistema Cinepelis</font><br><br>
 
@@ -31,4 +55,3 @@ Además, este sistema permite a los clientes del cine consultar la cartelera a t
   * Frameworks : Ibatis, Spring, JSF(MVC)
   * Bitácora : log4j
  
-
