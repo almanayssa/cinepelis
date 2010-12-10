@@ -6,7 +6,7 @@
 
     <select id="listarPeliculas" parameterClass="java.lang.Long" resultClass="beanPelicula">
             <![CDATA[
-		SELECT nombre, duracion, director, censura
+		SELECT id_pelicula, nombre, duracion as duracionMinutos, director, censura as tipoCensura
                 FROM tb_pelicula
                 WHERE is_vigente=1
                 ORDER BY nombre
@@ -22,6 +22,12 @@
             select last_insert_id() as id_pelicula
         </selectKey>
     </insert>
+
+    <delete id="eliminarPelicula" parameterClass="int">
+        <![CDATA[
+		DELETE FROM tb_pelicula
+                WHERE id_pelicula = #id_pelicula#
+	]]>
+    </delete>
  
-	
 </sqlMap>    

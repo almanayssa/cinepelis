@@ -20,4 +20,5 @@ public interface PeliculaService {
 
     public Long guardarPelicula(PeliculaBean pelicula);
 
+    public void eliminarPelicula(int id);
 }
