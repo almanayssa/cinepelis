@@ -8,6 +8,7 @@ package edu.upc.dew.cinepelis.controller.jsf;
 import edu.upc.dew.cinepelis.common.util.GenericBean;
 import edu.upc.dew.cinepelis.model.PeliculaBean;
 import java.util.List;
+import javax.faces.context.FacesContext;
 
 /**
  *
@@ -26,6 +27,8 @@ public class PeliculaJSF extends GenericBean {
     private String sinopsis;
     private String rutaImagen;
     private boolean isVigente;
+    private String idPeliculaRow;
+
     
     public String initPeliculas(){
         log.info("Entrando ... initPeliculas() - PeliculaJSF");
@@ -193,6 +196,17 @@ public class PeliculaJSF extends GenericBean {
         this.isVigente = isVigente;
     }
 
+    public String getIdPeliculaRow() {
+        return idPeliculaRow;
+    }
+
+    public void setIdPeliculaRow(String idPeliculaRow) {
+        this.idPeliculaRow = idPeliculaRow;
+    }
+
+    
+
+
     public String guardarPelicula(){
         log.info("Entrando ... guardarPelicula() - PeliculaJSF");
 
@@ -228,7 +242,14 @@ public class PeliculaJSF extends GenericBean {
         rutaImagen = null;
     }
 
-    public void eliminarPelicula(int id){
-        serviceFactory.getPeliculaService().eliminarPelicula(id);
+    public String eliminarPelicula(){
+         log.info("Entrando ... eliminarPelicula() - PeliculaJSF");
+
+          String id =(String)(FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get("idPeliculaRow"));
+
+
+         serviceFactory.getPeliculaService().eliminarPelicula(Integer.parseInt(id));
+         lstPelicula = serviceFactory.getPeliculaService().getPeliculas();
+         return "peliculas";
     }
 }
