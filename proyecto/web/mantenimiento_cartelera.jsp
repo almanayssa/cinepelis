@@ -1,5 +1,6 @@
 <%@ include file="/common/header_include.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<meta http-equiv="Cache-Control" content="no-store">
 <html>
  <f:view>
     
@@ -31,7 +32,7 @@
                                     <td>Pel&iacute;cula:</td>
                                     <td style="padding:2px;">                                       
                                         <h:selectOneMenu value="#{carteleraBean.codPelicula}" id="codPelicula">
-                                              <f:selectItem itemLabel="Machete" itemValue="1"/>
+                                            <f:selectItems value="#{carteleraBean.lstPelicula}" />
                                         </h:selectOneMenu>
                                     </td>
                                 </tr>
@@ -80,7 +81,7 @@
                                 </h:column>  
                                 <h:column>
                                     <f:facet name="header"> <h:outputText  value="Sala"/></f:facet>
-                                    <h:outputText value="#{cartelera.numSala}" />
+                                    <h:outputText value="#{cartelera.num_sala}" />
                                 </h:column>    
                                  <h:column>
                                     <f:facet name="header"> <h:outputText  value="Hora"/></f:facet>
