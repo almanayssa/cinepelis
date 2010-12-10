@@ -12,7 +12,7 @@
         <script type="text/javascript">
             function validarLogueo(){
                 if (blancoJSF('formLogin:usuario', "Ingresar el Usuario") == false)return false;
-                if (blancoJSF('formLogin:password', "Ingresar el Usuario") == false)return false;
+                if (blancoJSF('formLogin:password', "Ingresar el Password") == false)return false;
             }
         </script>
 
