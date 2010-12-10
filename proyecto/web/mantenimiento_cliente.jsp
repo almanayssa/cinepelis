@@ -14,14 +14,14 @@
                 
                 var b="/^[^@\s]+@[^@\.\s]+(\.[^@\.\s]+)+$⁄";
                 function validarFormulario(){
-                    if (blancoJSF('tbxNombre', "Ingresar el Nombre") == false)return false;
-                    if (blancoJSF('tbxApePaterno', "Ingresar apellido paterno") == false)return false;
-                    if (blancoJSF('tbxApeMaterno', "Ingresar apellido materno") == false)return false;
-                    if (blancoJSF('tbxDNI', "Ingresar DNI") == false)return false;
-                    if (ismaxlength(document.getElementById('tbxDNI'), "Solo ingresar 8 digitos") == false)return false;
-                    if (blancoJSF('tbxEmail', "Ingrese un email") == false)return false;
-                    if (isEmailAddress(document.getElementById("tbxEmail")) == false)return false;
-                    if (blancoJSF('numTarjeta', "Ingrese el numero de tarjeta") == false)return false;
+                    if (blancoJSF('frmClientes:tbxNombre', "Ingresar el Nombre") == false)return false;
+                    if (blancoJSF('frmClientes:tbxApePaterno', "Ingresar apellido paterno") == false)return false;
+                    if (blancoJSF('frmClientes:tbxApeMaterno', "Ingresar apellido materno") == false)return false;
+                    if (blancoJSF('frmClientes:tbxDNI', "Ingresar DNI") == false)return false;
+                    if (ismaxlength(document.getElementById('frmClientes:tbxDNI'), "Solo ingresar 8 digitos") == false)return false;
+                    if (blancoJSF('frmClientes:tbxEmail', "Ingrese un email") == false)return false;
+                    if (isEmailAddress(document.getElementById("frmClientes:tbxEmail")) == false)return false;
+                    if (blancoJSF('frmClientes:numTarjeta', "Ingrese el numero de tarjeta") == false)return false;
                     
                     //if(document.getElementById("tbxDNI").value.length!=8){
                     //    alert("DNI Inv\xe1lido");
@@ -92,7 +92,7 @@
                                         <tr>
                                             <td>Tipo Tarjeta:</td>
                                             <td style="padding:2px;">
-                                                <h:selectOneMenu value="#{clienteBean.tipo_tarjeta}" id="censura">
+                                                <h:selectOneMenu value="#{clienteBean.tipo_tarjeta}" id="tipo_tarjeta">
                                                         <f:selectItem itemLabel="CLASICA" itemValue="C"/>
                                                         <f:selectItem itemLabel="Premium" itemValue="P"/>
                                                 </h:selectOneMenu>
