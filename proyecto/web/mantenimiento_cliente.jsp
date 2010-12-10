@@ -8,54 +8,26 @@
             <meta http-equiv="content-type" content="text/html;charset=utf-8" />
             <title><h:outputText value="#{msgs.titulo_sistema}"/></title>
             <link href="<%=request.getContextPath()%>/faces/style.css" rel="stylesheet" type="text/css" media="screen" />
+            <script type="text/javascript" src="<%=request.getContextPath()%>/common/prototype.js"></script>
             <script type="text/javascript" src="<%=request.getContextPath()%>/common/validaciones.js"></script>
             <script type="text/javascript">
                 
                 var b="/^[^@\s]+@[^@\.\s]+(\.[^@\.\s]+)+$⁄";
                 function validarFormulario(){
-                    if(document.getElementById("tbxNombre").value==''){
-                        alert('Ingrese nombre');
-                        document.getElementById("tbxNombre").focus();
-                        return false;
-                    }
-                    if(document.getElementById("tbxApePaterno").value==''){
-                        alert('Ingrese apellido paterno');
-                        document.getElementById("tbxApePaterno").focus();
-                        return false;
-                    }
-                    if(document.getElementById("tbxApeMaterno").value==''){
-                        alert('Ingrese apellido materno');
-                        document.getElementById("tbxApeMaterno").focus();
-                        return false;
-                    }
-                    if(document.getElementById("tbxDNI").value==''){
-                        alert('Ingrese DNI');
-                        document.getElementById("tbxDNI").focus();
-                        return false;
-                    }
-                    if(document.getElementById("tbxDNI").value.length!=8){
-                        alert("DNI Inv\xe1lido");
-                        document.getElementById("tbxDNI").focus();
-                        return false;
-                    }
-                    /*if(document.getElementById("tbxTelefono").value==''){
-                        alert('Ingrese telefono');
-                        document.getElementById("tbxTelefono").focus();
-                        return false;
-                    }*/
-                    if(document.getElementById("tbxEmail").value==''){
-                        alert('Ingrese un email');
-                        document.getElementById("tbxEmail").focus();
-                        return false;
-                    }
+                    if (blancoJSF('tbxNombre', "Ingresar el Nombre") == false)return false;
+                    if (blancoJSF('tbxApePaterno', "Ingresar apellido paterno") == false)return false;
+                    if (blancoJSF('tbxApeMaterno', "Ingresar apellido materno") == false)return false;
+                    if (blancoJSF('tbxDNI', "Ingresar DNI") == false)return false;
+                    if (ismaxlength(document.getElementById('tbxDNI'), "Solo ingresar 8 digitos") == false)return false;
+                    if (blancoJSF('tbxEmail', "Ingrese un email") == false)return false;
                     if (isEmailAddress(document.getElementById("tbxEmail")) == false)return false;
+                    if (blancoJSF('numTarjeta', "Ingrese el numero de tarjeta") == false)return false;
                     
-                    if(document.getElementById("numTarjeta").value==''){
-                        alert('Ingrese el numero de tarjeta');
-                        document.getElementById("numTarjeta").focus();
-                        return false;
-                    }
-
+                    //if(document.getElementById("tbxDNI").value.length!=8){
+                    //    alert("DNI Inv\xe1lido");
+                    //    document.getElementById("tbxDNI").focus();
+                    //    return false;
+                    //}
                 }
             </script>
             <style type="text/css">
@@ -89,39 +61,54 @@
                                 
                                     <table border="0" cellpadding="0" cellspacing="0">
                                         <tr>
-                                            <td>Nombre:</td><td style="padding:2px;"><input name='tbxNombre' id='tbxNombre' type='text' size="50" maxlength="50"/></td>
+                                            <td>Nombre:</td><td style="padding:2px;">
+                                                <h:inputText  value="#{clienteBean.nombre}" id="tbxNombre" size="50" maxlength="50"></h:inputText>
+                                                </td>
                                         </tr>
                                         <tr>
-                                            <td>Apellido Paterno:</td><td style="padding:2px;"><input id='tbxApePaterno' name="tbxApePaterno" type="text" size="50" maxlength="50"/></td>
+                                            <td>Apellido Paterno:</td><td style="padding:2px;">
+                                                <h:inputText value="#{clienteBean.ape_paterno}" id="tbxApePaterno" size="50" maxlength="50"></h:inputText>
+                                                </td>
                                         </tr>
                                         <td>Apellido Materno:</td>
-                                        <td style="padding:2px;"><input name="tbxApeMaterno" id='tbxApeMaterno' type="text" size="50" maxlength="50"/></td>
+                                        <td style="padding:2px;">
+                                            <h:inputText value="#{clienteBean.ape_materno}" id="tbxApeMaterno" size="50" maxlength="50"></h:inputText>
+                                            </td>
                                         <tr>
                                             <td>DNI:</td>
-                                            <td style="padding:2px;"><input name="tbxDNI" id='tbxDNI' type="text" size="20" maxlength="8" onkeypress="return soloNumeros(event)"/></td></tr>
+                                            <td style="padding:2px;">
+                                                <h:inputText value="#{clienteBean.dni}" id="tbxDNI" size="20" maxlength="8" onkeypress="return soloNumeros(event)"></h:inputText>
+                                            </td></tr>
                                         <tr>
                                             <td>Tel&eacute;fono:</td>
-                                            <td style="padding:2px;"><input name="tbxTelefono" id='tbxTelefono' type="text" size="20" maxlength="18" onkeypress="return soloNumeros(event)"/></td></tr>
+                                            <td style="padding:2px;">
+                                                <h:inputText value="#{clienteBean.telefono}" id="tbxTelefono" size="20" maxlength="18" onkeypress="return soloNumeros(event)"></h:inputText>
+                                            </td></tr>
                                         <tr>
                                             <td>Email:</td>
-                                            <td style="padding:2px;"><input name="tbxEmail" id="tbxEmail" type="text" size="50" maxlength="110"/></td></tr>
+                                            <td style="padding:2px;">
+                                                <h:inputText value="#{clienteBean.email}" id="tbxEmail" size="50" maxlength="110"></h:inputText>
+                                                </td></tr>
                                         <tr>
                                             <td>Tipo Tarjeta:</td>
                                             <td style="padding:2px;">
-                                                <select>
-                                                    <option>Cl&aacute;sica</option>
-                                                    <option>Premium</option>
-                                                </select>
+                                                <h:selectOneMenu value="#{clienteBean.tipo_tarjeta}" id="censura">
+                                                        <f:selectItem itemLabel="CLASICA" itemValue="CLASICA"/>
+                                                        <f:selectItem itemLabel="Premium" itemValue="Premium"/>
+                                                </h:selectOneMenu>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td># Tarjeta:</td>
-                                            <td style="padding:2px;"><input id="numTarjeta" name="numTarjeta" type="text" size="20" maxlength="18" onkeypress="return soloNumeros(event)"/></td></tr>
+                                            <td style="padding:2px;">
+                                                <h:inputText value="#{clienteBean.num_tarjeta}" id="numTarjeta" size="20" maxlength="18" onkeypress="return soloNumeros(event)"></h:inputText>
+                                                </td></tr>
                                         <tr>
                                             <td>&nbsp;</td>
                                         </tr>
                                         <tr><td></td>
-                                            <td><input type="submit" value="Guardar" onclick="return validarFormulario();" /><input type="submit" value="Cancelar" /></td></tr>
+                                            <td><h:commandButton action="#{clienteBean.guardarCliente}" value="Guardar" onclick="return validarFormulario();" />
+                                                    <input type="submit" value="Cancelar" /></td></tr>
                                         <tr><td>&nbsp;</td>
                                         </tr>
                                     </table>

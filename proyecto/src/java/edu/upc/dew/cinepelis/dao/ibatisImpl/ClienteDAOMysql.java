@@ -48,6 +48,16 @@ public class ClienteDAOMysql extends SqlMapClientDaoSupport implements ClienteDA
 
     }
 
+    public Long guardarCliente(ClienteBean cliente) {
+        try{
+		return (Long)getSqlMapClientTemplate().insert("guardarCliente", cliente);
+	}catch (Exception e) {
+		e.printStackTrace();
+		System.out.println("Error en el ibatis - method guardarCliente()");
+		return null;
+	}
+    }
+
     
 
 }
