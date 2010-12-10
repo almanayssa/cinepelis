@@ -24,7 +24,7 @@
 
     <insert id="guardarCliente" parameterClass="beanCliente">
         <![CDATA[
-		INSERT tb_cliente(nombre, ape_paterno, ape_materno, dni, telefono, email, tipo, num_tarjeta)
+		INSERT tb_cliente(nombre, ape_paterno, ape_materno, dni, telefono, email, tipo_tarjeta, num_tarjeta)
                 VALUES (#nombre#, #ape_paterno#, #ape_materno#, #dni#, #telefono#, #email#, #tipo_tarjeta#,#num_tarjeta#);
 	]]>
         <selectKey resultClass="java.lang.Long" keyProperty="id_cliente" >
