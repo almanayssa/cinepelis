@@ -17,4 +17,6 @@ public interface CarteleraDAO {
      public List<CarteleraBean> getCartelera();
 
      public Long guardarCartelera(CarteleraBean cartelera);
+
+      public void eliminarCartelera(int id);
 }
