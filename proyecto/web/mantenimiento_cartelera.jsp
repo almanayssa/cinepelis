@@ -57,6 +57,12 @@
                                         <f:selectItem itemLabel="11:00" itemValue="11:00"/>
                                         <f:selectItem itemLabel="11:30" itemValue="11:30"/>
                                         <f:selectItem itemLabel="12:00" itemValue="12:00"/>
+                                        <f:selectItem itemLabel="13:00" itemValue="13:00"/>
+                                        <f:selectItem itemLabel="14:00" itemValue="14:00"/>
+                                        <f:selectItem itemLabel="19:00" itemValue="19:00"/>
+                                        <f:selectItem itemLabel="20:00" itemValue="20:00"/>
+                                        <f:selectItem itemLabel="21:00" itemValue="21:00"/>
+                                        <f:selectItem itemLabel="22:00" itemValue="22:00"/>
                                 </h:selectOneMenu>
                                </td>
                             <td>

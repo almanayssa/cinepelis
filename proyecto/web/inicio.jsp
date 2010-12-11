@@ -27,7 +27,13 @@
 		<div id="content">
                     <div class="post">
                         <h2 class="title"><a href="#">Inicio</a></h2>
-                      <div class="entry"></div>
+                      <div class="entry">
+                          <h2>Cinepelis Web System</h2><br><br>
+                          <span>
+                              Cinepelis es un sistema Web de gestión de los principales procesos de un Cine; es decir automatiza desde las consultas de cartelera hasta la venta de entradas a los clientes. Este sistema ha sido creado en base al modelo de negocio que existe en la ciudad de Lima y aplica para un cine de una sede con varias salas.
+                          </span>
+
+                      </div>
                     </div>
 		</div>
 		<!-- end #content -->

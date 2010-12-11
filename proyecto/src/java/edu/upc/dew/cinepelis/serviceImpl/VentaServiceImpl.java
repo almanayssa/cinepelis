@@ -47,6 +47,10 @@ public class VentaServiceImpl implements  VentaService{
     public List<DetalleVentaBean> getEntradasByCabecera(Long idCabecera) {
         return getVentaDAO().getEntradasByCabecera(idCabecera);
     }
+
+    public boolean terminarProceso(CabeceraVentaBean cabecera) {
+        return getVentaDAO().terminarProceso(cabecera);
+    }
     
 
 

@@ -62,6 +62,18 @@ public class VentaDAOMysql extends SqlMapClientDaoSupport implements VentaDAO{
 	}
     }
 
+    public boolean terminarProceso(CabeceraVentaBean cabecera) {
+            try{
+		getSqlMapClientTemplate().update("terminarProceso",cabecera);
+			return true;
+            }catch (Exception e) {
+		e.printStackTrace();
+		System.out.println("Error en el ibatis - method terminarProceso()");
+		return false;
+	}
+
+    }
+
 
 
     

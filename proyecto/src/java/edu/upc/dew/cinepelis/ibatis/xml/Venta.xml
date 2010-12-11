@@ -63,5 +63,17 @@
     </select>
 
 
+    
+	<update id="terminarProceso" parameterClass="beanCabeceraVenta">
+		<![CDATA[
+			UPDATE tb_venta
+			SET cant_entradas = #cant_entradas#,
+				monto_total = #monto_total#
+				
+			WHERE id_venta = #id_venta#
+		]]>
+	</update>
+
+
 	
 </sqlMap>    

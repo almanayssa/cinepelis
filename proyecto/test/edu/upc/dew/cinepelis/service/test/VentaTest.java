@@ -85,6 +85,7 @@ public class VentaTest extends  TestTransactional {
     }
 
 
+    @Ignore
     @Test
     @Rollback(false)
     public void testListadoEntradas(){
@@ -97,6 +98,28 @@ public class VentaTest extends  TestTransactional {
 
         Assert.assertNotNull(lst);
     }
+    
+    @Test
+    @Rollback(false)
+    public void testTerminarProceso(){
+        log.info("entro testTerminarProceso");
+        
+        CabeceraVentaBean cabecera = new CabeceraVentaBean();
+        cabecera.setId_venta(1L);
+        cabecera.setCant_entradas(3);
+        cabecera.setFecha_venta(Utils.getNowTimestamp());
+        cabecera.setId_cartelera(1L);
+        cabecera.setId_cliente(1L);
+        cabecera.setId_usuario(1L);
+        cabecera.setMonto_total(21.5);
+        
+        boolean flag = ventaServiceCtx.terminarProceso(cabecera);
+
+   
+        Assert.assertTrue(flag);
+    }
+
+
 
 
     
