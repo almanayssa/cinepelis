@@ -18,4 +18,5 @@ public interface CarteleraService {
 
     public Long guardarCartelera(CarteleraBean cartelera);
 
+    public void eliminarCartelera(int id);
 }
