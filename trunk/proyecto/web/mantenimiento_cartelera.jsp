@@ -87,7 +87,11 @@
                                     <f:facet name="header"> <h:outputText  value="Hora"/></f:facet>
                                     <h:outputText value="#{cartelera.hora_inicio}" />
                                 </h:column>                                 
-                                
+                                <h:column>
+                                    <h:commandLink action="#{carteleraBean.eliminarCartelera}" value="Eliminar" >
+                                        <f:param name="idCartelera"  value="#{cartelera.id_cartelera}" />
+                                    </h:commandLink>
+                                </h:column>
                                 
                             </h:dataTable>
 
