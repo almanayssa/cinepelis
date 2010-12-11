@@ -41,5 +41,12 @@ public class CarteleraDAOMysql extends SqlMapClientDaoSupport implements Cartele
     }
 
 
-
+    public void eliminarCartelera(int id){
+        try{
+            getSqlMapClientTemplate().delete("eliminarCartelera", id);
+	}catch (Exception e) {
+		e.printStackTrace();
+		System.out.println("Error en el ibatis - method eliminarCartelera()");
+	}
+    }
 }
