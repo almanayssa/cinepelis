@@ -25,4 +25,6 @@ public interface VentaDAO {
 
     public List<DetalleVentaBean> getEntradasByCabecera(Long idCabecera);
 
+    public boolean terminarProceso(CabeceraVentaBean cabecera);
+
 }

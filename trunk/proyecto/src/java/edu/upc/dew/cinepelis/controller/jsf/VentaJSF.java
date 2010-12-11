@@ -212,6 +212,11 @@ public class VentaJSF extends  GenericBean{
     }
 
     public String terminarOperacion(){
+        log.info("Entrando ... terminarOperacion() - VentaJSF");
+        log.info("idVenta:"+idCabecera);
+        log.info("montoTotal:"+montoTotal);
+        log.info("cantidadEntradas:"+cantidadEntradas);
+
         resetForm();
         return "inicio";
     }

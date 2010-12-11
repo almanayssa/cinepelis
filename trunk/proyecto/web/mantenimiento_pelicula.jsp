@@ -93,10 +93,11 @@
                                             <tr>
                                                 <td>Sinopsis:</td>
                                                 <td style="padding:2px;"><h:inputTextarea value="#{peliculaBean.sinopsis}" cols="40"></h:inputTextarea></td></tr>
+                                            <!--
                                             <tr>
                                                 <td>Ruta Foto:</td>
                                                 <td style="padding:2px;"><h:inputText value="#{peliculaBean.rutaImagen}" size="50" maxlength="200"></h:inputText></td></tr>
-                                            <tr>
+                                            <tr>-->
                                                 <td></td>
                                                 <td style="padding:2px;">&nbsp;</td>
                                             </tr>
@@ -110,10 +111,8 @@
                                         </table>
                                         <br/>
                                         <h:dataTable id="peliculas"  value="#{peliculaBean.lstPelicula}" var="pelicula"  border="1" headerClass="cabeceratabla">
-                                            <h:column>
-                                                <f:facet name="header"> <h:outputText  value="Id"/> </f:facet>
-                                                <h:outputText value="#{pelicula.id_pelicula}" />
-                                            </h:column>
+                                            <!--
+                                            
                                             <h:column>
                                                 <f:facet name="header"> <h:outputText  value="Nombre"/> </f:facet>
                                                 <h:outputText value="#{pelicula.nombre}" />

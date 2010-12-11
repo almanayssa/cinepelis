@@ -24,6 +24,8 @@ public interface VentaService {
 
      public List<DetalleVentaBean> getEntradasByCabecera(Long idCabecera);
 
+    public boolean terminarProceso(CabeceraVentaBean cabecera);
+
 
 
 }
