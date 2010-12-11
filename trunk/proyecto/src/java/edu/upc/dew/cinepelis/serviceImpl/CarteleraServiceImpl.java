@@ -34,5 +34,9 @@ public class CarteleraServiceImpl implements CarteleraService {
         return getCarteleraDAO().guardarCartelera(cartelera);
     }
 
+    public void eliminarCartelera(int id) {
+         getCarteleraDAO().eliminarCartelera(id);
+    }
+
 
 }
