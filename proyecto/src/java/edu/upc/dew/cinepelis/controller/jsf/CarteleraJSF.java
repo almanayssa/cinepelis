@@ -10,6 +10,7 @@ import edu.upc.dew.cinepelis.model.CarteleraBean;
 import edu.upc.dew.cinepelis.model.PeliculaBean;
 import java.util.ArrayList;
 import java.util.List;
+import javax.faces.context.FacesContext;
 import javax.faces.model.SelectItem;
 
 /**
@@ -138,5 +139,9 @@ public class CarteleraJSF extends  GenericBean{
        }
     }
 
-   
+   public void eliminarCartelera(){
+       String id =(String)(FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get("idCartelera"));
+       serviceFactory.getCarteleraService().eliminarCartelera(Integer.parseInt(id));
+       initCartelera();
+   }
 }
