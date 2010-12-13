@@ -56,5 +56,5 @@ Además, este sistema permite a los clientes del cine consultar la cartelera a t
   * Bitácora : log4j
  
 
-<b><u>Video sobre el Uso del Sistema</u></b>
-http://www.youtube.com/watch?v=lGLH9XTSxm4
+<font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Cinepelis Web System en video</font><br><br>
+<a href="http://www.youtube.com/watch?v=lGLH9XTSxm4" target="_blank">Hacer click aqui</a>
