@@ -57,4 +57,4 @@ Además, este sistema permite a los clientes del cine consultar la cartelera a t
  
 
 <font face="Arial Rounded MT Bold" color="black" size="5" style="bold">Cinepelis Web System en video</font><br><br>
-<a href="http://www.youtube.com/watch?v=lGLH9XTSxm4" target="_blank">Hacer click aqui</a>
+http://www.youtube.com/watch?v=lGLH9XTSxm4
