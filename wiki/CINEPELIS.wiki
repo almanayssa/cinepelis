@@ -55,3 +55,6 @@ Además, este sistema permite a los clientes del cine consultar la cartelera a t
   * Frameworks : Ibatis, Spring, JSF(MVC)
   * Bitácora : log4j
  
+
+<b><u>Video sobre el Uso del Sistema</u></b>
+http://www.youtube.com/watch?v=lGLH9XTSxm4
